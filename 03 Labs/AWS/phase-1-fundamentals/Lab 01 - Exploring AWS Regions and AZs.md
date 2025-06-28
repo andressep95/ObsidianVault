@@ -27,4 +27,5 @@ labs/phase-1-fundamentals/lab-01-regions-azs/
 ```
   
 ---
-swqbduiqwbdiuqwb
+
+
