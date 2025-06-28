@@ -1,3 +1,13 @@
+---
+tags:
+  - moc
+  - terraform
+  - indice
+aliases:
+  - Terraform
+  - Software Development
+  - Dev MOC
+---
 # 🏗️ Estructura de Terraform para Certificación AWS SAA-C03
 
 ```

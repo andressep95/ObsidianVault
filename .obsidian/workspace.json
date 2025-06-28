@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Indice General/MOC - Desarrollo de Software.md",
+                "file": "01 Indice General/MOC - Terraform.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MOC - Desarrollo de Software"
+              "title": "MOC - Terraform"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:desarrollo-software",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,13 +184,13 @@
   },
   "active": "52c6813db0af601c",
   "lastOpenFiles": [
+    "01 Indice General/MOC - Desarrollo de Software.md",
     "01 Indice General/MOC - AWS.md",
     "01 Indice General/MOC - Terraform.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "ObsidianVault",
     "ObsidianVault/nod.md",
     "ObsidianVault/Untitled",
-    "01 Indice General/MOC - Desarrollo de Software.md",
     "Welcomes.md",
     "2025-06-27.md",
     "05 Templates/Template - AWS Concept.md",
