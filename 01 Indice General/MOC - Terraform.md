@@ -3,6 +3,8 @@ tags:
   - moc
   - terraform
   - indice
+  - infraestructura
+  - cloud
 aliases:
   - Terraform
   - Software Development
