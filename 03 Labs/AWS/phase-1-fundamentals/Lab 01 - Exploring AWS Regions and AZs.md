@@ -39,53 +39,29 @@
 - [x] Terraform >= 1.0 instalado
 - [x] Credenciales AWS válidas
 - [x] Permisos para crear recursos S3
+
 ---
 ## 🚀 Ejecución del Laboratorio
-
-  
-
+ 
 ### 1. Configuración Inicial
-
-  
-
 ```bash
-
 # Clonar y navegar al laboratorio
-
 cd labs/phase-1-fundamentals/lab-01-regions-azs/
 
-  
-
 # Verificar configuración AWS
-
 aws sts get-caller-identity
 
-  
-
 # Inicializar Terraform
-
 terraform init
-
 ```
 
-  
-
 ### 2. Planificación
-
-  
-
 ```bash
-
 # Ver el plan de ejecución
-
 terraform plan
 
-  
-
 # Revisar que las regiones sean correctas
-
 terraform plan -var="primary_region=us-east-1" -var="secondary_region=eu-west-1"
-
 ```
 
   
