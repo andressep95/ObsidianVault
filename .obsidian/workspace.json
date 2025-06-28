@@ -195,12 +195,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "41de66d15d41cf36",
+  "active": "52c6813db0af601c",
   "lastOpenFiles": [
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/main.tf.md",
-    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "03 Labs/AWS/phase-1-fundamentals/Lab 01 - Exploring AWS Regions and AZs.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "01 Indice General/MOC - Terraform.md",
     "03 Labs/AWS/phase-1-fundamentals",
     "03 Labs/AWS",
@@ -218,7 +218,6 @@
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)",
     "06 Templates",
     "04 Componentes",
-    "05 Proyectos",
-    "02 Tecnologias"
+    "05 Proyectos"
   ]
 }
