@@ -34,7 +34,7 @@
 ```
 
 ---
-### Archivos
+## Archivos
 ```
 labs/phase-1-fundamentals/lab-01-regions-azs/
 ├── 📄 main.tf # Configuración principal
@@ -47,7 +47,7 @@ labs/phase-1-fundamentals/lab-01-regions-azs/
 └── 📄 README.md # Documentación del laboratorio
 ```
 
-**lab-01-regions-azs** 
+### lab-01-regions-azs
 - [[main.tf]]
 
 ---  
