@@ -49,6 +49,8 @@ labs/phase-1-fundamentals/lab-01-regions-azs/
 
 ### lab-01-regions-azs
 - [[main.tf]]
+- [[version.tf]]
+- 
 
 ---  
 ## 📋 Prerrequisitos
