@@ -83,45 +83,26 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "lab_secondary_enc
 }
 
   
-
 # Bloquear acceso público (seguridad)
-
 resource "aws_s3_bucket_public_access_block" "lab_primary_pab" {
+	provider = aws
+	bucket = aws_s3_bucket.lab_primary_region.id
 
-provider = aws
-
-bucket = aws_s3_bucket.lab_primary_region.id
-
-  
-
-block_public_acls = true
-
-block_public_policy = true
-
-ignore_public_acls = true
-
-restrict_public_buckets = true
-
+	block_public_acls = true
+	block_public_policy = true
+	ignore_public_acls = true
+	restrict_public_buckets = true
 }
 
-  
 
 resource "aws_s3_bucket_public_access_block" "lab_secondary_pab" {
+	provider = aws.secondary
+	bucket = aws_s3_bucket.lab_secondary_region.id
 
-provider = aws.secondary
-
-bucket = aws_s3_bucket.lab_secondary_region.id
-
-  
-
-block_public_acls = true
-
-block_public_policy = true
-
-ignore_public_acls = true
-
-restrict_public_buckets = true
-
+	block_public_acls = true
+	block_public_policy = true
+	ignore_public_acls = true
+	restrict_public_buckets = true
 }
 ```
 
