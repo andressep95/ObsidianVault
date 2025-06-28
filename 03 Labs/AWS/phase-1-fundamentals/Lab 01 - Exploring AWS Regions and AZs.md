@@ -64,73 +64,37 @@ terraform plan
 terraform plan -var="primary_region=us-east-1" -var="secondary_region=eu-west-1"
 ```
 
-  
-
 ### 3. Aplicación
-
-  
-
 ```bash
-
 # Aplicar configuración
-
 terraform apply
 
-  
-
 # Confirmar con 'yes' cuando se solicite
-
 ```
-
-  
 
 ### 4. Exploración de Resultados
-
-  
-
 ```bash
-
 # Ver información de regiones
-
 terraform output primary_region_info
 
-  
-
 # Ver comparación entre regiones
-
 terraform output regions_comparison
 
-  
-
 # Ver resumen completo
-
 terraform output lab_summary
-
 ```
 
-  
-
 ### 5. Limpieza
-
-  
-
 ```bash
 
 # Destruir recursos para evitar costos
-
 terraform destroy
 
-  
-
 # Confirmar con 'yes'
-
 ```
 
-  
-
+---
 ## 📊 Conceptos Clave Aprendidos
-
-  
 
 ### 🌍 **Infraestructura Global AWS**
 
