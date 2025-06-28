@@ -161,7 +161,8 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "github-sync:Sync with Remote": false
     }
   },
   "active": "41de66d15d41cf36",
@@ -169,20 +170,20 @@
     "ObsidianVault",
     "ObsidianVault/nod.md",
     "ObsidianVault/Untitled",
-    "ObsidianVault/01 Indice General/MOC - AWS.md.md",
-    "ObsidianVault/01 Indice General/MOC - Desarrollo de Software.md.md",
-    "ObsidianVault/02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
+    "01 Indice General/MOC - AWS.md.md",
+    "01 Indice General/MOC - Desarrollo de Software.md.md",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "Welcomes.md",
     "2025-06-27.md",
-    "ObsidianVault/05 Templates/Template - AWS Concept.md",
-    "ObsidianVault/05 Templates/Template - Concepto.md.md",
-    "ObsidianVault/02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS API Gateway.md",
-    "ObsidianVault/02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)",
-    "ObsidianVault/05 Templates",
-    "ObsidianVault/04 Componentes",
-    "ObsidianVault/03 Proyectos",
-    "ObsidianVault/02 Tecnologias",
-    "ObsidianVault/01 Indice General",
-    "ObsidianVault/00 inbox"
+    "05 Templates/Template - AWS Concept.md",
+    "05 Templates/Template - Concepto.md.md",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS API Gateway.md",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)",
+    "05 Templates",
+    "04 Componentes",
+    "03 Proyectos",
+    "02 Tecnologias",
+    "01 Indice General",
+    "00 inbox"
   ]
 }
