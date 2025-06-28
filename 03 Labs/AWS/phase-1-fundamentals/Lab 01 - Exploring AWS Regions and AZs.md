@@ -97,47 +97,23 @@ terraform destroy
 ## 📊 Conceptos Clave Aprendidos
 
 ### 🌍 **Infraestructura Global AWS**
-
-  
-
 - **Regiones**: Ubicaciones geográficas con múltiples AZs
-
 - **Zonas de Disponibilidad**: Centros de datos aislados
-
 - **Edge Locations**: Puntos de presencia para CloudFront
 
-  
-
 ### 🏗️ **Terraform Data Sources**
-
-  
-
 - `aws_region`: Información de regiones
-
 - `aws_availability_zones`: Lista de AZs disponibles
-
 - `aws_caller_identity`: Información de la cuenta
-
 - `aws_ami`: Imágenes de máquinas virtuales
 
-  
-
 ### 🔧 **Multi-Provider Configuration**
-
-  
-
 - Proveedores con alias para múltiples regiones
-
 - Configuración de tags por defecto
-
 - Gestión de recursos distribuidos
 
-  
-
+---
 ## 🎯 Preguntas de Preparación para el Examen
-
-  
-
 ### 1. **¿Cuál es la diferencia entre una Región y una Zona de Disponibilidad?**
 
   
