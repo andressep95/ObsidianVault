@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Indice General/MOC - Terraform.md",
+                "file": "01 Indice General/MOC - AWS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MOC - Terraform"
+              "title": "MOC - AWS"
             }
           }
         ]
@@ -183,9 +183,9 @@
   },
   "active": "52c6813db0af601c",
   "lastOpenFiles": [
+    "01 Indice General/MOC - Terraform.md",
     "01 Indice General/MOC - Desarrollo de Software.md",
     "01 Indice General/MOC - AWS.md",
-    "01 Indice General/MOC - Terraform.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "ObsidianVault",
     "ObsidianVault/nod.md",
