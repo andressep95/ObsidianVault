@@ -115,61 +115,26 @@ terraform destroy
 ---
 ## 🎯 Preguntas de Preparación para el Examen
 ### 1. **¿Cuál es la diferencia entre una Región y una Zona de Disponibilidad?**
-
-  
-
-- **Región**: Área geográfica con múltiples AZs
-
+-  **Región**: Área geográfica con múltiples AZs
 - **AZ**: Centro de datos aislado dentro de una región
-
-  
-
 ### 2. **¿Cuántas AZs tiene cada región típicamente?**
-
-  
-
 - Mínimo 3 AZs por región
-
 - Máximo varía (algunas tienen 6+)
-
-  
-
 ### 3. **¿Cómo afecta la elección de región a la latencia?**
-
-  
-
 - Proximidad geográfica reduce latencia
-
 - Considerar ubicación de usuarios finales
 
-  
-
+---
 ## 💰 Estimación de Costos
-
-  
-
 - **S3 Buckets**: Gratis (Free Tier)
-
 - **Data Transfer**: Mínimo (solo metadatos)
-
 - **Total Estimado**: $0.00
-
-  
-
+ ---
 ## 🔗 Enlaces Útiles
-
-  
-
 - [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
-
 - [AWS Regions and AZs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
-
 - [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-  
-
 ---
-
-  
 
 **⚠️ Importante**: Siempre ejecuta `terraform destroy` al finalizar para evitar costos innecesarios.
