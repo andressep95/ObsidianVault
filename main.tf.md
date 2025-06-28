@@ -8,45 +8,26 @@
 # (Usamos un bucket S3 como ejemplo, ya que es global pero region-specific)
 resource "aws_s3_bucket" "lab_primary_region" {
 	provider = aws
-
-bucket = "${local.resource_prefix}-primary-${random_id.bucket_suffix.hex}"
-
+	bucket = "${local.resource_prefix}-primary-${random_id.bucket_suffix.hex}"
   
-
-tags = merge(local.common_tags, {
-
-Name = "Lab01-Primary-Region-Bucket"
-
-Region = var.primary_region
-
-Description = "Bucket creado en region primaria para exploración"
-
-})
-
+	tags = merge(local.common_tags, {
+		Name = "Lab01-Primary-Region-Bucket"
+		Region = var.primary_region
+		Description = "Bucket creado en region primaria para exploración"
+	})
 }
 
   
-
 # Recurso para demostrar creación en región secundaria
-
 resource "aws_s3_bucket" "lab_secondary_region" {
-
-provider = aws.secondary
-
-bucket = "${local.resource_prefix}-secondary-${random_id.bucket_suffix.hex}"
-
+	provider = aws.secondary
+	bucket = "${local.resource_prefix}-secondary-${random_id.bucket_suffix.hex}"
   
-
-tags = merge(local.common_tags, {
-
-Name = "Lab01-secondary-Region-Bucket"
-
-Region = var.secondary_region
-
-Description = "Bucket creado en region secundaria para exploración"
-
-})
-
+	tags = merge(local.common_tags, {
+		Name = "Lab01-secondary-Region-Bucket"
+		Region = var.secondary_region
+		Description = "Bucket creado en region secundaria para exploración"
+	})
 }
 
   
