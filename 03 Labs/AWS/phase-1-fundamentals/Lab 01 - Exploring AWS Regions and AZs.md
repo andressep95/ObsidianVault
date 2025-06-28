@@ -1,5 +1,3 @@
-  
-
 ## 🎯 Objetivos del Laboratorio
 - Comprender la infraestructura global de AWS
 - Explorar regiones y zonas de disponibilidad
@@ -8,15 +6,8 @@
 - Aplicar mejores prácticas de seguridad
 
   
-
 ## 🏗️ Arquitectura
-
-  
-
 ```
-
-  
-
 ┌─────────────────┐ ┌─────────────────┐
 
 │ us-east-1 │ │ eu-west-1 │
@@ -40,9 +31,6 @@
 │ • AMI Info │ │ • AMI Info │
 
 └─────────────────┘ └─────────────────┘
-
-  
-
 ```
 
   
