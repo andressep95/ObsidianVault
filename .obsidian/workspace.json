@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
+                "file": "Lab 01 - Exploring AWS Regions and AZs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AWS Global Infrastructure"
+              "title": "Lab 01 - Exploring AWS Regions and AZs"
             }
           }
         ]
@@ -181,24 +181,26 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "52c6813db0af601c",
+  "active": "41de66d15d41cf36",
   "lastOpenFiles": [
+    "Untitled",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
+    "Lab 01 - Exploring AWS Regions and AZs.md",
     "01 Indice General/MOC - AWS.md",
     "01 Indice General/MOC - Terraform.md",
     "01 Indice General/MOC - Desarrollo de Software.md",
-    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "ObsidianVault",
     "ObsidianVault/nod.md",
     "ObsidianVault/Untitled",
     "Welcomes.md",
     "2025-06-27.md",
-    "05 Templates/Template - AWS Concept.md",
-    "05 Templates/Template - Concepto.md.md",
+    "06 Templates/Template - AWS Concept.md",
+    "06 Templates/Template - Concepto.md.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS API Gateway.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)",
-    "05 Templates",
+    "06 Templates",
     "04 Componentes",
-    "03 Proyectos",
+    "05 Proyectos",
     "02 Tecnologias",
     "01 Indice General",
     "00 inbox"
