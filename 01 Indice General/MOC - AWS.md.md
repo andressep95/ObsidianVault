@@ -4,7 +4,7 @@ aliases: [Amazon Web Services, AWS Index]
 ---
 # ☁️ Plan de Estudios - AWS Solutions Architect Associate (SAA-C03)
 
-> **🎯 Objetivo:** Obtener la certificación AWS Certified Solutions Architect - Associate en 3-4 meses **📅 Creado:** {{date}} **🔄 Última actualización:** {{date}}
+> **🎯 Objetivo:** Obtener la certificación AWS Certified Solutions Architect - Associate en 3-4 meses **📅 Creado:** {{27/06/2025}} **🔄 Última actualización:** {{date}}
 
 ## 📋 Prerrequisitos Completados
 
