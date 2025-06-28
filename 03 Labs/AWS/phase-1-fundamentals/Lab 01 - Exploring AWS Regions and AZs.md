@@ -5,7 +5,7 @@
 - Implementar configuración multi-región
 - Aplicar mejores prácticas de seguridad
 
-  
+---
 ## 🏗️ Arquitectura
 ```
 ┌─────────────────┐ ┌─────────────────┐
@@ -33,22 +33,13 @@
 └─────────────────┘ └─────────────────┘
 ```
 
-  
-
+---  
 ## 📋 Prerrequisitos
-
-  
-
 - [x] AWS CLI configurado (`aws configure`)
-
 - [x] Terraform >= 1.0 instalado
-
 - [x] Credenciales AWS válidas
-
 - [x] Permisos para crear recursos S3
-
-  
-
+---
 ## 🚀 Ejecución del Laboratorio
 
   
