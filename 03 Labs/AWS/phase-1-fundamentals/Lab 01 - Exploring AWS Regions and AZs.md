@@ -46,6 +46,7 @@ labs/phase-1-fundamentals/lab-01-regions-azs/
 ├── 📄 locals.tf # Variables locales
 └── 📄 README.md # Documentación del laboratorio
 ```
+- [[main.tf]]
 
 ---  
 ## 📋 Prerrequisitos
