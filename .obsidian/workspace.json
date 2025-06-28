@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Labs/AWS/Lab 01 - Exploring AWS Regions and AZs.md",
+                "file": "01 Indice General/MOC - Terraform.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab 01 - Exploring AWS Regions and AZs"
+              "title": "MOC - Terraform"
             }
           }
         ]
@@ -181,12 +181,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "41de66d15d41cf36",
+  "active": "52c6813db0af601c",
   "lastOpenFiles": [
+    "03 Labs/AWS/Lab 01 - Exploring AWS Regions and AZs.md",
     "03 Labs/AWS",
     "03 Labs",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
-    "03 Labs/AWS/Lab 01 - Exploring AWS Regions and AZs.md",
     "01 Indice General/MOC - AWS.md",
     "01 Indice General/MOC - Terraform.md",
     "01 Indice General/MOC - Desarrollo de Software.md",
@@ -203,7 +203,6 @@
     "04 Componentes",
     "05 Proyectos",
     "02 Tecnologias",
-    "01 Indice General",
-    "00 inbox"
+    "01 Indice General"
   ]
 }
