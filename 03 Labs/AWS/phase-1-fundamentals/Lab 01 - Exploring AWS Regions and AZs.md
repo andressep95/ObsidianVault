@@ -1,6 +1,6 @@
 ### Estructura del laboratorio
 
-
+```bash
 labs/AWS/phase-1-fundamentals/Lab 01 - Exploring AWS Regions and AZs/
 ├── 📄 main.tf              # Configuración principal
 ├── 📄 variables.tf         # Variables de entrada
@@ -13,3 +13,6 @@ labs/AWS/phase-1-fundamentals/Lab 01 - Exploring AWS Regions and AZs/
 ├── 📄 architecture.drawio  # Diagrama de arquitectura
 └── 📁 examples/            # Ejemplos adicionales
     └── multi-region.tf
+```
+
+swqbduiqwbdiuqwb
