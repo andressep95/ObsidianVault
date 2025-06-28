@@ -314,7 +314,7 @@ AZFailureAlert:
 
 ### 🧪 Hands-on Labs
 
-- [[Lab 01 - Exploring AWS Regions and AZs]]
+- [[01 - Exploring AWS Regions and AZs]]
 - [AWS Workshop - Multi-Region Basics](https://workshops.aws/)
 - [Qwiklabs - AWS Infrastructure Fundamentals](https://qwiklabs.com/)
 

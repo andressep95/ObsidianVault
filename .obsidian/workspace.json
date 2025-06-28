@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/version.tf.md",
+                "file": "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "version.tf"
+              "title": "01 - Exploring AWS Regions and AZs"
             }
           },
           {
@@ -197,11 +197,11 @@
   },
   "active": "52c6813db0af601c",
   "lastOpenFiles": [
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/main.tf.md",
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/version.tf.md",
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/Lab 01 - Exploring AWS Regions and AZs.md",
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/version.tf.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/main.tf.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs",
     "01 Indice General/MOC - Terraform.md",
     "03 Labs/AWS/phase-1-fundamentals",
     "03 Labs/AWS",
