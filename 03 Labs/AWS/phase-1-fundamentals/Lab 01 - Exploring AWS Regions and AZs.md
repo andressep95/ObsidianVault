@@ -33,6 +33,10 @@
 └─────────────────┘ └─────────────────┘
 ```
 
+---
+### Archivos
+
+
 ---  
 ## 📋 Prerrequisitos
 - [x] AWS CLI configurado (`aws configure`)
@@ -137,4 +141,4 @@ terraform destroy
 
 ---
 
-**⚠️ Importante**: Siempre ejecuta `terraform destroy` al finalizar para evitar costos innecesarios.
+# ⚠️ Importante: Siempre ejecuta `terraform destroy` al finalizar para evitar costos innecesarios.
