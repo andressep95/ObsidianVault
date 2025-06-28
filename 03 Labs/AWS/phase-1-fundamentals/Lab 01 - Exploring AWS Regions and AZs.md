@@ -44,7 +44,7 @@ labs/phase-1-fundamentals/lab-01-regions-azs/
 ├── 📄 versions.tf # Versiones de providers
 ├── 📄 data.tf # Data sources
 ├── 📄 locals.tf # Variables locales
-├── 📄 README.md # Documentación del laboratorio
+└── 📄 README.md # Documentación del laboratorio
 ```
 
 ---  
