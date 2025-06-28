@@ -31,58 +31,37 @@ resource "aws_s3_bucket" "lab_secondary_region" {
 }
 
   
-
 # ID aleatorio para nombres únicos de buckets
-
 resource "random_id" "bucket_suffix" {
-
-byte_length = 4
-
+	byte_length = 4
 }
 
-  
 
 # Configuración de versionado para buckets (buena práctica)
-
 resource "aws_s3_bucket_versioning" "lab_primary_versioning" {
-
-provider = aws
-
-bucket = aws_s3_bucket.lab_primary_region.id
-
-versioning_configuration {
-
-status = "Enabled"
-
-}
-
+	provider = aws
+	bucket = aws_s3_bucket.lab_primary_region.id
+	
+	versioning_configuration {
+		status = "Enabled"
+	}
 }
 
   
-
 resource "aws_s3_bucket_versioning" "lab_secondary_versioning" {
-
-provider = aws.secondary
-
-bucket = aws_s3_bucket.lab_secondary_region.id
-
-versioning_configuration {
-
-status = "Enabled"
-
+	provider = aws.secondary
+	bucket = aws_s3_bucket.lab_secondary_region.id
+	
+	versioning_configuration {
+		status = "Enabled"
+	}
 }
-
-}
-
   
 
 # Server-side encryption para buckets
-
 resource "aws_s3_bucket_server_side_encryption_configuration" "lab_primary_encrypt" {
-
-provider = aws
-
-bucket = aws_s3_bucket.lab_primary_region.id
+	provider = aws
+	bucket = aws_s3_bucket.lab_primary_region.id
 
   
 
