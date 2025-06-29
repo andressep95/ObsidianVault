@@ -25,10 +25,8 @@ Encaja como parte del **ciclo de diseño, revisión y mejora continua de arquite
 - **Partners de AWS y consultores**, para ofrecer evaluaciones formales a clientes.
 - **Clientes**, para mantener la calidad y escalabilidad de sus aplicaciones en AWS.
 
-	Dentro del ecosistema de AWS, el Framework se **complementa con herramientas y servicios**, como:
-	
-	- **AWS Trusted Advisor** (para recomendaciones de seguridad, performance y costos)
-	    
-	- **AWS Config** (para evaluación continua de cumplimiento)
-	    
-	- **AWS Well-Architected Tool** (para evaluaciones automatizadas basadas en los seis pilares)
+---
+
+## ⚙️ Cómo Funciona / Arquitectura
+
+### 🏗️ Componentes Principales
