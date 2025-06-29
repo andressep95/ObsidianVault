@@ -109,18 +109,12 @@ Por eso, cada recomendación debe ser evaluada según el presupuesto y criticida
 
 ## 🧪 Configuración Práctica
 
-## 🧪 Configuración para Práctica del AWS Well-Architected Framework
-
 ### 🔧 Requisitos Previos
-
 - Cuenta de AWS activa (puede ser el **Free Tier**).
 - Permisos adecuados de IAM para usar la **Well-Architected Tool**.
 - Workload o aplicación ya desplegada (puede ser una demo o entorno de prueba).
 
----
-
 ### 🪜 Pasos para Configurar y Usar la Herramienta
-
 #### 1. Ingresar a la Consola
 - Accede a: [https://console.aws.amazon.com/](https://console.aws.amazon.com/)
 - Busca y selecciona **Well-Architected Tool**.
