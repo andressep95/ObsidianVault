@@ -158,5 +158,4 @@ Por eso, cada recomendación debe ser evaluada según el presupuesto y criticida
 ### 🧰 Recursos Útiles
 
 - 📘 [AWS Well-Architected Tool - Documentación Oficial](https://docs.aws.amazon.com/wellarchitected/latest/userguide/)
-- 📗 [Lentes de AWS (Serverless, ML, etc.)](https://docs.aws.amazon.com/wellarchitected/latest/framework/lenses.html)
-- 🛠️ [AWS Pricing Calculator](https://calculator.aws.amazon.com/)
+- 🛠️ [AWS Pricing Calculator](https://aws.amazon.com/es/aws-cost-management/aws-pricing-calculator/)
