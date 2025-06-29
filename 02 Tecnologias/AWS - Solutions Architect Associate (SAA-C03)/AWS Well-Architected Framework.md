@@ -30,3 +30,13 @@ Encaja como parte del **ciclo de diseño, revisión y mejora continua de arquite
 ## ⚙️ Cómo Funciona / Arquitectura
 
 ### 🏗️ Componentes Principales
+
+| Componente                                                  | Descripción                                                                                                                                                                                          |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pilares (Pillars)**                                       | Seis áreas clave que representan los fundamentos de una arquitectura en la nube: Excelencia Operacional, Seguridad, Fiabilidad, Eficiencia del Rendimiento, Optimización de Costes y Sostenibilidad. |
+| **Preguntas Fundamentales (Design Principles & Questions)** | Cada pilar incluye preguntas estratégicas que permiten identificar riesgos, oportunidades de mejora y buenas prácticas.                                                                              |
+| **Buenas Prácticas Recomendadas**                           | AWS provee guías específicas que indican cómo aplicar los principios en cada pilar con ejemplos concretos.                                                                                           |
+| **AWS Well-Architected Tool**                               | Herramienta gratuita en la consola AWS para realizar evaluaciones sistemáticas, almacenar resultados, obtener reportes y planes de acción.                                                           |
+| **Lentes Especializadas (Lenses)**                          | Extensiones del Framework que adaptan las preguntas y prácticas a industrias o tipos de carga específicos, como IoT, ML, Serverless, etc.                                                            |
+| **Workloads**                                               | Cada carga de trabajo (aplicación, sistema o servicio) es evaluada individualmente usando el framework para identificar riesgos y priorizar acciones.                                                |
+| **Informe de Revisión (Review Report)**                     | Resultado de la evaluación, con un resumen de riesgos, nivel de cumplimiento por pilar, y recomendaciones para remediación.                                                                          |
