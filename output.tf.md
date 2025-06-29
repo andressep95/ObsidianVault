@@ -95,58 +95,33 @@ description = "Comparación entre las dos regiones"
 
 		summary = {
 			total_azs_explored = length(data.aws_availability_zones.primary_azs.names) + length(data.aws_availability_zones.secondary_azs.names)
-		
 		regions_compared = 2
-
+		}
+	}
 }
 
-}
-
-}
-
-  
 
 # Información de laboratorio
-
 output "lab_summary" {
-
 description = "Resumen del laboratorio completado"
 
-value = {
+	value = {
+		lab_name = "Lab 01 - Exploring AWS Regions and AZs"
+		objective = "Understand AWS global infrastructure"
 
-lab_name = "Lab 01 - Exploring AWS Regions and AZs"
-
-objective = "Understand AWS global infrastructure"
-
-  
-
-learned_concepts = [
-
-"AWS Regions and Availability Zones",
-
-"Data sources in Terraform",
-
-"Multi-provider configuration",
-
-"Resource tagging strategies",
-
-"S3 bucket security best practices"
-
-]
-
-  
-
-resources_created = {
-
-s3_buckets = 2
-
-regions_used = 2
-
-providers_configured = 2
-
-}
-
-  
+	learned_concepts = [
+		"AWS Regions and Availability Zones",
+		"Data sources in Terraform",
+		"Multi-provider configuration",
+		"Resource tagging strategies",
+		"S3 bucket security best practices"
+	]
+	
+	resources_created = {
+		s3_buckets = 2
+		regions_used = 2
+		providers_configured = 2
+	}
 
 cleanup_command = "terraform destroy"
 
