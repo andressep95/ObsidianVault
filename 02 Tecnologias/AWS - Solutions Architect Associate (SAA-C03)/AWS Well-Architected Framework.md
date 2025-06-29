@@ -186,8 +186,6 @@ Por eso, cada recomendación debe ser evaluada según el presupuesto y criticida
 | Abrir puertos innecesarios (como SSH 22 o RDP 3389 a 0.0.0.0/0) | Exposición directa a ataques desde internet                  |
 | Reutilización de roles o permisos genéricos                     | Escalada de privilegios o acceso no controlado               |
 
----
-
 ### 🧰 Herramientas de Apoyo en AWS
 
 - **AWS IAM Access Analyzer** – Detecta permisos excesivos
@@ -197,12 +195,13 @@ Por eso, cada recomendación debe ser evaluada según el presupuesto y criticida
 - **AWS KMS** – Cifrado de datos administrado
 - **AWS Inspector** – Escanea vulnerabilidades en instancias EC2
 
----
-
 🔁 **Recomendación**: revisa el pilar de seguridad al menos cada 3 meses o después de un cambio en el equipo, la aplicación o la política de cumplimiento.
 
-
+---
 ### 📚 Recursos y referencias
 
 - 📘 [AWS Well-Architected Tool - Documentación Oficial](https://docs.aws.amazon.com/wellarchitected/latest/userguide/)
 - 🛠️ [AWS Pricing Calculator](https://aws.amazon.com/es/aws-cost-management/aws-pricing-calculator/)
+
+### 🧪 Hands-on Labs
+- [[01 - ]]
