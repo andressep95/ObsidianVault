@@ -8,7 +8,7 @@
 
 ## 📋 Descripción General
 **¿Qué es?**  
-La infraestructura global de AWS es la red física de centros de datos distribuidos geográficamente alrededor del mundo que permite a AWS ofrecer servicios en la nube con alta disponibilidad, baja latencia y redundancia geográfica.
+Es un conjunto coherente de practicas recomendadas para que clientes y socios evakuen arquitecturas y proporciona un conjunto de preguntas que pueden utilizarse para evaluar la adecuacion de una arquitectura a las practicas recomendadas de AWS
 
 **¿Para qué sirve?**  
 Proporciona la base física para todos los servicios de AWS, permitiendo desplegar aplicaciones cerca de los **usuarios finales**, cumplir con regulaciones de soberanía de datos, y diseñar arquitecturas resilientes contra desastres naturales o fallas regionales.
