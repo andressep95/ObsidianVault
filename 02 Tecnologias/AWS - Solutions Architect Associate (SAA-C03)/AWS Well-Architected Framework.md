@@ -81,3 +81,48 @@ Encaja como parte del **ciclo de diseño, revisión y mejora continua de arquite
 ---
 ## 💰 Modelo de Precios
 
+## 💰 Modelo de Precios del AWS Well-Architected Framework
+
+### 📌 ¿Cómo se cobra?
+
+- ✅ **La herramienta AWS Well-Architected Tool es completamente gratuita.**
+    
+- No hay costo por usarla, crear workloads, responder preguntas o generar reportes.
+    
+- Sin embargo, **las recomendaciones pueden sugerir servicios de AWS** que sí tienen costos (por ejemplo, habilitar backups, usar Auto Scaling, CloudTrail, etc.).
+    
+
+---
+
+### 💵 Estimación de Costos (indirectos)
+
+Aunque la herramienta en sí no tiene precio, debes considerar:
+
+|Elemento recomendado|Posibles costos asociados (ejemplo)|
+|---|---|
+|**Backup automático con AWS Backup**|Depende del tamaño y frecuencia del backup.|
+|**Alta disponibilidad con RDS Multi-AZ**|Incrementa el costo de instancias y almacenamiento.|
+|**Implementación de CloudWatch Logs**|Costos por métricas, logs almacenados y retención.|
+|**Amazon GuardDuty o AWS WAF**|Servicios pagos según volumen o uso.|
+|**Elastic Load Balancer (ELB)**|Factura por tráfico y número de instancias detrás del balanceador.|
+
+Por eso, cada recomendación debe ser evaluada según el presupuesto y criticidad del sistema.
+
+---
+
+### 🧠 Tips de Optimización
+
+1. **Prioriza los High Risk Issues (HRIs)**: Enfócate primero en las recomendaciones críticas antes de aplicar todas.
+    
+2. **Evalúa costos antes de aplicar sugerencias**: Usa la calculadora de precios de AWS para estimar el impacto.
+    
+3. **Usa Lenses apropiadas para tu carga**: Las lentes personalizadas filtran mejor las recomendaciones relevantes.
+    
+4. **Automatiza revisiones periódicas**: Por ejemplo, cada 3 o 6 meses, para mantener costos y arquitectura optimizados.
+    
+5. **Combina con Trusted Advisor (gratuito con soporte Business o Enterprise)** para más visibilidad en optimización de costos y seguridad.
+    
+
+---
+
+¿Quieres que convierta esto en una hoja de resumen tipo PDF o Markdown para tus apuntes o guía de estudio?
