@@ -54,7 +54,7 @@ labs/phase-1-fundamentals/lab-01-regions-azs/
 - [[terraform.tfvars]]
 - [[locals.tf]]
 - [[data.tf]]
-- 
+- [[output.tf]]
 
 ---  
 ## 📋 Prerrequisitos
