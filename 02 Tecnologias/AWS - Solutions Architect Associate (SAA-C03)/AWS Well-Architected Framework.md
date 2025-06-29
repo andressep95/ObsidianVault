@@ -50,38 +50,20 @@ Encaja como parte del **ciclo de diseño, revisión y mejora continua de arquite
 - **Migraciones a la nube**: Evalúa si una arquitectura on-premises está lista para migrarse eficientemente.
 - **Auditorías técnicas regulares**: Ayuda a identificar desviaciones o riesgos con el tiempo.
 - **Empresas en crecimiento**: Asegura que la infraestructura escale de forma segura, eficiente y optimizada en costos.
-    
 - **Equipos DevOps y arquitectura**: Estandariza las prácticas entre equipos distribuidos o múltiples aplicaciones.
-    
 - **Preparación para certificaciones**: Mejora la postura de seguridad y cumplimiento normativo.
-    
 
----
-
-### 🚫 No recomendado para...
-
+### 🚫 No recomendado para:
 - **Aplicaciones pequeñas o experimentales sin intención de escalar**: Puede ser innecesario aplicar toda la metodología si la carga no es crítica.
-    
 - **Ambientes puramente on-premises**: Está diseñado específicamente para arquitecturas en la nube de AWS.
-    
 - **Cargas sin soporte estratégico**: Si no hay compromiso del equipo en aplicar mejoras, la evaluación no tendrá impacto real.
-    
-
----
 
 ### 🌍 Ejemplos del Mundo Real
-
 - **Fintech que busca escalar globalmente**: Usa el framework para optimizar latencia, seguridad y recuperación ante desastres antes de lanzar su app financiera en nuevos mercados.
-    
 - **Empresa de retail que migra su ERP a AWS**: Evalúa fiabilidad y rendimiento antes de cortar con la infraestructura on-premises.
-    
 - **Startup de IA que entrena modelos en AWS**: Aplica el lens de Machine Learning para asegurar eficiencia y control de costos en cargas intensivas.
-    
 - **Gobierno local que moderniza servicios ciudadanos**: Utiliza el pilar de sostenibilidad para construir arquitecturas más responsables y eficientes energéticamente.
-    
 - **Consultora AWS Partner**: Aplica revisiones Well-Architected como parte de sus servicios para clientes, identificando riesgos y entregando planes de remediación.
-    
 
 ---
 
-¿Te gustaría que estos casos de uso se transformen en tarjetas de estudio, tabla o presentación visual?
