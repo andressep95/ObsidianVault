@@ -155,6 +155,53 @@ Por eso, cada recomendación debe ser evaluada según el presupuesto y criticida
 
 ---
 
+### 🧭 Principios Clave de Seguridad
+1. **Implementar una identidad fuerte y control de acceso**
+2. **Aplicar el principio de privilegio mínimo**
+3. **Habilitar trazabilidad**
+4. **Proteger datos en tránsito y en reposo**
+5. **Automatizar las respuestas de seguridad**
+6. **Prepararse para incidentes de seguridad**
+
+### ✅ Mejores Prácticas
+
+| Área                          | Recomendación                                                   |
+|------------------------------|------------------------------------------------------------------|
+| **Gestión de identidades (IAM)** | Usa roles y políticas mínimas necesarias (least privilege).      |
+| **Autenticación multifactor (MFA)** | Habilita MFA para usuarios y roles críticos.                     |
+| **Registro y monitoreo**     | Habilita AWS CloudTrail, Config y CloudWatch Logs.              |
+| **Cifrado de datos**         | Usa KMS para cifrar datos en S3, EBS, RDS, etc.                 |
+| **Seguridad de red**         | Configura VPCs, subredes privadas, NACLs, y grupos de seguridad. |
+| **Auditorías automáticas**   | Usa AWS Config Rules, GuardDuty, Security Hub.                  |
+| **Respuesta a incidentes**   | Establece un runbook y simula incidentes con AWS Fault Injection Simulator. |
+
+### ❌ Errores Comunes
+
+| Error                                                           | Riesgo Asociado                                              |
+| --------------------------------------------------------------- | ------------------------------------------------------------ |
+| Uso excesivo de usuarios IAM con acceso root                    | Alta exposición ante compromisos de seguridad                |
+| No habilitar CloudTrail en todas las regiones                   | Falta de visibilidad ante eventos sospechosos                |
+| Uso de claves de acceso estáticas sin rotación                  | Aumenta la probabilidad de filtraciones                      |
+| No cifrar datos sensibles                                       | Incumplimiento de normativas y riesgo de fuga de información |
+| Abrir puertos innecesarios (como SSH 22 o RDP 3389 a 0.0.0.0/0) | Exposición directa a ataques desde internet                  |
+| Reutilización de roles o permisos genéricos                     | Escalada de privilegios o acceso no controlado               |
+
+---
+
+### 🧰 Herramientas de Apoyo en AWS
+
+- **AWS IAM Access Analyzer** – Detecta permisos excesivos
+- **AWS Security Hub** – Consolida alertas de seguridad
+- **AWS Config** – Evalúa conformidad de recursos
+- **Amazon GuardDuty** – Detecta amenazas y comportamientos anómalos
+- **AWS KMS** – Cifrado de datos administrado
+- **AWS Inspector** – Escanea vulnerabilidades en instancias EC2
+
+---
+
+🔁 **Recomendación**: revisa el pilar de seguridad al menos cada 3 meses o después de un cambio en el equipo, la aplicación o la política de cumplimiento.
+
+
 ### 📚 Recursos y referencias
 
 - 📘 [AWS Well-Architected Tool - Documentación Oficial](https://docs.aws.amazon.com/wellarchitected/latest/userguide/)
