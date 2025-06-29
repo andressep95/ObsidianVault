@@ -35,8 +35,7 @@
               "title": "data.tf"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,10 +196,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "36bc0af30c6c75e3",
+  "active": "52c6813db0af601c",
   "lastOpenFiles": [
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
     "data.tf.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/locals.tf.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/terraform.tfvars.md",

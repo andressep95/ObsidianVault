@@ -57,58 +57,34 @@ data "aws_ami" "amazon_linux_primary" {
 
 # AMIs disponibles en la región secundaria (para comparación)
 data "aws_ami" "amazon_linux_secondary" {
-
-provider = aws.secondary
-
-most_recent = true
-
-owners = ["amazon"]
-
-  
-
-filter {
-
-name = "name"
-
-values = ["amzn2-ami-hvm-*-x86_64-gp2"]
-
+	provider = aws.secondary
+	most_recent = true
+	owners = ["amazon"]	  
+	
+	filter {
+		name = "name"
+		values = ["amzn2-ami-hvm-*-x86_64-gp2"]
+	}
+		
+	filter {
+		name = "virtualization-type"
+		values = ["hvm"]
+	}
 }
-
-  
-
-filter {
-
-name = "virtualization-type"
-
-values = ["hvm"]
-
-}
-
-}
-
   
 
 # Servicios disponibles en cada región
-
 data "aws_service" "ec2_primary" {
-
-provider = aws
-
-service_id = "ec2"
-
-region = var.primary_region
-
+	provider = aws
+	service_id = "ec2"
+	region = var.primary_region
 }
 
   
 
 data "aws_service" "ec2_secondary" {
-
-provider = aws.secondary
-
-service_id = "ec2"
-
-region = var.secondary_region
-
+	provider = aws.secondary
+	service_id = "ec2"
+	region = var.secondary_region
 }
 ```
