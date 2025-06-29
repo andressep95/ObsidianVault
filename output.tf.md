@@ -80,36 +80,23 @@ output "secondary_region_info" {
 # Comparación entre regiones
 output "regions_comparison" {
 description = "Comparación entre las dos regiones"
+	value = {
+		primary_region = {
+			name = var.primary_region
+			az_count = length(data.aws_availability_zones.primary_azs.names)
+			azs = data.aws_availability_zones.primary_azs.names
+		}
 
-value = {
+		secondary_region = {
+			name = var.secondary_region
+			az_count = length(data.aws_availability_zones.secondary_azs.names)
+			azs = data.aws_availability_zones.secondary_azs.names
+		}
 
-primary_region = {
-
-name = var.primary_region
-
-az_count = length(data.aws_availability_zones.primary_azs.names)
-
-azs = data.aws_availability_zones.primary_azs.names
-
-}
-
-secondary_region = {
-
-name = var.secondary_region
-
-az_count = length(data.aws_availability_zones.secondary_azs.names)
-
-azs = data.aws_availability_zones.secondary_azs.names
-
-}
-
-  
-
-summary = {
-
-total_azs_explored = length(data.aws_availability_zones.primary_azs.names) + length(data.aws_availability_zones.secondary_azs.names)
-
-regions_compared = 2
+		summary = {
+			total_azs_explored = length(data.aws_availability_zones.primary_azs.names) + length(data.aws_availability_zones.secondary_azs.names)
+		
+		regions_compared = 2
 
 }
 
