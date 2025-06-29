@@ -109,25 +109,22 @@ description = "Resumen del laboratorio completado"
 		lab_name = "Lab 01 - Exploring AWS Regions and AZs"
 		objective = "Understand AWS global infrastructure"
 
-	learned_concepts = [
-		"AWS Regions and Availability Zones",
-		"Data sources in Terraform",
-		"Multi-provider configuration",
-		"Resource tagging strategies",
-		"S3 bucket security best practices"
-	]
-	
-	resources_created = {
-		s3_buckets = 2
-		regions_used = 2
-		providers_configured = 2
+		learned_concepts = [
+			"AWS Regions and Availability Zones",
+			"Data sources in Terraform",
+			"Multi-provider configuration",
+			"Resource tagging strategies",
+			"S3 bucket security best practices"
+		]
+		
+		resources_created = {
+			s3_buckets = 2
+			regions_used = 2
+			providers_configured = 2
+		}
+
+	cleanup_command = "terraform destroy"
+	estimated_cost = "~$0.00 (Free Tier S3 usage)"	
 	}
-
-cleanup_command = "terraform destroy"
-
-estimated_cost = "~$0.00 (Free Tier S3 usage)"
-
-}
-
 }
 ```

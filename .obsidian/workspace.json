@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "output.tf.md",
+                "file": "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/output.tf.md",
                 "mode": "source",
                 "source": false
               },
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5,
-    "collapsed": true
+    "width": 302.5
   },
   "right": {
     "id": "643dd29477638eb7",
@@ -197,10 +196,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "36bc0af30c6c75e3",
+  "active": "41de66d15d41cf36",
   "lastOpenFiles": [
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
-    "output.tf.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/output.tf.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/data.tf.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/locals.tf.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
