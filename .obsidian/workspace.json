@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "locals.tf.md",
+                "file": "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/locals.tf.md",
                 "mode": "source",
                 "source": false
               },
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
+                "file": "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AWS Global Infrastructure"
+              "title": "01 - Exploring AWS Regions and AZs"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5,
-    "collapsed": true
+    "width": 302.5
   },
   "right": {
     "id": "643dd29477638eb7",
@@ -196,13 +196,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "52c6813db0af601c",
+  "active": "36bc0af30c6c75e3",
   "lastOpenFiles": [
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/locals.tf.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
-    "locals.tf.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/terraform.tfvars.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/variables.tf.md",
-    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/version.tf.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/main.tf.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs",

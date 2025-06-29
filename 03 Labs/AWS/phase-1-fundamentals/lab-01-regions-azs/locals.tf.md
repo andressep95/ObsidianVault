@@ -5,7 +5,6 @@
   
 
 locals {
-	
 	common_tags = {
 		# Tags comunes para todos los recursos
 		Project = var.project_name
@@ -18,7 +17,6 @@ locals {
 		CreatedDate = formatdate("YYYY-MM-DD", timestamp())
 	}
   
-
 	# Configuraciones derivadas
 	resource_prefix = "${var.project_name}-${var.environment}-lab${var.lab_number}"
 	
@@ -28,16 +26,10 @@ locals {
 			description = "Región primaria para el laboratorio"
 		}
   
-
-secondary = {
-
-name = var.secondary_region
-
-description = "Región secundaria para el laboratorio"
-
-}
-
-}
-
+		secondary = {
+			name = var.secondary_region
+			description = "Región secundaria para el laboratorio"
+		}
+	}
 }
 ```
