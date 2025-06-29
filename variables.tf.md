@@ -29,70 +29,41 @@ variable "secondary_region" {
 
 
 variable "environment" {
+	description = "Ambiente del laboratorio"
+	type = string	
+	default = "lab"
 
-description = "Ambiente del laboratorio"
-
-type = string
-
-default = "lab"
-
-  
-
-validation {
-
-condition = contains(["lab", "dev", "staging", "prod"], var.environment)
-
-error_message = "El ambiente debe ser: lab, dev, staging o prod."
-
-}
-
+	validation {
+		condition = contains(["lab", "dev", "staging", "prod"], var.environment)
+		error_message = "El ambiente debe ser: lab, dev, staging o prod."
+	}
 }
 
   
-
 variable "project_name" {
-
-description = "Nombre del proyecto"
-
-type = string
-
-default = "aws-saa-certification"
-
+	description = "Nombre del proyecto"
+	type = string
+	default = "aws-saa-certification"
 }
-
   
 
 variable "lab_number" {
-
-description = "Numero del laboratorio"
-
-type = string
-
-default = "01"
-
+	description = "Numero del laboratorio"
+	type = string
+	default = "01"
 }
 
-  
 
 variable "lab_name" {
-
-description = "Nombre descriptivo del laboratorio"
-
-type = string
-
-default = "regions-azs-exploration"
-
+	description = "Nombre descriptivo del laboratorio"
+	type = string
+	default = "regions-azs-exploration"
 }
 
-  
 
 variable "owner" {
-
-description = "Propietario del laboratorio"
-
-type = string
-
-default = "aws-student"
-
+	description = "Propietario del laboratorio"
+	type = string
+	default = "aws-student"
 }
 ```
