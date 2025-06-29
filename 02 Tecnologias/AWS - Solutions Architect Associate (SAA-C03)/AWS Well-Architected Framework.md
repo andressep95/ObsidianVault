@@ -204,4 +204,4 @@ Por eso, cada recomendación debe ser evaluada según el presupuesto y criticida
 - 🛠️ [AWS Pricing Calculator](https://aws.amazon.com/es/aws-cost-management/aws-pricing-calculator/)
 
 ### 🧪 Hands-on Labs
-- [[01 - ]]
+- [[01 - Well-Architected Tool]]
