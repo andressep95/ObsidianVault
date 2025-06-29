@@ -81,34 +81,22 @@ Encaja como parte del **ciclo de diseño, revisión y mejora continua de arquite
 ---
 ## 💰 Modelo de Precios
 
-## 💰 Modelo de Precios del AWS Well-Architected Framework
-
 ### 📌 ¿Cómo se cobra?
-
 - ✅ **La herramienta AWS Well-Architected Tool es completamente gratuita.**
-    
 - No hay costo por usarla, crear workloads, responder preguntas o generar reportes.
-    
 - Sin embargo, **las recomendaciones pueden sugerir servicios de AWS** que sí tienen costos (por ejemplo, habilitar backups, usar Auto Scaling, CloudTrail, etc.).
-    
-
----
 
 ### 💵 Estimación de Costos (indirectos)
-
 Aunque la herramienta en sí no tiene precio, debes considerar:
 
-|Elemento recomendado|Posibles costos asociados (ejemplo)|
-|---|---|
-|**Backup automático con AWS Backup**|Depende del tamaño y frecuencia del backup.|
-|**Alta disponibilidad con RDS Multi-AZ**|Incrementa el costo de instancias y almacenamiento.|
-|**Implementación de CloudWatch Logs**|Costos por métricas, logs almacenados y retención.|
-|**Amazon GuardDuty o AWS WAF**|Servicios pagos según volumen o uso.|
-|**Elastic Load Balancer (ELB)**|Factura por tráfico y número de instancias detrás del balanceador.|
-
+| Elemento recomendado                     | Posibles costos asociados (ejemplo)                                |
+| ---------------------------------------- | ------------------------------------------------------------------ |
+| **Backup automático con AWS Backup**     | Depende del tamaño y frecuencia del backup.                        |
+| **Alta disponibilidad con RDS Multi-AZ** | Incrementa el costo de instancias y almacenamiento.                |
+| **Implementación de CloudWatch Logs**    | Costos por métricas, logs almacenados y retención.                 |
+| **Amazon GuardDuty o AWS WAF**           | Servicios pagos según volumen o uso.                               |
+| **Elastic Load Balancer (ELB)**          | Factura por tráfico y número de instancias detrás del balanceador. |
 Por eso, cada recomendación debe ser evaluada según el presupuesto y criticidad del sistema.
-
----
 
 ### 🧠 Tips de Optimización
 
