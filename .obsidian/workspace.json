@@ -94,7 +94,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -202,10 +203,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "3ba0410521b9a884",
+  "active": "ca125eef04bdc241",
   "lastOpenFiles": [
-    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Well-Architected Framework.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Well-Architected Framework.md",
     "01 Indice General/MOC - AWS.md",
     "01 Indice General/MOC - Terraform.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/locals.tf.md",
