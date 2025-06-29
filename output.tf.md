@@ -33,46 +33,29 @@ output "primary_region_info" {
 		}
 	
 		latest_ami = {
-	
-	id = data.aws_ami.amazon_linux_primary.id
-	
-	name = data.aws_ami.amazon_linux_primary.name
-	
-	description = data.aws_ami.amazon_linux_primary.description
-	
-	creation_date = data.aws_ami.amazon_linux_primary.creation_date
-	
+			id = data.aws_ami.amazon_linux_primary.id
+			name = data.aws_ami.amazon_linux_primary.name
+			description = data.aws_ami.amazon_linux_primary.description
+			creation_date = data.aws_ami.amazon_linux_primary.creation_date
+		}
+		
+		created_resources = {
+			s3_bucket = aws_s3_bucket.lab_primary_region.id
+			bucket_arn = aws_s3_bucket.lab_primary_region.arn	
+		}
 	}
-	
-	  
-	
-	created_resources = {
-	
-	s3_bucket = aws_s3_bucket.lab_primary_region.id
-	
-	bucket_arn = aws_s3_bucket.lab_primary_region.arn
-	
-	}
-	
-	}
-
 }
-
   
 
 # Información de la región secundaria
-
 output "secondary_region_info" {
-
-description = "Información detallada de la región secundaria"
-
-value = {
-
-name = data.aws_region.secondary.name
-
-description = data.aws_region.secondary.description
-
-endpoint = data.aws_region.secondary.endpoint
+	
+	description = "Información detallada de la región secundaria"
+	
+	value = {
+	name = data.aws_region.secondary.name
+	description = data.aws_region.secondary.description
+	endpoint = data.aws_region.secondary.endpoint
 
   
 
