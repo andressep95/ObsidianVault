@@ -105,3 +105,64 @@ Por eso, cada recomendación debe ser evaluada según el presupuesto y criticida
 4. **Automatiza revisiones periódicas**: Por ejemplo, cada 3 o 6 meses, para mantener costos y arquitectura optimizados.
 5. **Combina con Trusted Advisor (gratuito con soporte Business o Enterprise)** para más visibilidad en optimización de costos y seguridad.
 
+---
+
+## 🧪 Configuración Práctica
+
+## 🧪 Configuración para Práctica del AWS Well-Architected Framework
+
+### 🔧 Requisitos Previos
+
+- Cuenta de AWS activa (puede ser el **Free Tier**).
+- Permisos adecuados de IAM para usar la **Well-Architected Tool**.
+- Workload o aplicación ya desplegada (puede ser una demo o entorno de prueba).
+
+---
+
+### 🪜 Pasos para Configurar y Usar la Herramienta
+
+#### 1. Ingresar a la Consola
+- Accede a: [https://console.aws.amazon.com/](https://console.aws.amazon.com/)
+- Busca y selecciona **Well-Architected Tool**.
+
+#### 2. Crear una Carga de Trabajo (*Workload*)
+- Haz clic en **"Create workload"**.
+- Define:
+  - Nombre del workload
+  - Ambiente (dev / test / prod)
+  - Regiones donde corre
+  - Industria (opcional)
+  - Selecciona el **framework estándar** de 6 pilares
+  - (Opcional) Agrega un **lens especializado** (Serverless, ML, IoT, etc.)
+
+#### 3. Iniciar la Revisión
+- Selecciona el workload y haz clic en **"Start review"**.
+- Responde las preguntas para cada pilar:
+  - ✅ Operational Excellence
+  - 🔐 Security
+  - ⚙️ Reliability
+  - 🚀 Performance Efficiency
+  - 💵 Cost Optimization
+  - 🌱 Sustainability
+
+#### 4. Analizar el Resultado
+- La herramienta identifica los **High Risk Issues (HRIs)**.
+- Puedes:
+  - Exportar un **reporte de revisión**
+  - Generar un **plan de mejora (Improvement Plan)**
+
+#### 5. Aplicar Mejoras
+- Evalúa y prioriza las recomendaciones.
+- Aplica cambios relevantes (ej. habilitar backups, usar IAM roles, escalar automáticamente, etc.)
+
+#### 6. Repetir Regularmente
+- Realiza revisiones **trimestrales** o tras cambios significativos en la arquitectura.
+- Compara los resultados a lo largo del tiempo.
+
+---
+
+### 🧰 Recursos Útiles
+
+- 📘 [AWS Well-Architected Tool - Documentación Oficial](https://docs.aws.amazon.com/wellarchitected/latest/userguide/)
+- 📗 [Lentes de AWS (Serverless, ML, etc.)](https://docs.aws.amazon.com/wellarchitected/latest/framework/lenses.html)
+- 🛠️ [AWS Pricing Calculator](https://calculator.aws.amazon.com/)
