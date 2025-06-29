@@ -6,76 +6,55 @@
 
 # Información de la cuenta AWS
 output "account_info" {
-
-description = "Información de la cuenta AWS"
-
-value = {
-
-account_id = data.aws_caller_identity.current.account_id
-
-user_id = data.aws_caller_identity.current.user_id
-
-arn = data.aws_caller_identity.current.arn
-
-partition = data.aws_partition.current.partition
-
-}
-
+	description = "Información de la cuenta AWS"
+	
+	value = {
+		account_id = data.aws_caller_identity.current.account_id
+		user_id = data.aws_caller_identity.current.user_id
+		arn = data.aws_caller_identity.current.arn
+		partition = data.aws_partition.current.partition
+	}
 }
 
   
-
 # Información de la región primaria
-
 output "primary_region_info" {
-
-description = "Información detallada de la región primaria"
-
-value = {
-
-name = data.aws_region.primary.name
-
-description = data.aws_region.primary.description
-
-endpoint = data.aws_region.primary.endpoint
-
-  
-
-availability_zones = {
-
-count = length(data.aws_availability_zones.primary_azs.names)
-
-names = data.aws_availability_zones.primary_azs.names
-
-zone_ids = data.aws_availability_zones.primary_azs.zone_ids
-
-}
-
-  
-
-latest_ami = {
-
-id = data.aws_ami.amazon_linux_primary.id
-
-name = data.aws_ami.amazon_linux_primary.name
-
-description = data.aws_ami.amazon_linux_primary.description
-
-creation_date = data.aws_ami.amazon_linux_primary.creation_date
-
-}
-
-  
-
-created_resources = {
-
-s3_bucket = aws_s3_bucket.lab_primary_region.id
-
-bucket_arn = aws_s3_bucket.lab_primary_region.arn
-
-}
-
-}
+	description = "Información detallada de la región primaria"
+	
+	value = {
+		name = data.aws_region.primary.name
+		description = data.aws_region.primary.description
+		endpoint = data.aws_region.primary.endpoint
+	
+		availability_zones = {
+			count = length(data.aws_availability_zones.primary_azs.names)
+			names = data.aws_availability_zones.primary_azs.names
+			zone_ids = data.aws_availability_zones.primary_azs.zone_ids
+		}
+	
+		latest_ami = {
+	
+	id = data.aws_ami.amazon_linux_primary.id
+	
+	name = data.aws_ami.amazon_linux_primary.name
+	
+	description = data.aws_ami.amazon_linux_primary.description
+	
+	creation_date = data.aws_ami.amazon_linux_primary.creation_date
+	
+	}
+	
+	  
+	
+	created_resources = {
+	
+	s3_bucket = aws_s3_bucket.lab_primary_region.id
+	
+	bucket_arn = aws_s3_bucket.lab_primary_region.arn
+	
+	}
+	
+	}
 
 }
 
