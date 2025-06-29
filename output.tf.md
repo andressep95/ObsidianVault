@@ -48,61 +48,37 @@ output "primary_region_info" {
   
 
 # Información de la región secundaria
-output "secondary_region_info" {
-	
+output "secondary_region_info" {	
 	description = "Información detallada de la región secundaria"
-	
+
 	value = {
-	name = data.aws_region.secondary.name
-	description = data.aws_region.secondary.description
-	endpoint = data.aws_region.secondary.endpoint
+		name = data.aws_region.secondary.name
+		description = data.aws_region.secondary.description
+		endpoint = data.aws_region.secondary.endpoint
 
-  
+		availability_zones = {
+			count = length(data.aws_availability_zones.secondary_azs.names)
+			names = data.aws_availability_zones.secondary_azs.names
+			zone_ids = data.aws_availability_zones.secondary_azs.zone_ids
+		}
 
-availability_zones = {
+		latest_ami = {
+			id = data.aws_ami.amazon_linux_secondary.id
+			name = data.aws_ami.amazon_linux_secondary.name
+			description = data.aws_ami.amazon_linux_secondary.description
+			creation_date = data.aws_ami.amazon_linux_secondary.creation_date
+		}
 
-count = length(data.aws_availability_zones.secondary_azs.names)
-
-names = data.aws_availability_zones.secondary_azs.names
-
-zone_ids = data.aws_availability_zones.secondary_azs.zone_ids
-
+		created_resources = {
+			s3_bucket = aws_s3_bucket.lab_secondary_region.id
+			bucket_arn = aws_s3_bucket.lab_secondary_region.arn
+		}
+	}
 }
-
-  
-
-latest_ami = {
-
-id = data.aws_ami.amazon_linux_secondary.id
-
-name = data.aws_ami.amazon_linux_secondary.name
-
-description = data.aws_ami.amazon_linux_secondary.description
-
-creation_date = data.aws_ami.amazon_linux_secondary.creation_date
-
-}
-
-  
-
-created_resources = {
-
-s3_bucket = aws_s3_bucket.lab_secondary_region.id
-
-bucket_arn = aws_s3_bucket.lab_secondary_region.arn
-
-}
-
-}
-
-}
-
   
 
 # Comparación entre regiones
-
 output "regions_comparison" {
-
 description = "Comparación entre las dos regiones"
 
 value = {
