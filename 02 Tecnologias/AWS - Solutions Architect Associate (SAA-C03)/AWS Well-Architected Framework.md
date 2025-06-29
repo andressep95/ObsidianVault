@@ -67,3 +67,17 @@ Encaja como parte del **ciclo de diseño, revisión y mejora continua de arquite
 
 ---
 
+## ⚖️ Pros y Contras
+|✅ Pros|⚠️ Contras|
+|---|---|
+|**Estándar claro y probado** para evaluar arquitecturas.|Puede ser **intimidante o complejo** al inicio si no se conoce AWS.|
+|Fomenta **mejores prácticas desde el diseño** hasta la operación.|Requiere **tiempo y compromiso** para realizar evaluaciones completas.|
+|Identifica **riesgos ocultos y oportunidades de mejora**.|Si no se aplica correctamente, puede **quedar como un checklist sin acción real**.|
+|Disponible una **herramienta gratuita en la consola AWS**.|Está **centrado exclusivamente en AWS**, no se adapta directamente a otras nubes.|
+|Permite crear **planes de remediación priorizados**.|Algunas recomendaciones pueden ser **genéricas o poco aplicables** a ciertos casos.|
+|Se **complementa con lentes especializados** según tipo de carga.|Las evaluaciones no generan acciones automáticas: todo es **manual**.|
+|Facilita **alineación entre equipos técnicos y de negocio**.|No sustituye una revisión arquitectónica humana experta.|
+
+---
+## 💰 Modelo de Precios
+
