@@ -8,7 +8,7 @@
 
 ## 📋 Descripción General
 **¿Qué es?**  
-Es un conjunto consistente de buenas prácticas para que clientes y socios evalúen arquitecturas, se basa en seis pilares: excelencia operativa, seguridad, fiabilidad
+Es un conjunto consistente de buenas prácticas para que clientes y socios evalúen arquitecturas, se basa en seis pilares: excelencia operativa, seguridad, fiabilidad, eficiencia del rendimiento, optimización de costes y sostenibilidad.
 
 **¿Para qué sirve?**  
 Proporciona la base física para todos los servicios de AWS, permitiendo desplegar aplicaciones cerca de los **usuarios finales**, cumplir con regulaciones de soberanía de datos, y diseñar arquitecturas resilientes contra desastres naturales o fallas regionales.
