@@ -28,56 +28,34 @@ data "aws_availability_zones" "secondary_azs" {
 	state = "available"
 }
 
-  
 
 # Información de la cuenta AWS actual
-
 data "aws_caller_identity" "current" {}
 
-  
 
 # Información de la partición AWS (aws, aws-cn, aws-us-gov)
-
 data "aws_partition" "current" {}
-
   
 
 # AMIs disponibles en la región primaria (para referencia)
-
 data "aws_ami" "amazon_linux_primary" {
+	provider = aws
+	most_recent = true
+	owners = ["amazon"]
+	
+	filter {
+		name = "name"
+		values = ["amzn2-ami-hvm-*-x86_64-gp2"]
+	} 
 
-provider = aws
-
-most_recent = true
-
-owners = ["amazon"]
-
-  
-
-filter {
-
-name = "name"
-
-values = ["amzn2-ami-hvm-*-x86_64-gp2"]
-
+	filter {
+		name = "virtualization-type"
+		values = ["hvm"]
+	}
 }
 
-  
-
-filter {
-
-name = "virtualization-type"
-
-values = ["hvm"]
-
-}
-
-}
-
-  
 
 # AMIs disponibles en la región secundaria (para comparación)
-
 data "aws_ami" "amazon_linux_secondary" {
 
 provider = aws.secondary
