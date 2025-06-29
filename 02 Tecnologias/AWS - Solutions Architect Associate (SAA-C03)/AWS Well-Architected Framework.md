@@ -5,3 +5,13 @@
 > **📈 Nivel:** Básico | **💰 Pricing Tier:** N/A (Conceptual)
 
 ---
+
+## 📋 Descripción General
+**¿Qué es?**  
+La infraestructura global de AWS es la red física de centros de datos distribuidos geográficamente alrededor del mundo que permite a AWS ofrecer servicios en la nube con alta disponibilidad, baja latencia y redundancia geográfica.
+
+**¿Para qué sirve?**  
+Proporciona la base física para todos los servicios de AWS, permitiendo desplegar aplicaciones cerca de los **usuarios finales**, cumplir con regulaciones de soberanía de datos, y diseñar arquitecturas resilientes contra desastres naturales o fallas regionales.
+
+**¿Dónde encaja en AWS?**  
+Es el fundamento de toda la plataforma AWS. Todos los servicios se ejecutan dentro de esta infraestructura y las decisiones arquitectónicas dependen de comprender sus componentes.
