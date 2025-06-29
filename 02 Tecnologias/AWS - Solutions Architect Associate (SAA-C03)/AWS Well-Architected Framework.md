@@ -27,7 +27,7 @@ Encaja como parte del **ciclo de diseño, revisión y mejora continua de arquite
 
 ---
 
-## ⚙️ Cómo Funciona / Arquitectura
+## ⚙️ Cómo Funciona
 
 ### 🏗️ Componentes Principales
 
