@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0d8a7165239f84f2",
+        "id": "2d440bcf514c8b4f",
         "type": "tabs",
         "children": [
           {
-            "id": "ca125eef04bdc241",
+            "id": "744d63c14f2b6d9a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "id": "2d440bcf514c8b4f",
+        "id": "3c6a6fff3b65cdeb",
         "type": "tabs",
         "children": [
           {
@@ -94,8 +94,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -203,10 +202,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "ca125eef04bdc241",
+  "active": "744d63c14f2b6d9a",
   "lastOpenFiles": [
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Well-Architected Framework.md",
+    "Untitled.canvas",
     "01 Indice General/MOC - AWS.md",
     "01 Indice General/MOC - Terraform.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/locals.tf.md",
