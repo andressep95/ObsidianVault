@@ -1,55 +1,32 @@
 ```hcl
 # =============================================================================
-
 # VARIABLES DEL LABORATORIO
-
 # =============================================================================
 
-  
 
 variable "primary_region" {
-
-description = "Región AWS primaria para el laboratorio"
-
-type = string
-
-default = "us-east-1"
-
-  
-
-validation {
-
-condition = can(regex("^[a-z]{2}-[a-z]+-[0-9]$", var.primary_region))
-
-error_message = "La región debe tener formato válido (ej: us-east-1)."
-
+	description = "Región AWS primaria para el laboratorio"
+	type = string
+	default = "us-east-1"
+	
+	validation {
+		condition = can(regex("^[a-z]{2}-[a-z]+-[0-9]$", var.primary_region))
+		error_message = "La región debe tener formato válido (ej: us-east-1)."
+	}
 }
 
-}
-
-  
 
 variable "secondary_region" {
-
-description = "Región AWS secundaria para el laboratorio"
-
-type = string
-
-default = "us-west-2"
-
-  
-
-validation {
-
-condition = can(regex("^[a-z]{2}-[a-z]+-[0-9]$", var.secondary_region))
-
-error_message = "La región debe tener formato válido (ej: us-west-2)."
-
+	description = "Región AWS secundaria para el laboratorio"
+	type = string
+	default = "us-west-2"
+	
+	validation {
+		condition = can(regex("^[a-z]{2}-[a-z]+-[0-9]$", var.secondary_region))
+		error_message = "La región debe tener formato válido (ej: us-west-2)."
+	}
 }
 
-}
-
-  
 
 variable "environment" {
 
