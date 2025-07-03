@@ -1,7 +1,7 @@
 
 
 > **📂 Categoría:** Fundamentos | **🏷️ Tags:** #aws #infrastructure #regions #responsability-model  
-> **📅 Creado:** 2025-07-02 | **🔄 Actualizado:** 2025-06-27  
+> **📅 Creado:** 2025-07-02 | **🔄 Actualizado:** 2025-07-02  
 > **📈 Nivel:** Básico | **💰 Pricing Tier:** N/A (Conceptual)
 
 ---
