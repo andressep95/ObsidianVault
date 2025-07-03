@@ -36,7 +36,7 @@ graph TD
 ### 🎯 Conceptos Clave a Dominar
 
 - [x] [[AWS Global Infrastructure]]
-- [ ] [[AWS Well-Architected Framework]]
+- [x] [[AWS Well-Architected Framework]]
 - [ ] [[AWS Shared Responsibility Model]]
 - [ ] [[AWS Management Console]]
 - [ ] [[AWS Pricing Models]]
