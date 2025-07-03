@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "aeff0c0bd4474f09",
+        "id": "9e5ff40c02b69365",
         "type": "tabs",
         "children": [
           {
-            "id": "53fe55d1477772dc",
+            "id": "0f118c988c5aac85",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "01 Indice General/MOC - AWS.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "MOC - AWS"
             }
           }
         ]
@@ -178,7 +182,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "53fe55d1477772dc",
+  "active": "0f118c988c5aac85",
   "lastOpenFiles": [
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Well-Architected Framework.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
