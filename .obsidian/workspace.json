@@ -20,7 +20,13 @@
               "icon": "lucide-file",
               "title": "AWS Shared Responsibility Model"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "c017526d54590809",
+        "type": "tabs",
+        "children": [
           {
             "id": "e122033cd81f6d7e",
             "type": "leaf",
@@ -67,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#availability-zones",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +94,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
