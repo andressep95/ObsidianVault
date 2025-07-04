@@ -112,7 +112,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5
+    "width": 302.5,
+    "collapsed": true
   },
   "right": {
     "id": "643dd29477638eb7",
@@ -215,13 +216,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "52649df219e9124b",
+  "active": "2bc542c48209e390",
   "lastOpenFiles": [
+    "01 Indice General/MOC - AWS.md",
     "06 Templates/Template - AWS Concept.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS IAM & AWS CLI - Identity and Access Management.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Well-Architected Framework.md",
-    "01 Indice General/MOC - AWS.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Shared Responsibility Model.md",
     "Untitled.canvas",
     "01 Indice General/MOC - Terraform.md",
