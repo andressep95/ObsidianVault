@@ -11,7 +11,7 @@ aliases: [Amazon Web Services, AWS Index]
 - [x] Experiencia en programación (Java/Spring Boot) ✅
 - [x] Conocimientos básicos de redes e infraestructura
 - [x] Cuenta AWS Free Tier creada
-- [ ] Entorno de estudio configurado
+- [x] Entorno de estudio configurado
 
 ## [Mapa de Certificaciones de AWS (PDF)](https://d1.awsstatic.com/es_ES/training-and-certification/docs/AWS_certification_paths.pdf)
 
@@ -37,13 +37,13 @@ graph TD
 
 - [x] [[AWS Global Infrastructure]]
 - [x] [[AWS Well-Architected Framework]]
-- [ ] [[AWS Shared Responsibility Model]]
-- [ ] [[AWS Management Console]]
+- [x] [[AWS Shared Responsibility Model]]
+- [x] [[AWS Management Console]]
 - [ ] [[AWS Pricing Models]]
 
 ### ⚙️ Servicios Core
 
-- [ ] [[AWS IAM - Identity and Access Management]]
+- [ ] [[AWS IAM - Identity and Ac]]
 - [ ] [[Amazon EC2 - Elastic Compute Cloud]]
 - [ ] [[Amazon S3 - Simple Storage Service]]
 - [ ] [[Amazon VPC - Virtual Private Cloud]]

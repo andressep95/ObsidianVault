@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 Templates/Template - AWS Concept.md",
+                "file": "01 Indice General/MOC - AWS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Template - AWS Concept"
+              "title": "MOC - AWS"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "2bc542c48209e390",
   "lastOpenFiles": [
+    "06 Templates/Template - AWS Concept.md",
     "AWS Shared Responsibility Model.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "01 Indice General/MOC - AWS.md",
@@ -207,7 +208,6 @@
     "ObsidianVault/Untitled",
     "Welcomes.md",
     "2025-06-27.md",
-    "06 Templates/Template - AWS Concept.md",
     "06 Templates/Template - Concepto.md.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS API Gateway.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)",
