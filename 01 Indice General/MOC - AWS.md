@@ -38,12 +38,12 @@ graph TD
 - [x] [[AWS Global Infrastructure]]
 - [x] [[AWS Well-Architected Framework]]
 - [x] [[AWS Shared Responsibility Model]]
-- [x] [[AWS Management Console]]
+- [ ] [[AWS Management Console]]
 - [ ] [[AWS Pricing Models]]
 
 ### ⚙️ Servicios Core
 
-- [ ] [[AWS IAM - Identity and Ac]]
+- [ ] [[AWS IAM & AWS CLI - Identity and Access Management]]
 - [ ] [[Amazon EC2 - Elastic Compute Cloud]]
 - [ ] [[Amazon S3 - Simple Storage Service]]
 - [ ] [[Amazon VPC - Virtual Private Cloud]]
