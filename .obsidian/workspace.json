@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 Templates/Template - AWS Concept.md",
+                "file": "01 Indice General/MOC - AWS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Template - AWS Concept"
+              "title": "MOC - AWS"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "AWS Global Infrastructure"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "d0d60f649706adb9",
@@ -113,8 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5,
-    "collapsed": true
+    "width": 302.5
   },
   "right": {
     "id": "643dd29477638eb7",
@@ -217,14 +215,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "aa8ef19b761ee9a2",
+  "active": "52649df219e9124b",
   "lastOpenFiles": [
+    "06 Templates/Template - AWS Concept.md",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS IAM & AWS CLI - Identity and Access Management.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Well-Architected Framework.md",
-    "06 Templates/Template - AWS Concept.md",
     "01 Indice General/MOC - AWS.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Shared Responsibility Model.md",
-    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "Untitled.canvas",
     "01 Indice General/MOC - Terraform.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/locals.tf.md",
