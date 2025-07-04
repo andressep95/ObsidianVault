@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Template - AWS Concept"
             }
+          },
+          {
+            "id": "aa8ef19b761ee9a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AWS Global Infrastructure"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "d0d60f649706adb9",
@@ -33,7 +48,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS IAM & AWS CLI - Identity and Access Management.md",
+                "file": "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS IAM & AWS CLI - Identity and Access Management.md",
                 "mode": "source",
                 "source": false
               },
@@ -202,14 +217,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2bc542c48209e390",
+  "active": "aa8ef19b761ee9a2",
   "lastOpenFiles": [
-    "06 Templates/Template - AWS Concept.md",
-    "AWS IAM & AWS CLI - Identity and Access Management.md",
-    "01 Indice General/MOC - AWS.md",
-    "AWS Shared Responsibility Model.md",
-    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS IAM & AWS CLI - Identity and Access Management.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Well-Architected Framework.md",
+    "06 Templates/Template - AWS Concept.md",
+    "01 Indice General/MOC - AWS.md",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Shared Responsibility Model.md",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "Untitled.canvas",
     "01 Indice General/MOC - Terraform.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/locals.tf.md",
