@@ -11,3 +11,6 @@ Es un servicio global de AWS, en donde IAM significa identidad y gestion de acce
 **¿Para qué sirve?**  
 Su función es controlar quien puede acceder a que recurso y bajo que condiciones.
 
+**Funciones Principales**
+- **Autenticación:** Verifica la identidad de usuarios y servicios
+- 
