@@ -13,4 +13,6 @@ Su función es controlar quien puede acceder a que recurso y bajo que condicione
 
 **Funciones Principales**
 - **Autenticación:** Verifica la identidad de usuarios y servicios
-- 
+	- Gestión de credenciales (usuarios, contraseñas, claves de acceso)
+	- Integración con proveedores de identidad externos (SAML, OpenID Connect)
+- **Autorizacion:**
