@@ -18,4 +18,8 @@ Su función es controlar quien puede acceder a que recurso y bajo que condicione
 - **Autorización:** Determinar que acciones pueden tomar los usuarios autenticados
 	- Politicas granulares de permisos
 	- Principio de menor privilegio
-- Gestión de id
+- **Gestión de identidades:** Crear y administrar diferentes tipos de identidades
+	- Usuarios IAM
+	- Grupos IAM
+	- Roles IAM
+	- Politicas IAM
