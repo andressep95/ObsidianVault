@@ -6,4 +6,8 @@
 ## 📋 Descripción General
 
 **¿Qué es?**
-Es un servici
+Es un servicio global de AWS, en donde IAM significa identidad y gestion de acceso.
+
+**¿Para qué sirve?**  
+Su función es controlar quien puede acceder a que recurso y bajo que condiciones.
+
