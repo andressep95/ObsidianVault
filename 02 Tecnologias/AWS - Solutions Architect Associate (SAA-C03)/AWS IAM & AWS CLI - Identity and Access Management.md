@@ -23,3 +23,6 @@ Su función es controlar quien puede acceder a que recurso y bajo que condicione
 	- Grupos IAM
 	- Roles IAM
 	- Politicas IAM
+
+**¿Dónde encaja en AWS?**
+Es la base sobre la cual se const
