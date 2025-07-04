@@ -26,3 +26,8 @@ Su función es controlar quien puede acceder a que recurso y bajo que condicione
 
 **¿Dónde encaja en AWS?**
 Es la base sobre la cual se construye el resto del entorno en la nube. Antes de que cualquier usuario, aplicación o servicio pueda interactuar con otros servicios AWS, primero debe de autenticarse a través de IAM.
+
+---
+
+## ⚙️ Cómo Funciona / Arquitectura
+
