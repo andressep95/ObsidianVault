@@ -82,4 +82,6 @@ graph TD
 - **Auditoria de accesos:** Registrar y monitorear quién puede acceder a qué recursos y cuándo (con CloudTrail)
 
 ### ❌ No Recomendado Para:
-- **Compartir Credenciales Root:** Nunca se debe de compartir las credenciales de la cuenta root
+- **Compartir Credenciales Root:** Nunca se debe de compartir las credenciales de la cuenta root de AWS
+- **Permisos Excesivos:** Otorgar permisos más amplios de los necesarios (violación del principio de privilegio mínimo)
+- **Credenciales Permanentes para Servicios:** 
