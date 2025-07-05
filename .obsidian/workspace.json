@@ -11,10 +11,14 @@
             "id": "2bc542c48209e390",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "03 Labs/AWS/phase-1-fundamentals/lab-02-iam/01 - Gestión de Identidades y Acceso.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 - Gestión de Identidades y Acceso"
             }
           }
         ]
