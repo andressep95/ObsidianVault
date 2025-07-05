@@ -35,8 +35,7 @@
               "title": "MOC - Terraform"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "fd589e5e3df7a7ee",
@@ -217,11 +216,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "aa8ef19b761ee9a2",
+  "active": "2bc542c48209e390",
   "lastOpenFiles": [
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
     "01 Indice General/MOC - Terraform.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-02-iam/01 - AWS IAM & CLI.md",
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
     "01 Indice General/MOC - AWS.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS IAM & AWS CLI - Identity and Access Management.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
