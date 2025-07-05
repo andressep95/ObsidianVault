@@ -358,7 +358,7 @@ IAMFailedLoginAttempts:
 
 ### 🧪 Hands-on Labs
 
-- [[01 - Laboratorio de Gestión de Identidades y Acceso]]
+- [[01 - Gestión de Identidades y Acceso]]
 
 ---
 
