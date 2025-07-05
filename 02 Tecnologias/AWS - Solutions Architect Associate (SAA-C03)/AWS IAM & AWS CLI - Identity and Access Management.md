@@ -140,3 +140,235 @@ graph TD
 - 🔧 **Tip 1:** Utiliza el principio de **privilegio mínimo** para evitar permisos excesivos, lo que también puede reducir la superficie de ataque.
 - 📉 **Tip 2:** Revisa regularmente las **políticas y los roles** para eliminar permisos innecesarios o no utilizados.
 - 📊 **Tip 3:** Aprovecha **IAM Access Analyzer** para identificar accesos no deseados o permisos excesivos, invirtiendo en seguridad.
+
+---
+## 🧚 Configuración Práctica
+
+### 🚀 Setup Básico
+
+```bash
+# Crear un nuevo usuario IAM
+aws iam create-user --user-name mi-usuario-de-ejemplo
+
+# Crear un nuevo grupo IAM
+aws iam create-group --group-name mi-grupo-de-desarrolladores
+
+# Adjuntar una política gestionada a un usuario (ej. AmazonS3ReadOnlyAccess)
+aws iam attach-user-policy --user-name mi-usuario-de-ejemplo --policy-arn arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+
+# Crear un rol IAM para una instancia EC2
+aws iam create-role --role-name mi-ec2-role --assume-role-policy-document file://trust-policy-ec2.json
+```
+
+**Contenido de `trust-policy-ec2.json`:**
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": { "Service": "ec2.amazonaws.com" },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+```
+
+---
+
+### ⚙️ Configuración Avanzada
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
+      "Resource": "arn:aws:s3:::mi-bucket-de-aplicacion/*",
+      "Condition": {
+        "StringEquals": {
+          "s3:x-amz-acl": "public-read"
+        }
+      }
+    }
+  ]
+}
+```
+
+> Esta política permite leer y escribir objetos en un bucket específico, pero solo si el objeto se sube con el ACL `public-read`.
+
+---
+
+### 🐍 Código Python/Boto3
+
+```python
+import boto3
+import json
+
+# Cliente IAM
+iam = boto3.client('iam')
+
+# Listar usuarios IAM
+response = iam.list_users()
+print("Usuarios IAM:")
+for user in response['Users']:
+    print(f"- {user['UserName']}")
+
+# Crear una política personalizada
+policy_document = {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": "*"
+        }
+    ]
+}
+
+response = iam.create_policy(
+    PolicyName='MiPoliticaDeEjemploS3List',
+    PolicyDocument=json.dumps(policy_document)
+)
+
+print(f"Política creada: {response['Policy']['Arn']}")
+```
+
+---
+
+### ☕ Integración con Java/Spring Boot
+
+```java
+import com.amazonaws.auth.STSAssumeRoleSessionCredentialsProvider;
+import com.amazonaws.services.s3.AmazonS3ClientBuilder;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.regions.Regions;
+
+// Ejemplo de cómo asumir un rol y usar sus credenciales
+public class S3AccessWithRole {
+    public static void main(String[] args) {
+        String roleArn = "arn:aws:iam::123456789012:role/MiAplicacionS3Role"; // Reemplaza con tu ARN de rol
+        String roleSessionName = "S3AccessSession";
+
+        STSAssumeRoleSessionCredentialsProvider credentialsProvider =
+            new STSAssumeRoleSessionCredentialsProvider.Builder(roleArn, roleSessionName).build();
+
+        AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
+            .withCredentials(credentialsProvider)
+            .withRegion(Regions.US_EAST_1)
+            .build();
+
+        // Ahora puedes usar s3Client para interactuar con S3 con los permisos del rol
+        System.out.println("Listando buckets con el rol asumido:");
+        s3Client.listBuckets().forEach(bucket -> System.out.println(bucket.getName()));
+
+        // Cierra el proveedor de credenciales cuando ya no lo necesites
+        credentialsProvider.close();
+    }
+}
+```
+
+---
+
+### 🔒 Seguridad y Mejores Prácticas
+
+#### 🏡 Consideraciones de Seguridad
+
+- **Principio del Privilegio Mínimo:** Concede solo los permisos necesarios.
+    
+- **MFA para Todos:** Habilita MFA para todos los usuarios, especialmente el root.
+    
+- **Roles sobre Usuarios:** Usa roles en lugar de claves de acceso permanentes.
+    
+- **Rotación de Credenciales:** Cambia periódicamente las claves.
+    
+- **AWS CloudTrail:** Audita todas las acciones, incluidas las de IAM.
+    
+- **IAM Access Analyzer:** Detecta accesos no deseados o excesivos.
+    
+
+#### ✅ Best Practices
+
+- 📋 No uses el usuario root. Protege con MFA.
+    
+- 🔧 Usa grupos para simplificar permisos.
+    
+- 📊 Usa roles para servicios.
+    
+- 📝 Utiliza políticas gestionadas por el cliente.
+    
+
+#### ⚠️ Errores Comunes
+
+- ❌ Otorgar `*` (todos los permisos).
+    
+    - ✅ Solución: Especifica acciones y recursos.
+        
+- ❌ Compartir claves de acceso.
+    
+    - ✅ Solución: Usa roles.
+        
+- ❌ No usar MFA.
+    
+    - ✅ Solución: Habilita MFA.
+        
+
+---
+
+### 📊 Monitoring y Troubleshooting
+
+#### 📈 Métricas Clave (CloudWatch)
+
+- **IAM Credentials:** Uso de credenciales.
+    
+- **MFA Usage:** Seguimiento del uso de MFA.
+    
+- **CloudTrail Events:** Registro de llamadas a la API de IAM.
+    
+
+#### 🚨 Alertas Recomendadas (YAML)
+
+```yaml
+IAMRootLoginAlert:
+  Metric: AWS/CloudTrail
+  MetricName: ConsoleLogin
+  Dimensions:
+    - Name: "EventType"
+      Value: "AwsConsoleSignIn"
+    - Name: "UserType"
+      Value: "Root"
+  Threshold: 1
+  ComparisonOperator: GreaterThanOrEqualToThreshold
+  EvaluationPeriods: 1
+  Period: 300
+  Statistic: Sum
+  Action: SNS notification
+
+IAMFailedLoginAttempts:
+  Metric: AWS/CloudTrail
+  MetricName: ConsoleLogin
+  Dimensions:
+    - Name: "EventType"
+      Value: "AwsConsoleSignIn"
+    - Name: "LoginStatus"
+      Value: "Failed"
+  Threshold: 5
+  ComparisonOperator: GreaterThanOrEqualToThreshold
+  EvaluationPeriods: 1
+  Period: 300
+  Statistic: Sum
+  Action: SNS notification
+```
+
+#### 🔍 Troubleshooting Common Issues
+
+|Problema|Síntomas|Solución|
+|---|---|---|
+|Acceso Denegado|Errores de "Access Denied"|Revisa las políticas con el Simulador de Políticas de IAM|
+|Rol no asumible|Error al intentar asumir un rol|Verifica la política de confianza del rol|
+|Claves de acceso perdidas|No se puede acceder programáticamente|Genera nuevas claves y elimina las antiguas|
