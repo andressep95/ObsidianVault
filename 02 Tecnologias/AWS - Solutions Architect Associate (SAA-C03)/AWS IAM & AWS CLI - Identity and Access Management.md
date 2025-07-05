@@ -46,15 +46,15 @@ Es la base sobre la cual se construye el resto del entorno en la nube. Antes de 
 
 ```mermaid
 graph TD
-    A[👤 Principal (Usuario o Servicio)] --> B[🔐 Intenta acceder a un recurso AWS]
-    B --> C[🔎 IAM evalúa la solicitud]
-    C --> D[✅ Autenticación (¿Quién eres?)]
-    D --> E[🛂 Autorización (¿Qué puedes hacer?)]
-    E --> F[📜 Evaluar políticas de permisos adjuntas]
-    F --> G[🤝 Evaluar políticas de confianza (si es un rol)]
-    G --> H[📏 Evaluar políticas de límite (si existen)]
-    H --> I{¿La solicitud está permitida?}
-    I -- Sí --> J[✅ Acceso permitido al recurso AWS]
-    I -- No --> K[❌ Acceso denegado]
+    A[Principal - Usuario o Servicio] --> B[Intenta acceder a un recurso AWS]
+    B --> C[IAM evalua la solicitud]
+    C --> D[Autenticacion - Quien eres]
+    D --> E[Autorizacion - Que puedes hacer]
+    E --> F[Evalua politicas de permisos adjuntas]
+    F --> G[Evalua politicas de confianza - si es un rol]
+    G --> H[Evalua politicas de limite - si existen]
+    H --> I{La solicitud esta permitida}
+    I --|Si|--> J[Acceso permitido al recurso AWS]
+    I --|No|--> K[Acceso denegado]
 
 ```
