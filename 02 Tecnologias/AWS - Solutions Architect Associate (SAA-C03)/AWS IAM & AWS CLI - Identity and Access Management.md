@@ -100,4 +100,9 @@ graph TD
 - **Seguridad Mejorada:** Implementa el principio de privilegio minimo, reduciendo la superficie de ataque
 - **Flexibilidad:** Permite definir permisos muy granulares y complejos
 - **Gratuito:** El servicio IAM no tiene costo adicional
-- ** Escalabilidad:** Fácil de gestionar identidades y accesos a medida que tu infraestrucut
+- **Escalabilidad:** Fácil de gestionar identidades y accesos a medida que tu infraestructura crece
+- **Integración Completa:** Se integra con todos los servicios de AWS y con proveedores de identidad externos
+
+### ❌ Desventajas
+
+- **Complejidad Inicial:** Puede ser abrumador para principiantes de
