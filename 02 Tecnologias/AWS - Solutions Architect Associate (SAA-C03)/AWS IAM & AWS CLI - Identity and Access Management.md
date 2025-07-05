@@ -45,15 +45,16 @@ Es la base sobre la cual se construye el resto del entorno en la nube. Antes de 
 ### 🔄 Flujo de Trabajo
 
 ```mermaid
-graph TD 
-	A[Principal (Usuario/Servicio)] --> B{Intento de Acceso a Recurso AWS} 
-	B --> C[IAM Evalúa Solicitud] 
-	C --> D[Autenticación (¿Quién eres?)] 
-	D --> E[Autorización (¿Qué puedes hacer?)] 
-	E --> F{Políticas de Permisos Adjuntas} 
-	F --> G{Políticas de Confianza (para Roles)} 
-	G --> H{Políticas de Límite de Permisos (Opcional)} 
-	H --> I{Decisión de Acceso (Permitir/Denegar)} 
-	I -- Permitido --> J[Acceso al Recurso AWS] 
-	I -- Denegado --> K[Acceso Denegado]
+graph TD
+    A[👤 Principal (Usuario o Servicio)] --> B[🔐 Intenta acceder a un recurso AWS]
+    B --> C[🔎 IAM evalúa la solicitud]
+    C --> D[✅ Autenticación (¿Quién eres?)]
+    D --> E[🛂 Autorización (¿Qué puedes hacer?)]
+    E --> F[📜 Evaluar políticas de permisos adjuntas]
+    F --> G[🤝 Evaluar políticas de confianza (si es un rol)]
+    G --> H[📏 Evaluar políticas de límite (si existen)]
+    H --> I{¿La solicitud está permitida?}
+    I -- Sí --> J[✅ Acceso permitido al recurso AWS]
+    I -- No --> K[❌ Acceso denegado]
+
 ```
