@@ -87,4 +87,5 @@ graph TD
 - **Credenciales Permanentes para Servicios:** Usar claves de acceso de usuarios IAM directamente en aplicaciones en lugar de roles
 
 ### 🏢 Ejemplos del Mundo Real
-1. **Desarrollo de Aplicaciones:** Un rol de IAM asignado a una instancia de EC2 que permite a la aplicacion 
+1. **Desarrollo de Aplicaciones:** Un rol de IAM asignado a una instancia de EC2 que permite a la aplicación leer y escribir en un bucket de S3 especifico para almacenar imágenes
+2. **Administrador de Bases de Datos:** Un usuario de IAM con una politica que le permite gestionar bases de datos en Amazon RDS
