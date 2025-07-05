@@ -358,8 +358,7 @@ IAMFailedLoginAttempts:
 
 ### 🧪 Hands-on Labs
 
-- [[01 - ]]
-
+- [[01 - AWS IAM & CLI]]
 
 ---
 

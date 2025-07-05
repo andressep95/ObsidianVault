@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS IAM & AWS CLI - Identity and Access Management.md",
+                "file": "01 - AWS IAM & CLI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AWS IAM & AWS CLI - Identity and Access Management"
+              "title": "01 - AWS IAM & CLI"
             }
           }
         ],
@@ -196,10 +196,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2bc542c48209e390",
+  "active": "41de66d15d41cf36",
   "lastOpenFiles": [
-    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
+    "03 Labs/AWS/phase-1-fundamentals/Untitled",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS IAM & AWS CLI - Identity and Access Management.md",
+    "01 - AWS IAM & CLI.md",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "01 Indice General/MOC - AWS.md",
     "06 Templates/Template - AWS Concept.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Well-Architected Framework.md",
