@@ -105,4 +105,6 @@ graph TD
 
 ### ❌ Desventajas
 
-- **Complejidad Inicial:** Puede ser abrumador para principiantes de
+- **Complejidad Inicial:** Puede ser abrumador para principiantes debido a la granularidad de las políticas
+- **Costos Opcionales:** Características avanzadas como IAM Access Analyzer tienen costos asociados
+- **Gestion de Políticas:** 
