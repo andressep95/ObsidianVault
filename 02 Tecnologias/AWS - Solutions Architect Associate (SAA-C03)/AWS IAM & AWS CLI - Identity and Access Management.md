@@ -69,4 +69,11 @@ graph TD
 | Rol IAM       | Identidad asumible con permisos temporales | Nombre del rol, política de confianza | Ideal para servicios AWS y acceso entre cuentas              |
 | Política IAM  | Documento JSON de permisos                 | Allow/Deny, Action, Resource          | Define qué acciones se permiten/deniegan en qué recursos     |
 | MFA           | Autenticación Multifactor                  | Activado/Desactivado                  | Capa adicional de seguridad para usuarios IAM y usuario root |
+
 --- 
+
+## 🎯 Casos de Uso / Cuándo Usarlo
+
+### ✅ Ideal Para:
+- **Control de Acceso Granular:** Definir permisos específicos para usuarios y servicios
+- -

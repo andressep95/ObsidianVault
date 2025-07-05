@@ -20,7 +20,13 @@
               "icon": "lucide-file",
               "title": "AWS IAM & AWS CLI - Identity and Access Management"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "6f83195c8d16cbc2",
+        "type": "tabs",
+        "children": [
           {
             "id": "aa8ef19b761ee9a2",
             "type": "leaf",
