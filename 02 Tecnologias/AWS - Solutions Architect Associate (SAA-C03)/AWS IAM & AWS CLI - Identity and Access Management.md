@@ -282,39 +282,25 @@ public class S3AccessWithRole {
 - **Principio del Privilegio Mínimo:** Concede solo los permisos necesarios.
 - **MFA para Todos:** Habilita MFA para todos los usuarios, especialmente el root.
 - **Roles sobre Usuarios:** Usa roles en lugar de claves de acceso permanentes.
-    
 - **Rotación de Credenciales:** Cambia periódicamente las claves.
-    
 - **AWS CloudTrail:** Audita todas las acciones, incluidas las de IAM.
-    
 - **IAM Access Analyzer:** Detecta accesos no deseados o excesivos.
-    
 
 #### ✅ Best Practices
 
 - 📋 No uses el usuario root. Protege con MFA.
-    
 - 🔧 Usa grupos para simplificar permisos.
-    
 - 📊 Usa roles para servicios.
-    
 - 📝 Utiliza políticas gestionadas por el cliente.
-    
 
 #### ⚠️ Errores Comunes
 
 - ❌ Otorgar `*` (todos los permisos).
-    
     - ✅ Solución: Especifica acciones y recursos.
-        
 - ❌ Compartir claves de acceso.
-    
     - ✅ Solución: Usa roles.
-        
 - ❌ No usar MFA.
-    
     - ✅ Solución: Habilita MFA.
-        
 
 ---
 
@@ -323,11 +309,8 @@ public class S3AccessWithRole {
 #### 📈 Métricas Clave (CloudWatch)
 
 - **IAM Credentials:** Uso de credenciales.
-    
 - **MFA Usage:** Seguimiento del uso de MFA.
-    
 - **CloudTrail Events:** Registro de llamadas a la API de IAM.
-    
 
 #### 🚨 Alertas Recomendadas (YAML)
 
