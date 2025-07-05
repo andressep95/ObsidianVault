@@ -98,4 +98,6 @@ graph TD
 ### ✅ Ventajas
 
 - **Seguridad Mejorada:** Implementa el principio de privilegio minimo, reduciendo la superficie de ataque
-- **Flexibilidad:** Permite definir
+- **Flexibilidad:** Permite definir permisos muy granulares y complejos
+- **Gratuito:** El servicio IAM no tiene costo adicional
+- ** Escalabilidad:** Fácil de gestionar identidades y accesos a medida que tu infraestrucut
