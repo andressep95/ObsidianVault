@@ -353,3 +353,14 @@ IAMFailedLoginAttempts:
 |Acceso Denegado|Errores de "Access Denied"|Revisa las políticas con el Simulador de Políticas de IAM|
 |Rol no asumible|Error al intentar asumir un rol|Verifica la política de confianza del rol|
 |Claves de acceso perdidas|No se puede acceder programáticamente|Genera nuevas claves y elimina las antiguas|
+
+--- 
+
+### 🧪 Hands-on Labs
+
+- [[01 - ]]
+
+
+---
+
+## 📝 Mis Notas y Experiencias
