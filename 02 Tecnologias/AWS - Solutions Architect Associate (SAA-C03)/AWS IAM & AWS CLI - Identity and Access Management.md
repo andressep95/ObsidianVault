@@ -109,3 +109,34 @@ graph TD
 - **Costos Opcionales:** Características avanzadas como IAM Access Analyzer tienen costos asociados
 - **Gestión de Políticas:** Mantener políticas claras y actualizadas puede ser un desafío en entornos grandes
 - **Riesgo de Mala Configuración:** Una configuración incorrecta puede llevar a brechas de seguridad o a denegación de servicios
+
+
+---
+
+## 💰 Modelo de Precios
+
+### 💳 Cómo se Cobra
+- **Modelo:** AWS IAM es un servicio gratuito. No se cobra por crear usuarios, grupos, roles o políticas.
+- **Free Tier:** Incluido como parte de la cuenta de AWS sin costo directo.
+- **Factores de Costo:**  
+  Los únicos costos asociados pueden provenir del uso de características avanzadas como **AWS IAM Access Analyzer**, que se cobra por la cantidad de recursos o identidades analizadas.
+
+---
+
+### 📊 Estimación de Costos
+
+| Servicio                            | Costo estimado                               |
+|-------------------------------------|----------------------------------------------|
+| IAM (básico)                        | $0.00 / mes                                   |
+| IAM Access Analyzer (ejemplo)       |                                              |
+| - Análisis de recursos              | $9.00 / recurso analizado / mes / analizador |
+| - Análisis de acceso no utilizado   | $0.20 / rol o usuario analizado / mes        |
+| - Verificaciones de políticas       | $0.0020 / llamada a la API                   |
+
+---
+
+### 💡 Tips de Optimización
+
+- 🔧 **Tip 1:** Utiliza el principio de **privilegio mínimo** para evitar permisos excesivos, lo que también puede reducir la superficie de ataque.
+- 📉 **Tip 2:** Revisa regularmente las **políticas y los roles** para eliminar permisos innecesarios o no utilizados.
+- 📊 **Tip 3:** Aprovecha **IAM Access Analyzer** para identificar accesos no deseados o permisos excesivos, invirtiendo en seguridad.
