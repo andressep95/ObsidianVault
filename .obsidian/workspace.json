@@ -20,13 +20,7 @@
               "icon": "lucide-file",
               "title": "01 - AWS IAM & CLI"
             }
-          }
-        ]
-      },
-      {
-        "id": "0fa427b13e3452db",
-        "type": "tabs",
-        "children": [
+          },
           {
             "id": "aa8ef19b761ee9a2",
             "type": "leaf",
@@ -41,7 +35,8 @@
               "title": "01 - Exploring AWS Regions and AZs"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5,
-    "collapsed": true
+    "width": 302.5
   },
   "right": {
     "id": "643dd29477638eb7",
@@ -202,11 +196,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "aa8ef19b761ee9a2",
+  "active": "41de66d15d41cf36",
   "lastOpenFiles": [
+    "01 Indice General/MOC - Terraform.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS IAM & AWS CLI - Identity and Access Management.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-02-iam/01 - AWS IAM & CLI.md",
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-02-iam",
     "01 Indice General/MOC - AWS.md",
@@ -214,7 +209,6 @@
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Well-Architected Framework.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Shared Responsibility Model.md",
     "Untitled.canvas",
-    "01 Indice General/MOC - Terraform.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/locals.tf.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/output.tf.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/data.tf.md",
