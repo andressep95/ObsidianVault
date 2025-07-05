@@ -84,4 +84,7 @@ graph TD
 ### ❌ No Recomendado Para:
 - **Compartir Credenciales Root:** Nunca se debe de compartir las credenciales de la cuenta root de AWS
 - **Permisos Excesivos:** Otorgar permisos más amplios de los necesarios (violación del principio de privilegio mínimo)
-- **Credenciales Permanentes para Servicios:** 
+- **Credenciales Permanentes para Servicios:** Usar claves de acceso de usuarios IAM directamente en aplicaciones en lugar de roles
+
+### 🏢 Ejemplos del Mundo Real
+1. **Desarrollo de Aplicaciones:** Un rol de IAM asignado a una instancia de EC2 que permite a la aplicacion 
