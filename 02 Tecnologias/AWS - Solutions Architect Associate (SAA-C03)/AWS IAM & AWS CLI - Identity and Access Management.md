@@ -60,7 +60,7 @@ graph TD
 ```
 ---
 
-# 🎛️ Configuraciones Clave
+## 🎛️ Configuraciones Clave
 
 | **Parámetro** | **Descripción**                            | **Valores**                           | **Notas**                                                    |
 | ------------- | ------------------------------------------ | ------------------------------------- | ------------------------------------------------------------ |
@@ -93,3 +93,9 @@ graph TD
 
 --- 
 
+## ⚖️ Pros y Contras
+
+### ✅ Ventajas
+
+- **Seguridad Mejorada:** Implementa el principio de privilegio minimo, reduciendo la superficie de ataque
+- **Flexibilidad:** Permite definir
