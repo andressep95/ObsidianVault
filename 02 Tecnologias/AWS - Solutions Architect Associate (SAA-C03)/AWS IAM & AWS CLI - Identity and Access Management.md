@@ -58,5 +58,15 @@ graph TD
     I --|No|--> K[Acceso denegado]
 
 ```
+---
 
+# 🎛️ Configuraciones Clave
 
+| **Parámetro** | **Descripción**                            | **Valores**                           | **Notas**                                                    |
+| ------------- | ------------------------------------------ | ------------------------------------- | ------------------------------------------------------------ |
+| Usuario IAM   | Identidad para personas/aplicaciones       | Nombre de usuario, credenciales       | Puede tener claves de acceso y contraseña                    |
+| Grupo IAM     | Colección de usuarios                      | Nombre del grupo                      | Simplifica la gestión de permisos para múltiples usuarios    |
+| Rol IAM       | Identidad asumible con permisos temporales | Nombre del rol, política de confianza | Ideal para servicios AWS y acceso entre cuentas              |
+| Política IAM  | Documento JSON de permisos                 | Allow/Deny, Action, Resource          | Define qué acciones se permiten/deniegan en qué recursos     |
+| MFA           | Autenticación Multifactor                  | Activado/Desactivado                  | Capa adicional de seguridad para usuarios IAM y usuario root |
+--- 
