@@ -280,9 +280,7 @@ public class S3AccessWithRole {
 #### 🏡 Consideraciones de Seguridad
 
 - **Principio del Privilegio Mínimo:** Concede solo los permisos necesarios.
-    
 - **MFA para Todos:** Habilita MFA para todos los usuarios, especialmente el root.
-    
 - **Roles sobre Usuarios:** Usa roles en lugar de claves de acceso permanentes.
     
 - **Rotación de Credenciales:** Cambia periódicamente las claves.
