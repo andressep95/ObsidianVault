@@ -79,4 +79,7 @@ graph TD
 - **Delegación Segura:** Permitir que otros servicios de AWS (ej., EC2, Lambda) interactúen con otros servicios (ej., S3, DynamoDB) de forma segura
 - **Acceso entre Cuentas:** Conceder acceso seguro a recursos en una cuenta AWS desde otra cuenta
 - **Federación de identidades:** Integrar sistemas de identidad corporativos (ej., Active Directory) con AWS
-- **Auditoria de accesos:** Registrar y monitorear
+- **Auditoria de accesos:** Registrar y monitorear quién puede acceder a qué recursos y cuándo (con CloudTrail)
+
+### ❌ No Recomendado Para:
+- **Compartir Credenciales Root:** Nunca se debe de compartir las credenciales de la cuenta root
