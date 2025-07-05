@@ -108,4 +108,4 @@ graph TD
 - **Complejidad Inicial:** Puede ser abrumador para principiantes debido a la granularidad de las políticas
 - **Costos Opcionales:** Características avanzadas como IAM Access Analyzer tienen costos asociados
 - **Gestión de Políticas:** Mantener políticas claras y actualizadas puede ser un desafío en entornos grandes
-- **Riesgo de Mala Configuración:** Una configuración incorrecta puede llevar
+- **Riesgo de Mala Configuración:** Una configuración incorrecta puede llevar a brechas de seguridad o a denegación de servicios
