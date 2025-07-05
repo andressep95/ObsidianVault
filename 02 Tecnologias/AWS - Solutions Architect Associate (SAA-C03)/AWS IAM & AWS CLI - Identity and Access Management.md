@@ -76,4 +76,6 @@ graph TD
 
 ### ✅ Ideal Para:
 - **Control de Acceso Granular:** Definir permisos específicos para usuarios y servicios
-- -**Delegación Segura:** Permitir que otros servicios de AWS (ej., EC2, Lambda) interactúen 
+- **Delegación Segura:** Permitir que otros servicios de AWS (ej., EC2, Lambda) interactúen con otros servicios (ej., S3, DynamoDB) de forma segura
+- **Acceso entre Cuentas:** Conceder acceso seguro a recursos en una cuenta AWS desde otra cuenta
+- 
