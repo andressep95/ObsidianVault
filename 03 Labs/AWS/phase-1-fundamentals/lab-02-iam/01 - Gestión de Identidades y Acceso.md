@@ -314,3 +314,69 @@ terraform destroy
 - Nunca hardcodees credenciales en el código
 - Revisa periódicamente los permisos otorgados
 - Mantén un inventario de usuarios y roles activos
+
+
+---
+
+# Comandos para testear  
+
+## 1. Configure el perfil de AWS CLI para el perfil
+```bash
+
+aws configure --profile <USER_PROFILE_NAME>
+
+```
+  
+- **Nota:** `<USER_PROFILE_NAME>` debe ser reemplazado con el nombre del perfil.
+- Esto le solicitará configurar el perfil con los siguientes datos:
+	- Clave de acceso
+	- Clave secreta de acceso
+	- Nombre de la región por defecto (usar `us_east-1`)
+	- Formato de salida
+
+  
+## 2. Testear permisos de lectura
+```bash
+
+aws s3 ls s3://<YOUR_S3_BUCKET_NAME> --profile <USER_PROFILE_NAME>
+
+```
+
+- **Nota:** `<YOUR_S3_BUCKET_NAME>` debe ser reemplazado con el nombre actual del bucket de S3.
+- `<USER_PROFILE_NAME>` debe ser reemplazado con el nombre del usuario a testear.
+
+## 3. Testear descargar un objeto de S3
+```bash
+
+aws s3 cp s3://<YOUR_S3_BUCKET_NAME>/<OBJECT_NAME> ./<LOCAL_FILE_NAME> --profile <USER_PROFILE_NAME>
+
+```
+
+- **Nota:** `<OBJECT_NAME>` es el nombre del objeto de S3 a descargar.
+- `<LOCAL_FILE_NAME>` es el nombre con el que quieres que se descargue.
+
+## 4. Testear permisos de escritura
+
+  
+
+### Crea un archivo para subir a AWS
+
+  
+
+```bash
+
+echo "This is a test from <USER_PROFILE_NAME>" > test-upload-file.txt
+
+```
+
+  
+
+### Sube el archivo creado
+
+  
+
+```bash
+
+aws s3 cp ./test-upload-file.txt s3://<YOUR_S3_BUCKET_NAME>/test-upload-file.txt --profile <USER_PROFILE_NAME>
+
+```
