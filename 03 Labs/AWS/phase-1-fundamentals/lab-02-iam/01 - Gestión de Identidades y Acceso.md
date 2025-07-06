@@ -357,26 +357,17 @@ aws s3 cp s3://<YOUR_S3_BUCKET_NAME>/<OBJECT_NAME> ./<LOCAL_FILE_NAME> --profile
 
 ## 4. Testear permisos de escritura
 
-  
-
 ### Crea un archivo para subir a AWS
-
-  
-
 ```bash
 
 echo "This is a test from <USER_PROFILE_NAME>" > test-upload-file.txt
 
 ```
 
-  
-
 ### Sube el archivo creado
-
-  
-
 ```bash
 
 aws s3 cp ./test-upload-file.txt s3://<YOUR_S3_BUCKET_NAME>/test-upload-file.txt --profile <USER_PROFILE_NAME>
 
 ```
+
