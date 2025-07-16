@@ -359,6 +359,7 @@ IAMFailedLoginAttempts:
 ### 🧪 Hands-on Labs
 
 - [[01 - Gestión de Identidades y Acceso]]
+- [[phase-1-iam]] 
 
 ---
 
