@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07 Cuestionarios/AWS/Untitled.md",
+                "file": "07 Cuestionarios/AWS/phase-1-iam.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "phase-1-iam"
             }
           }
         ]
@@ -184,7 +184,7 @@
   "active": "2bc542c48209e390",
   "lastOpenFiles": [
     "01 Indice General/MOC - AWS.md",
-    "07 Cuestionarios/AWS/Untitled.md",
+    "07 Cuestionarios/AWS/phase-1-iam.md",
     "07 Cuestionarios/AWS",
     "07 Cuestionarios",
     "03 Labs/AWS/phase-2-core-services/lab-02-iam/01 - Gestión de Identidades y Acceso.md",
