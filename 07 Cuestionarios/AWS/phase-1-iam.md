@@ -349,9 +349,9 @@
 
 - [ ] A) Acceso dentro de la misma cuenta
 
-- [ ] B) Acceso entre diferentes cuentas AWS
+- [x] B) Acceso entre diferentes cuentas AWS
 
-- [x] C) Acceso a recursos públicos
+- [ ] C) Acceso a recursos públicos
 
 - [ ] D) Acceso temporal
 
