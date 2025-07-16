@@ -164,7 +164,7 @@
 
 **14. ¿Cuál es el ARN (Amazon Resource Name) típico para un usuario IAM?**
 
-- [ ] A) arn:aws:iam::account-id:user/username
+- [x] A) arn:aws:iam::account-id:user/username
 
 - [ ] B) arn:aws:s3:::bucket-name
 
