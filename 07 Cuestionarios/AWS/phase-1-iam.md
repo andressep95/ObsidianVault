@@ -193,7 +193,7 @@
 
 - [ ] A) Crear usuarios individuales con políticas adjuntas
 
-- [ ] B) Crear un grupo de desarrolladores con políticas adjuntas
+- [x] B) Crear un grupo de desarrolladores con políticas adjuntas
 
 - [ ] C) Usar el usuario root
 
