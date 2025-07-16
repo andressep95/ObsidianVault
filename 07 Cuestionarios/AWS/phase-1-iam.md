@@ -4,14 +4,13 @@
   
 
 ### Nivel Básico (Preguntas 1-15)
-
   
 
 **1. ¿Qué es AWS Identity and Access Management (IAM)?**
 
 - [ ] A) Un servicio de base de datos
 
-- [ ] B) Un servicio de gestión de identidades y acceso
+- [x] B) Un servicio de gestión de identidades y acceso
 
 - [ ] C) Un servicio de almacenamiento
 
@@ -189,7 +188,6 @@
 
 ### Nivel Intermedio (Preguntas 16-35)
 
-  
 
 **16. Una empresa necesita que sus desarrolladores accedan a recursos específicos de S3. ¿Cuál es la mejor práctica?**
 
@@ -432,7 +430,6 @@
   
 
 ### Nivel Avanzado (Preguntas 36-50)
-
   
 
 **36. Una empresa multinacional necesita diferentes niveles de acceso según la región. ¿Qué estrategia de IAM implementaría?**
