@@ -265,7 +265,7 @@
 
 - [ ] A) Un servicio de almacenamiento
 
-- [ ] B) Un servicio que emite credenciales temporales
+- [x] B) Un servicio que emite credenciales temporales
 
 - [ ] C) Un servicio de base de datos
 
@@ -281,13 +281,13 @@
 
 - [ ] C) 12 horas
 
-- [ ] D) 24 horas
+- [x] D) 24 horas
 
   
 
 **24. ¿Qué condición IAM verificaría la dirección IP del solicitante?**
 
-- [ ] A) aws:SourceIp
+- [x] A) aws:SourceIp
 
 - [ ] B) aws:UserAgent
 
