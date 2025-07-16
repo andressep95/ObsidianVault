@@ -359,7 +359,7 @@
 
 **30. ¿Cuál es el propósito del External ID en cross-account access?**
 
-- [ ] A) Identificar la cuenta de origen
+- [x] A) Identificar la cuenta de origen
 
 - [ ] B) Adicionar una capa de seguridad para prevenir confused deputy attacks
 
