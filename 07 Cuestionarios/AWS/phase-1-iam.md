@@ -108,7 +108,7 @@
 
 - [ ] B) Un certificado
 
-- [ ] C) Un par de claves para acceso programático
+- [x] C) Un par de claves para acceso programático
 
 - [ ] D) Un token temporal
 
@@ -120,7 +120,7 @@
 
 - [ ] B) Compartir sus credenciales
 
-- [ ] C) Configurar MFA y usarlo solo para tareas administrativas críticas
+- [x] C) Configurar MFA y usarlo solo para tareas administrativas críticas
 
 - [ ] D) Eliminar la cuenta
 
@@ -130,7 +130,7 @@
 
 - [ ] A) Múltiples contraseñas
 
-- [ ] B) Autenticación de dos o más factores
+- [x] B) Autenticación de dos o más factores
 
 - [ ] C) Múltiples usuarios
 
