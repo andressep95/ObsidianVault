@@ -70,7 +70,7 @@
 
 - [ ] A) No hay diferencia
 
-- [ ] B) Un User es permanente, un Role es temporal
+- [x] B) Un User es permanente, un Role es temporal
 
 - [ ] C) Un User es temporal, un Role es permanente
 
@@ -82,7 +82,7 @@
 
 - [ ] A) Una colección de policies
 
-- [ ] B) Una colección de users
+- [x] B) Una colección de users
 
 - [ ] C) Una colección de roles
 
@@ -94,7 +94,7 @@
 
 - [ ] A) Un usuario normal
 
-- [ ] B) El primer usuario creado con acceso completo
+- [x] B) El primer usuario creado con acceso completo
 
 - [ ] C) Un usuario sin permisos
 
