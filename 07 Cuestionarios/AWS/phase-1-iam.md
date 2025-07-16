@@ -303,7 +303,7 @@
 
 - [ ] B) aws:CurrentTime
 
-- [ ] C) aws:RequestedRegion
+- [x] C) aws:RequestedRegion
 
 - [ ] D) aws:UserAgent
 
@@ -313,7 +313,7 @@
 
 - [ ] A) Un servicio de base de datos
 
-- [ ] B) Un servicio para gestionar múltiples cuentas AWS y aplicar políticas centralizadas
+- [x] B) Un servicio para gestionar múltiples cuentas AWS y aplicar políticas centralizadas
 
 - [ ] C) Un servicio de almacenamiento
 
@@ -323,7 +323,7 @@
 
 **27. ¿Qué es una Service Control Policy (SCP)?**
 
-- [ ] A) Una política que define permisos para servicios
+- [x] A) Una política que define permisos para servicios
 
 - [ ] B) Una política que define límites máximos de permisos en Organizations
 
