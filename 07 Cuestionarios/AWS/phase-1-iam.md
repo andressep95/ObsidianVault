@@ -144,7 +144,7 @@
 
 - [ ] B) 1000
 
-- [ ] C) 5000
+- [x] C) 5000
 
 - [ ] D) 10000
 
@@ -154,7 +154,7 @@
 
 - [ ] A) Resource-based policy
 
-- [ ] B) Identity-based policy
+- [x] B) Identity-based policy
 
 - [ ] C) Trust policy
 
