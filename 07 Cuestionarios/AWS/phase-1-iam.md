@@ -351,7 +351,7 @@
 
 - [ ] B) Acceso entre diferentes cuentas AWS
 
-- [ ] C) Acceso a recursos públicos
+- [x] C) Acceso a recursos públicos
 
 - [ ] D) Acceso temporal
 
@@ -397,7 +397,7 @@
 
 - [ ] A) Un servicio de backup
 
-- [ ] B) Un servicio que registra llamadas a APIs de AWS
+- [x] B) Un servicio que registra llamadas a APIs de AWS
 
 - [ ] C) Un servicio de almacenamiento
 
@@ -411,7 +411,7 @@
 
 - [ ] B) Solo accesos exitosos
 
-- [ ] C) Todas las llamadas a APIs, incluyendo quién, qué, cuándo y desde dónde
+- [x] C) Todas las llamadas a APIs, incluyendo quién, qué, cuándo y desde dónde
 
 - [ ] D) Solo cambios en políticas
 
@@ -423,7 +423,7 @@
 
 - [ ] B) Rotarlas cada 5 años
 
-- [ ] C) Rotarlas regularmente (90 días recomendados)
+- [x] C) Rotarlas regularmente (90 días recomendados)
 
 - [ ] D) Rotarlas solo cuando hay incidentes
 
