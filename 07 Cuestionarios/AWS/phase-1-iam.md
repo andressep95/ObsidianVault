@@ -22,7 +22,7 @@
 
 - [ ] A) Dar todos los permisos a todos los usuarios
 
-- [ ] B) Dar solo los permisos mínimos necesarios para realizar una tarea
+- [x] B) Dar solo los permisos mínimos necesarios para realizar una tarea
 
 - [ ] C) No dar permisos a ningún usuario
 
@@ -36,7 +36,7 @@
 
 - [ ] B) Role
 
-- [ ] C) User
+- [x] C) User
 
 - [ ] D) Group
 
@@ -48,7 +48,7 @@
 
 - [ ] B) YAML
 
-- [ ] C) JSON
+- [x] C) JSON
 
 - [ ] D) HTML
 
@@ -60,7 +60,7 @@
 
 - [ ] B) Permite acceso completo
 
-- [ ] C) Deniega explícitamente el acceso
+- [x] C) Deniega explícitamente el acceso
 
 - [ ] D) No tiene efecto
 
