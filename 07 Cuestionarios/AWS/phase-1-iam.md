@@ -207,7 +207,7 @@
 
 - [ ] B) Inline policies son reutilizables, managed policies no
 
-- [ ] C) Managed policies son reutilizables, inline policies están integradas en un principal
+- [x] C) Managed policies son reutilizables, inline policies están integradas en un principal
 
 - [ ] D) Ambas son idénticas
 
