@@ -231,7 +231,7 @@
 
 - [ ] B) Eliminar un rol
 
-- [ ] C) Tomar temporalmente los permisos de un rol
+- [x] C) Tomar temporalmente los permisos de un rol
 
 - [ ] D) Modificar un rol
 
