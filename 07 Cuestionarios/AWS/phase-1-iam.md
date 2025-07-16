@@ -219,7 +219,7 @@
 
 - [ ] B) Crear un usuario IAM y usar sus credenciales
 
-- [ ] C) Usar un IAM Role asociado a la instancia EC2
+- [x] C) Usar un IAM Role asociado a la instancia EC2
 
 - [ ] D) Usar el usuario root
 
