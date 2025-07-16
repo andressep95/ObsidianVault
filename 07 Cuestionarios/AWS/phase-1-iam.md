@@ -180,7 +180,7 @@
 
 - [ ] B) Obtiene permisos de solo lectura
 
-- [ ] C) No tiene permisos por defecto
+- [x] C) No tiene permisos por defecto
 
 - [ ] D) Obtiene permisos básicos
 
