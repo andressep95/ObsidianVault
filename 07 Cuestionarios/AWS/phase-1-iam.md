@@ -337,7 +337,7 @@
 
 - [ ] A) Son lo mismo
 
-- [ ] B) Authentication verifica identidad, Authorization verifica permisos
+- [x] B) Authentication verifica identidad, Authorization verifica permisos
 
 - [ ] C) Authorization verifica identidad, Authentication verifica permisos
 
