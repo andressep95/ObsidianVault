@@ -241,7 +241,7 @@
 
 - [ ] A) Definir qué acciones puede realizar un rol
 
-- [ ] B) Definir quién puede asumir un rol
+- [x] B) Definir quién puede asumir un rol
 
 - [ ] C) Definir recursos accesibles
 
@@ -253,7 +253,7 @@
 
 - [ ] A) Crear usuarios permanentes
 
-- [ ] B) Usar roles con AssumeRole
+- [x] B) Usar roles con AssumeRole
 
 - [ ] C) Compartir credenciales de usuario root
 
