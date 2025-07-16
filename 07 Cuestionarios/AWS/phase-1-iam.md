@@ -277,11 +277,11 @@
 
 - [ ] A) 15 minutos
 
-- [ ] B) 1 hora
+- [x] B) 1 hora
 
 - [ ] C) 12 horas
 
-- [x] D) 24 horas
+- [ ] D) 24 horas
 
   
 
