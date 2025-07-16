@@ -614,15 +614,8 @@
 
 ---
 
-  
-
 ## Notas para Estudio
-
-  
-
 ### Conceptos Clave para Recordar:
-
-  
 
 1. **Principio de Menor Privilegio**: Siempre dar solo los permisos mínimos necesarios
 
