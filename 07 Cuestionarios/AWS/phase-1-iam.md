@@ -373,7 +373,7 @@
 
 - [ ] A) Una herramienta para analizar costos
 
-- [ ] B) Una herramienta para analizar políticas y accesos externos
+- [x] B) Una herramienta para analizar políticas y accesos externos
 
 - [ ] C) Una herramienta para analizar performance
 
@@ -385,7 +385,7 @@
 
 - [ ] A) Allow siempre gana
 
-- [ ] B) Deny siempre gana
+- [x] B) Deny siempre gana
 
 - [ ] C) No hay diferencia
 
