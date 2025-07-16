@@ -669,8 +669,6 @@
 
 ## Instrucciones de Uso
 
-  
-
 ### Para Marcar Respuestas:
 
 1. Marca tu respuesta cambiando `[ ]` por `[x]`
