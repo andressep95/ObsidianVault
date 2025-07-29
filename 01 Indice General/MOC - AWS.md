@@ -43,7 +43,7 @@ graph TD
 
 ### ⚙️ Servicios Core
 
-- [ ] [[AWS IAM & AWS CLI - Identity and Access Management]]
+- [x] [[AWS IAM & AWS CLI - Identity and Access Management]]
 - [ ] [[Amazon EC2 - Elastic Compute Cloud]]
 - [ ] [[Amazon S3 - Simple Storage Service]]
 - [ ] [[Amazon VPC - Virtual Private Cloud]]
