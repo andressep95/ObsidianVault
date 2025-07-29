@@ -74,8 +74,6 @@ graph TD
 
 - [ ] [Ultimate AWS Certified Developer Associate](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
 - [ ] [Ultimate AWS Certified Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/?couponCode=LETSLEARNNOW)
-- [ ] AWS Certified Solutions Architect Associate (A Cloud Guru)
-- [ ] AWS Training oficial
 
 **Documentación:**
 
