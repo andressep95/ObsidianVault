@@ -2,7 +2,7 @@
 tags: [moc, aws, cloud, infraestructura]
 aliases: [Amazon Web Services, AWS Index]
 ---
-# ☁️ Plan de Estudios - AWS Solutions Architect Associate (SAA-C03)
+# ☁️ Plan de Estudios - AWS Developer And Solutions Architect Associate
 
 > **🎯 Objetivo:** Obtener la certificación AWS Certified Solutions Architect - Associate en 3-4 meses **📅 Creado:** 27/06/2025 **🔄 Última actualización:** {{date}}
 

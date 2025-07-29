@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07 Cuestionarios/AWS/phase-1-iam.md",
+                "file": "01 Indice General/MOC - AWS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "phase-1-iam"
+              "title": "MOC - AWS"
             }
           }
         ]
@@ -181,10 +181,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "41de66d15d41cf36",
+  "active": "2bc542c48209e390",
   "lastOpenFiles": [
-    "07 Cuestionarios/AWS/phase-1-iam-teory.md",
     "07 Cuestionarios/AWS/phase-1-iam.md",
+    "07 Cuestionarios/AWS/phase-1-iam-teory.md",
     "01 Indice General/MOC - AWS.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS IAM & AWS CLI - Identity and Access Management.md",
     "07 Cuestionarios/AWS",
