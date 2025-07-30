@@ -2,9 +2,11 @@
 tags: [moc, aws, cloud, infraestructura]
 aliases: [Amazon Web Services, AWS Index]
 ---
-# ☁️ Plan de Estudios - AWS Developer & Solutions Architect Associate
+# ☁️ Plan de Estudios - AWS Triple Certificación Path
 
-> **🎯 Objetivo:** Obtener AMBAS certificaciones AWS Developer Associate (DVA-C02) y Solutions Architect Associate (SAA-C03) en 4-5 meses **📅 Creado:** 27/06/2025 **🔄 Última actualización:** {{date}}
+> **🎯 Objetivo:** Obtener las certificaciones AWS Cloud Practitioner (CLF-C02), Developer Associate (DVA-C02) y Solutions Architect Associate (SAA-C03) en 6-7 meses
+> 
+> **📅 Creado:** 30/07/2025 **🔄 Última actualización:** {{date}}
 
 ## 📋 Prerrequisitos Completados
 
@@ -15,18 +17,19 @@ aliases: [Amazon Web Services, AWS Index]
 
 ## [Mapa de Certificaciones de AWS (PDF)](https://d1.awsstatic.com/es_ES/training-and-certification/docs/AWS_certification_paths.pdf)
 
-## 🎯 Estrategia Dual: Developer + Solutions Architect
+## 🎯 Estrategia Triple Certificación
 
 ### Orden Recomendado:
 
-1. **Developer Associate primero** (más técnico, base sólida)
-2. **Solutions Architect después** (arquitectura y diseño)
+1. **Cloud Practitioner (CLF-C02)** - Fundamentos teóricos y conceptos generales
+2. **Developer Associate (DVA-C02)** - Enfoque técnico en desarrollo y deployment
+3. **Solutions Architect Associate (SAA-C03)** - Diseño arquitectónico y patrones avanzados
 
 ### 🏗️ Enfoque Infrastructure as Code:
 
-**Toda la infraestructura se generará con AWS CDK en Go**, incluyendo:
+**Toda la infraestructura práctica se generará con AWS CDK en Go**, aplicando:
 
-- Recursos de AWS para laboratorios prácticos
+- Recursos de AWS para laboratorios prácticos (Developer y SA)
 - Arquitecturas completas end-to-end
 - Pipelines CI/CD automatizados
 - Configuraciones de seguridad y monitoreo
@@ -37,291 +40,251 @@ aliases: [Amazon Web Services, AWS Index]
 
 ```mermaid
 graph TD
-    A[Fundamentos AWS] --> B[Developer Services + CDK]
-    B --> C[Storage & Databases + CDK]
-    C --> D[Security & Monitoring + CDK]
-    D --> E[Integration & Patterns + CDK]
-    E --> F[🏆 Developer Exam]
-    F --> G[Architecture & Networking + CDK]
-    G --> H[🏆 Solutions Architect Exam]
+    A[Cloud Practitioner Prep] --> B[🏆 CLF-C02 Exam]
+    B --> C[Developer Services + CDK]
+    C --> D[Storage & Databases + CDK]
+    D --> E[Security & Monitoring + CDK]
+    E --> F[Integration & Patterns + CDK]
+    F --> G[🏆 DVA-C02 Exam]
+    G --> H[Advanced Architecture + CDK]
+    H --> I[Enterprise Patterns + CDK]
+    I --> J[🏆 SAA-C03 Exam]
 ```
 
 ---
 
-## 📚 Fase 1: Fundamentos AWS (Semanas 1-2)
+## 📚 Fase 1: Cloud Practitioner Fundamentals (Semanas 1-3)
 
-**⏱️ Tiempo sugerido:** 1-2 horas/día
+**⏱️ Tiempo sugerido:** 1-1.5 horas/día **🎯 Enfoque:** Teórico - Conceptos fundamentales de AWS
 
-### 🎯 Conceptos Clave a Dominar
+### 🌐 AWS Global Infrastructure
 
-- [x] [[AWS Global Infrastructure]] ✅
-- [x] [[AWS Well-Architected Framework]] ✅
-- [x] [[AWS Shared Responsibility Model]] ✅
-- [ ] [[AWS Management Console]]
+- [ ] [[AWS Global Infrastructure]]
+
+### 🏗️ AWS Well-Architected Framework
+
+- [ ] [[AWS Well-Architected Framework]]
+
+### 🔒 AWS Shared Responsibility Model
+
+- [ ] [[AWS Shared Responsibility Model]]
+
+### 💰 AWS Pricing and Billing
+
 - [ ] [[AWS Pricing Models]]
-- [ ] [[AWS CDK Fundamentals with Go]]
+- [ ] [[AWS Support Plans]]
+- [ ] [[AWS Cost Explorer]]
+- [ ] [[AWS Budgets and Cost Management]]
 
-### ⚙️ Servicios Core
+### ⚙️ Core AWS Services (Conceptual)
 
-- [x] [[AWS IAM & AWS CLI - Identity and Access Management]] ✅
+#### Compute Services
+
 - [ ] [[Amazon EC2 - Elastic Compute Cloud]]
-- [ ] [[Amazon S3 - Simple Storage Service]]
-- [ ] [[Amazon VPC - Virtual Private Cloud]]
-
-### 📖 Recursos de Estudio
-
-**Curso Principal** (elegir uno):
-
-- [ ] [Ultimate AWS Certified Developer Associate](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
-- [ ] [Ultimate AWS Certified Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/?couponCode=LETSLEARNNOW)
-
-**Documentación:**
-
-- [ ] [AWS Documentation - Getting Started](https://docs.aws.amazon.com/index.html)
-- [ ] [AWS CDK for Go Developer Guide](https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-go.html)
-
-### 🧪 Laboratorios Prácticos - Semana 1
-
-- [ ] [[Lab 01 - Crear primera instancia EC2]]
-- [ ] [[Lab 02 - Configurar bucket S3 básico]]
-- [ ] [[Lab 03 - Gestión básica de usuarios IAM]]
-- [ ] [[Lab CDK 01 - Setup AWS CDK con Go]]
-
-### 🧪 Laboratorios Prácticos - Semana 2
-
-- [ ] [[Lab 04 - Configurar VPC básica con subnets]]
-- [ ] [[Lab 05 - Políticas de seguridad S3]]
-- [ ] [[Lab 06 - Security Groups y NACLs]]
-- [ ] [[Lab CDK 02 - VPC y EC2 con CDK Go]]
-
-**✅ Checkpoint Semana 2:**
-
-- [ ] Puedo explicar la infraestructura global de AWS
-- [ ] Entiendo el modelo de responsabilidad compartida
-- [ ] Puedo crear y gestionar recursos básicos
-- [ ] Comprendo conceptos de facturación
-- [ ] Tengo configurado AWS CDK con Go
-
----
-
-## 💻 Fase 2: Developer Services + CDK (Semanas 3-4)
-
-**⏱️ Tiempo sugerido:** 1.5-2 horas/día
-
-### ⚙️ Servicios de Compute
-
-- [ ] [[Amazon EC2 Advanced - Auto Scaling y Load Balancers]]
 - [ ] [[AWS Lambda - Serverless Computing]]
+- [ ] [[AWS Elastic Beanstalk]]
 - [ ] [[Amazon ECS - Elastic Container Service]]
-- [ ] [[AWS Elastic Beanstalk - Platform as a Service]]
-- [ ] [[AWS Fargate - Serverless Containers]]
+- [ ] [[AWS Fargate]]
 
-### ⚙️ DevOps & CI/CD
+#### Storage Services
 
-- [ ] [[AWS CodeCommit - Source Control]]
-- [ ] [[AWS CodeBuild - Build Service]]
-- [ ] [[AWS CodeDeploy - Deployment Service]]
-- [ ] [[AWS CodePipeline - CI/CD Pipeline]]
-- [ ] [[AWS SAM vs CDK - Serverless Deployment]]
-
-### ⚙️ API & Integration
-
-- [ ] [[AWS API Gateway - REST/HTTP APIs]]
-- [ ] [[AWS Step Functions - Workflow Orchestration]]
-
-### 💾 Servicios de Storage
-
+- [ ] [[Amazon S3 - Simple Storage Service]]
 - [ ] [[Amazon EBS - Elastic Block Store]]
 - [ ] [[Amazon EFS - Elastic File System]]
 - [ ] [[AWS Storage Gateway]]
-- [ ] [[Amazon S3 Advanced Features]]
 
-### 🧪 Laboratorios Prácticos - Semana 3
-
-- [ ] [[Lab 07 - Desplegar Spring Boot en Elastic Beanstalk]]
-- [ ] [[Lab 08 - Configurar Auto Scaling Group]]
-- [ ] [[Lab 09 - Crear función Lambda básica]]
-- [ ] [[Lab CDK 03 - Lambda + API Gateway con CDK Go]]
-
-### 🧪 Laboratorios Prácticos - Semana 4
-
-- [ ] [[Lab 10 - Application Load Balancer]]
-- [ ] [[Lab 11 - Contenedores con ECS]]
-- [ ] [[Lab 12 - Integración Lambda con API Gateway]]
-- [ ] [[Lab CDK 04 - CI/CD Pipeline con CDK Go]]
-
-### 🔗 Conexión con Java/Spring Boot + CDK
-
-- [ ] [[Deploying Java Apps on AWS]]
-- [ ] [[Spring Boot + AWS Lambda]]
-- [ ] [[Containerización con ECS]]
-- [ ] [[Spring Boot + Elastic Beanstalk Best Practices]]
-- [ ] [[CDK Go Patterns for Java Applications]]
-
-**✅ Checkpoint Semana 4:**
-
-- [ ] Puedo diseñar soluciones de compute escalables
-- [ ] Entiendo cuándo usar cada servicio de storage
-- [ ] Puedo desplegar aplicaciones Java en AWS
-- [ ] Comprendo conceptos de containerización
-- [ ] Manejo CDK Go para infraestructura como código
-
----
-
-## 🗄️ Fase 3: Storage, Databases & Networking + CDK (Semanas 5-6)
-
-**⏱️ Tiempo sugerido:** 1.5-2 horas/día
-
-### 🗃️ Servicios de Base de Datos
+#### Database Services
 
 - [ ] [[Amazon RDS - Relational Database Service]]
-- [ ] [[Amazon DynamoDB - NoSQL Database]]
-- [ ] [[Amazon ElastiCache - In-memory Caching]]
-- [ ] [[Amazon Redshift - Data Warehouse]]
-- [ ] [[Amazon Aurora - MySQL/PostgreSQL Compatible]]
-- [ ] [[Amazon DocumentDB - MongoDB Compatible]]
+- [ ] [[Amazon DynamoDB]]
+- [ ] [[Amazon ElastiCache]]
+- [ ] [[Amazon Redshift]]
 
-### 🌐 Networking Avanzado
+#### Networking Services
 
-- [ ] [[VPC Advanced - NAT Gateways y VPC Endpoints]]
-- [ ] [[Amazon Route 53 - DNS Service]]
-- [ ] [[AWS CloudFront - CDN]]
-- [ ] [[AWS Direct Connect]]
-- [ ] [[VPC Peering y Transit Gateway]]
+- [ ] [[Amazon VPC - Virtual Private Cloud]]
+- [ ] [[Amazon CloudFront]]
+- [ ] [[Amazon Route 53]]
+- [ ] [[Elastic Load Balancing]]
 
-### 🧪 Laboratorios Prácticos - Semana 5
+### 🛡️ Security and Identity Services
 
-- [ ] [[Lab 13 - Conectar Java App con RDS PostgreSQL]]
-- [ ] [[Lab 14 - Configurar ElastiCache para Spring Boot]]
-- [ ] [[Lab 15 - DynamoDB con aplicación Java]]
-- [ ] [[Lab CDK 05 - RDS Multi-AZ con CDK Go]]
-
-### 🧪 Laboratorios Prácticos - Semana 6
-
-- [ ] [[Lab 16 - Arquitectura Multi-AZ]]
-- [ ] [[Lab 17 - CloudFront para contenido estático]]
-- [ ] [[Lab 18 - Route 53 con health checks]]
-- [ ] [[Lab CDK 06 - CloudFront + S3 con CDK Go]]
-
-**✅ Checkpoint Semana 6:**
-
-- [ ] Puedo diseñar soluciones de base de datos apropiadas
-- [ ] Entiendo networking avanzado en AWS
-- [ ] Puedo implementar alta disponibilidad
-- [ ] Comprendo optimización de performance
-- [ ] Uso CDK Go para infraestructura de datos y networking
-
----
-
-## 🔒 Fase 4: Security, Authentication & Monitoring + CDK (Semanas 7-8)
-
-**⏱️ Tiempo sugerido:** 1-2 horas/día
-
-### 🛡️ Servicios de Seguridad
-
-- [ ] [[AWS IAM Advanced - Roles, Policies, Federation]]
-- [ ] [[AWS KMS - Key Management Service]]
-- [ ] [[AWS Secrets Manager]]
-- [ ] [[AWS WAF - Web Application Firewall]]
+- [ ] [[AWS IAM - Identity and Access Management]]
+- [ ] [[AWS CloudTrail]]
+- [ ] [[AWS Config]]
 - [ ] [[Amazon Inspector]]
 - [ ] [[AWS GuardDuty]]
 
-### 👤 Authentication & Authorization
+### 📊 Management and Monitoring
 
-- [ ] [[Amazon Cognito - User Authentication]]
-    - Cognito User Pools
-    - Cognito Identity Pools
-    - Cognito Hosted UI
-- [ ] [[AWS STS - Security Token Service]]
-
-### 📊 Monitoring y Logging
-
-- [ ] [[Amazon CloudWatch - Monitoring y Logs]]
-- [ ] [[AWS CloudTrail - API Logging]]
-- [ ] [[AWS Config - Configuration Management]]
+- [ ] [[Amazon CloudWatch]]
+- [ ] [[AWS Management Console]]
+- [ ] [[AWS Trusted Advisor]]
 - [ ] [[AWS Systems Manager]]
-- [ ] [[AWS X-Ray - Distributed Tracing]]
 
-### 🧪 Laboratorios Prácticos - Semana 7
+### 📖 Recursos de Estudio Cloud Practitioner
 
-- [ ] [[Lab 19 - Monitoreo avanzado aplicación Java]]
-- [ ] [[Lab 20 - Logging centralizado con CloudWatch]]
-- [ ] [[Lab 21 - Gestión de secretos con Secrets Manager]]
-- [ ] [[Lab CDK 07 - Cognito Authentication con CDK Go]]
+**Curso Principal:**
 
-### 🧪 Laboratorios Prácticos - Semana 8
+- [ ] [AWS Cloud Practitioner Essentials - AWS Skill Builder](https://aws.amazon.com/training/digital/)
+- [ ] [Ultimate AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
 
-- [ ] [[Lab 22 - Configurar alertas CloudWatch]]
-- [ ] [[Lab 23 - WAF para proteger aplicación web]]
-- [ ] [[Lab 24 - Compliance con AWS Config]]
-- [ ] [[Lab CDK 08 - Security Stack completo con CDK Go]]
+**Documentación:**
 
-**✅ Checkpoint Semana 8:**
+- [ ] [AWS Cloud Practitioner Learning Path](https://aws.amazon.com/training/path-cloudpractitioner/)
+- [ ] [AWS Whitepapers - Cloud Fundamentals](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html)
 
-- [ ] Puedo implementar seguridad en profundidad
-- [ ] Entiendo compliance y governance
-- [ ] Puedo configurar monitoreo completo
-- [ ] Comprendo incident response
-- [ ] Manejo autenticación con Cognito via CDK Go
+**✅ Checkpoint Semana 3:**
+
+- [ ] Comprendo la propuesta de valor de AWS
+- [ ] Entiendo el modelo de precios y facturación
+- [ ] Conozco los servicios core de cada categoría
+- [ ] Puedo explicar casos de uso básicos
+- [ ] Domino conceptos de seguridad básicos
 
 ---
 
-## 🔗 Fase 5: Integration, Messaging & Patterns + CDK (Semanas 9-10)
-
-**⏱️ Tiempo sugerido:** 2 horas/día
-
-### 🏗️ Patrones Arquitectónicos
-
-- [ ] [[3-Tier Web Architecture]]
-- [ ] [[Microservices on AWS]]
-- [ ] [[Event-Driven Architecture]]
-- [ ] [[Disaster Recovery Patterns]]
-- [ ] [[Serverless Architectures]]
-
-### 🔗 Servicios de Integración
-
-- [ ] [[Amazon SQS - Simple Queue Service]]
-- [ ] [[Amazon SNS - Simple Notification Service]]
-- [ ] [[AWS API Gateway]]
-- [ ] [[AWS Step Functions]]
-- [ ] [[Amazon EventBridge]]
-- [ ] [[Amazon Kinesis - Real-time Streaming]]
-
-### 💼 Casos de Uso para Backend Developer
-
-- [ ] [[Migrating Monolith to AWS]]
-- [ ] [[Implementing CI-CD with AWS]]
-- [ ] [[Scaling Java Applications]]
-- [ ] [[Cost Optimization Strategies]]
-
-### 🧪 Proyectos Prácticos
-
-- [ ] [[Proyecto 01 - Migrar aplicación monolítica]]
-- [ ] [[Proyecto 02 - Implementar arquitectura de microservicios]]
-- [ ] [[Proyecto 03 - Sistema de procesamiento de eventos]]
-- [ ] [[Lab CDK 09 - Event-Driven Architecture con CDK Go]]
-- [ ] [[Lab CDK 10 - Microservices completos con CDK Go]]
-
-**✅ Checkpoint Semana 10:**
-
-- [ ] Puedo diseñar arquitecturas complejas
-- [ ] Entiendo trade-offs arquitectónicos
-- [ ] Puedo calcular costos aproximados
-- [ ] Comprendo patrones de disaster recovery
-- [ ] Implemento arquitecturas completas con CDK Go
-
----
-
-## 🏆 DEVELOPER ASSOCIATE EXAM (Semanas 11-12)
+## 🏆 CLOUD PRACTITIONER EXAM (Semana 4)
 
 **⏱️ Tiempo sugerido:** 2-3 horas/día
 
-### 📝 Exámenes de Práctica
+### 📝 Exámenes de Práctica Cloud Practitioner
 
 - [ ] AWS Practice Exams (oficiales)
-- [ ] Udemy Practice Tests (Stephane Maarek)
+- [ ] Udemy Practice Tests
 - [ ] Whizlabs Practice Tests
-- [ ] Tutorials Dojo Practice Tests
+
+### 🎯 Resultados Simulacros CLF-C02
+
+- [ ] Simulacro 1: ___% (Objetivo: >80%)
+- [ ] Simulacro 2: ___% (Objetivo: >85%)
+- [ ] Simulacro 3: ___% (Objetivo: >90%)
+
+**🏆 EXAMEN CLOUD PRACTITIONER (CLF-C02) - Semana 4**
+
+---
+
+## 💻 Fase 2: Developer Associate - Technical Implementation (Semanas 5-10)
+
+**⏱️ Tiempo sugerido:** 2-2.5 horas/día **🎯 Enfoque:** Hands-on + CDK Implementation
+
+### 🛠️ CDK Setup y Fundamentos
+
+- [ ] [[AWS CDK Fundamentals with Go]]
+- [ ] [[AWS CLI Advanced Configuration]]
+
+### ⚙️ Advanced Compute Services
+
+#### Serverless Computing Deep Dive
+
+- [ ] [[AWS Lambda Advanced Features]]
+- [ ] [[AWS SAM vs CDK]]
+- [ ] [[Lambda Layers and Extensions]]
+- [ ] [[Lambda Performance Optimization]]
+
+#### Container Services
+
+- [ ] [[Amazon ECS Advanced]]
+- [ ] [[AWS Fargate Advanced]]
+- [ ] [[Container Image Management]]
+
+#### Load Balancing and Auto Scaling
+
+- [ ] [[Application Load Balancer]]
+- [ ] [[Network Load Balancer]]
+- [ ] [[Auto Scaling Groups]]
+- [ ] [[Target Groups and Health Checks]]
+
+### 🔄 DevOps & CI/CD Services
+
+- [ ] [[AWS CodeCommit]]
+- [ ] [[AWS CodeBuild]]
+- [ ] [[AWS CodeDeploy]]
+- [ ] [[AWS CodePipeline]]
+- [ ] [[AWS CodeStar]]
+
+### 🌐 API & Integration Services
+
+- [ ] [[AWS API Gateway]]
+- [ ] [[AWS Step Functions]]
+- [ ] [[Amazon EventBridge]]
+- [ ] [[Amazon SQS]]
+- [ ] [[Amazon SNS]]
+
+### 💾 Advanced Storage & Database
+
+- [ ] [[Amazon S3 Advanced Features]]
+- [ ] [[Amazon DynamoDB Advanced]]
+- [ ] [[DynamoDB Streams]]
+- [ ] [[Amazon RDS Advanced]]
+- [ ] [[Database Connection Pooling]]
+
+### 🔐 Security & Authentication
+
+- [ ] [[Amazon Cognito]]
+- [ ] [[AWS KMS - Key Management Service]]
+- [ ] [[AWS Secrets Manager]]
+- [ ] [[AWS Parameter Store]]
+- [ ] [[AWS WAF]]
+
+### 📊 Monitoring & Debugging
+
+- [ ] [[AWS X-Ray]]
+- [ ] [[Amazon CloudWatch Advanced]]
+- [ ] [[CloudWatch Logs]]
+- [ ] [[Application Performance Monitoring]]
+
+### 🧪 Laboratorios Prácticos Developer (Semanas 5-10)
+
+#### Semana 5: CDK Setup + Serverless
+
+- [ ] [[Lab CDK 01 - Setup AWS CDK con Go]]
+- [ ] [[Lab CDK 02 - Lambda + API Gateway Stack]]
+- [ ] [[Lab CDK 03 - DynamoDB + Lambda Integration]]
+
+#### Semana 6: Containers + CI/CD
+
+- [ ] [[Lab CDK 04 - ECS Fargate Application]]
+- [ ] [[Lab CDK 05 - CodePipeline CI/CD Stack]]
+- [ ] [[Lab CDK 06 - Application Load Balancer]]
+
+#### Semana 7: Security + Authentication
+
+- [ ] [[Lab CDK 07 - Cognito Authentication Stack]]
+- [ ] [[Lab CDK 08 - KMS + Secrets Manager]]
+- [ ] [[Lab CDK 09 - WAF + Security Groups]]
+
+#### Semana 8: Monitoring + Integration
+
+- [ ] [[Lab CDK 10 - X-Ray Tracing Setup]]
+- [ ] [[Lab CDK 11 - CloudWatch Dashboard]]
+- [ ] [[Lab CDK 12 - SQS + SNS Integration]]
+
+#### Semana 9: Advanced Patterns
+
+- [ ] [[Lab CDK 13 - Event-Driven Architecture]]
+- [ ] [[Lab CDK 14 - Microservices Pattern]]
+- [ ] [[Lab CDK 15 - Step Functions Workflow]]
+
+#### Semana 10: Review + Practice
+
+- [ ] [[Lab CDK 16 - Full Stack Application]]
+- [ ] [[Lab CDK 17 - Performance Optimization]]
+- [ ] [[Lab CDK 18 - Cost Optimization]]
+
+**✅ Checkpoint Semana 10:**
+
+- [ ] Domino desarrollo serverless en AWS
+- [ ] Puedo implementar CI/CD completo
+- [ ] Manejo autenticación y autorización
+- [ ] Implemento monitoreo y debugging
+- [ ] Uso CDK Go para infraestructura compleja
+
+---
+
+## 🏆 DEVELOPER ASSOCIATE EXAM (Semana 11)
+
+**⏱️ Tiempo sugerido:** 3-4 horas/día
 
 ### 📚 Repaso Final Developer
 
@@ -331,70 +294,145 @@ graph TD
 - [ ] [[API Gateway Troubleshooting]]
 - [ ] [[X-Ray Debugging Scenarios]]
 
-### 🎯 Resultados Simulacros Developer
+### 🎯 Resultados Simulacros DVA-C02
 
 - [ ] Simulacro 1: ___% (Objetivo: >75%)
 - [ ] Simulacro 2: ___% (Objetivo: >80%)
 - [ ] Simulacro 3: ___% (Objetivo: >85%)
 
-**🏆 EXAMEN DEVELOPER ASSOCIATE - Semana 12**
+**🏆 EXAMEN DEVELOPER ASSOCIATE (DVA-C02) - Semana 11**
 
 ---
 
-## 🏗️ Fase 6: Architecture & Advanced Networking + CDK (Semanas 13-14)
+## 🏗️ Fase 3: Solutions Architect - Advanced Architecture (Semanas 12-17)
 
-**⏱️ Tiempo sugerido:** 2 horas/día
+**⏱️ Tiempo sugerido:** 2.5-3 horas/día **🎯 Enfoque:** Arquitectural Patterns + Enterprise Solutions
 
-### ⚖️ Load Balancing & Auto Scaling
-
-- [ ] [[Application Load Balancer Advanced]]
-- [ ] [[Network Load Balancer]]
-- [ ] [[Auto Scaling Groups Advanced]]
-- [ ] [[Elastic Load Balancing Patterns]]
-
-### 🌐 Advanced Networking & CDN
+### 🌐 Advanced Networking
 
 - [ ] [[VPC Advanced Patterns]]
-- [ ] [[CloudFront Advanced Features]]
-- [ ] [[Route 53 Advanced Routing]]
-- [ ] [[Direct Connect & VPN]]
+- [ ] [[AWS Direct Connect]]
+- [ ] [[VPC Peering and Transit Gateway]]
+- [ ] [[AWS PrivateLink]]
+- [ ] [[Network Load Balancer Advanced]]
+
+### 🗃️ Enterprise Database Solutions
+
+- [ ] [[Amazon Aurora]]
+- [ ] [[Amazon DocumentDB]]
+- [ ] [[Database Migration Service]]
+- [ ] [[Database Backup and Recovery]]
+- [ ] [[Read Replicas and Clustering]]
+
+### 🚀 High Availability & Disaster Recovery
+
+- [ ] [[Multi-AZ Deployments]]
+- [ ] [[Multi-Region Architecture]]
+- [ ] [[Disaster Recovery Strategies]]
+- [ ] [[Backup and Archive Solutions]]
+- [ ] [[Cross-Region Replication]]
+
+### 📊 Analytics & Big Data
+
+- [ ] [[Amazon Kinesis]]
+- [ ] [[AWS Glue]]
+- [ ] [[Amazon EMR]]
+- [ ] [[Amazon Athena]]
+- [ ] [[AWS Lake Formation]]
+
+### 🏢 Enterprise Services
+
+- [ ] [[AWS Organizations]]
+- [ ] [[AWS Control Tower]]
+- [ ] [[AWS Service Catalog]]
+- [ ] [[AWS Config Advanced]]
+- [ ] [[AWS CloudFormation StackSets]]
 
 ### 💰 Cost Optimization & Governance
 
-- [ ] [[AWS Cost Explorer]]
-- [ ] [[AWS Budgets]]
-- [ ] [[Reserved Instances & Spot]]
-- [ ] [[AWS Organizations]]
-- [ ] [[AWS Trusted Advisor]]
+- [ ] [[AWS Cost Optimization Strategies]]
+- [ ] [[Reserved Instances and Savings Plans]]
+- [ ] [[Spot Instances Patterns]]
+- [ ] [[Resource Tagging Strategies]]
+- [ ] [[AWS Well-Architected Cost Optimization]]
 
-### 🧪 Laboratorios Architecture Focus
+### 🏗️ Architectural Patterns
 
-- [ ] [[Lab CDK 11 - Multi-Region Architecture con CDK Go]]
-- [ ] [[Lab CDK 12 - Cost-Optimized Infrastructure con CDK Go]]
+- [ ] [[3-Tier Web Architecture]]
+- [ ] [[Microservices Architecture]]
+- [ ] [[Event-Driven Architecture]]
+- [ ] [[Serverless Architecture Patterns]]
+- [ ] [[Hybrid Cloud Architecture]]
 
-**✅ Checkpoint Semana 14:**
+### 🔒 Advanced Security
 
-- [ ] Puedo diseñar arquitecturas enterprise-grade
-- [ ] Entiendo optimización de costos
-- [ ] Manejo networking avanzado
-- [ ] Comprendo governance y compliance
+- [ ] [[AWS Security Hub]]
+- [ ] [[AWS Shield and WAF Advanced]]
+- [ ] [[Network Security Patterns]]
+- [ ] [[Data Encryption Strategies]]
+- [ ] [[Compliance and Governance]]
+
+### 🧪 Laboratorios Architecture (Semanas 12-17)
+
+#### Semana 12: Advanced Networking
+
+- [ ] [[Lab CDK 19 - Multi-VPC Architecture]]
+- [ ] [[Lab CDK 20 - Transit Gateway Implementation]]
+- [ ] [[Lab CDK 21 - CloudFront + WAF]]
+
+#### Semana 13: Enterprise Databases
+
+- [ ] [[Lab CDK 22 - Aurora Multi-AZ Setup]]
+- [ ] [[Lab CDK 23 - Read Replicas Pattern]]
+- [ ] [[Lab CDK 24 - Database Migration]]
+
+#### Semana 14: High Availability
+
+- [ ] [[Lab CDK 25 - Multi-Region Active-Passive]]
+- [ ] [[Lab CDK 26 - Auto Scaling Policies]]
+- [ ] [[Lab CDK 27 - Health Checks + Route 53]]
+
+#### Semana 15: Analytics & Big Data
+
+- [ ] [[Lab CDK 28 - Kinesis Data Pipeline]]
+- [ ] [[Lab CDK 29 - Real-time Analytics]]
+- [ ] [[Lab CDK 30 - Data Lake Architecture]]
+
+#### Semana 16: Enterprise Patterns
+
+- [ ] [[Lab CDK 31 - Organizations Setup]]
+- [ ] [[Lab CDK 32 - Cost Optimization Stack]]
+- [ ] [[Lab CDK 33 - Compliance Automation]]
+
+#### Semana 17: Capstone Projects
+
+- [ ] [[Lab CDK 34 - Enterprise E-commerce Platform]]
+- [ ] [[Lab CDK 35 - SaaS Multi-Tenant Architecture]]
+- [ ] [[Lab CDK 36 - Complete DR Solution]]
+
+**✅ Checkpoint Semana 17:**
+
+- [ ] Diseño arquitecturas enterprise-grade
+- [ ] Implemento alta disponibilidad y DR
+- [ ] Manejo costos y governance
+- [ ] Comprendo patrones arquitectónicos avanzados
 
 ---
 
-## 🏆 SOLUTIONS ARCHITECT EXAM (Semanas 15-16)
+## 🏆 SOLUTIONS ARCHITECT EXAM (Semana 18)
 
-**⏱️ Tiempo sugerido:** 2-3 horas/día
+**⏱️ Tiempo sugerido:** 3-4 horas/día
 
 ### 📚 Repaso Final Solutions Architect
 
-- [ ] [[AWS Services Cheat Sheet]]
+- [ ] [[AWS Services Comparison Matrix]]
 - [ ] [[Common Exam Scenarios]]
-- [ ] [[Cost Calculation Examples]]
-- [ ] [[Security Best Practices Summary]]
-- [ ] [[Troubleshooting Common Issues]]
-- [ ] [[Well-Architected Framework Review]]
+- [ ] [[Cost Calculation Framework]]
+- [ ] [[Security Best Practices Checklist]]
+- [ ] [[Troubleshooting Decision Trees]]
+- [ ] [[Well-Architected Framework Deep Dive]]
 
-### 🎯 Resultados Simulacros SA
+### 🎯 Resultados Simulacros SAA-C03
 
 - [ ] Simulacro 1: ___% (Objetivo: >75%)
 - [ ] Simulacro 2: ___% (Objetivo: >80%)
@@ -402,31 +440,27 @@ graph TD
 
 ### ✅ Checklist Final Pre-Examen
 
-- [ ] Domino los 5 pilares del Well-Architected Framework
-- [ ] Puedo diseñar arquitecturas multi-tier
-- [ ] Entiendo pricing y cost optimization
-- [ ] Conozco límites y quotas de servicios principales
-- [ ] Puedo resolver casos de troubleshooting
-- [ ] Promedio >85% en exámenes de práctica
-- [ ] Repasé scenarios de disaster recovery
-- [ ] Tengo clara la diferencia entre servicios similares
+- [ ] Domino los 6 pilares del Well-Architected Framework
+- [ ] Puedo calcular costos y ROI
+- [ ] Conozco límites y quotas de todos los servicios
+- [ ] Puedo diseñar para cualquier caso de uso
+- [ ] Manejo troubleshooting avanzado
+- [ ] Promedio >85% en simulacros
 
-**🏆 EXAMEN SOLUTIONS ARCHITECT ASSOCIATE - Semana 16**
+**🏆 EXAMEN SOLUTIONS ARCHITECT ASSOCIATE (SAA-C03) - Semana 18**
 
 ---
 
-## 📅 Cronograma Detallado con CDK
+## 📅 Cronograma Detallado Triple Certificación
 
-|Semana|Fase|Tiempo/día|Enfoque Principal|Deliverable CDK|
+|Semana|Fase|Tiempo/día|Enfoque Principal|Deliverable|
 |---|---|---|---|---|
-|1-2|Fundamentos|1-2h|Teoría + Labs básicos + Setup CDK|CDK Go configurado|
-|3-4|Developer Services|1.5-2h|Serverless + CI/CD + CDK|Lambda + API Gateway Stack|
-|5-6|Storage/DB/Networking|1.5-2h|Integración datos + CDK|RDS + VPC Stack completo|
-|7-8|Security/Monitoring|1-2h|Cognito + Seguridad + CDK|Security Stack con Cognito|
-|9-10|Integration/Patterns|2h|Arquitecturas + CDK|Event-Driven Stack|
-|11-12|Developer Exam Prep|2-3h|Repaso + Examen|**DVA-C02 Certificación**|
-|13-14|Architecture Advanced|2h|Networking + Cost + CDK|Enterprise Architecture Stack|
-|15-16|SA Exam Prep|2-3h|Repaso + Examen|**SAA-C03 Certificación**|
+|1-3|Cloud Practitioner Prep|1-1.5h|Teoría fundamental AWS|Conceptos sólidos|
+|4|CLF-C02 Exam|2-3h|Repaso + Examen|**CLF-C02 Certificate**|
+|5-10|Developer Technical|2-2.5h|Hands-on + CDK Go|CDK Stacks completos|
+|11|DVA-C02 Exam|3-4h|Repaso + Examen|**DVA-C02 Certificate**|
+|12-17|Solutions Architect|2.5-3h|Enterprise Architecture|Architecture Patterns|
+|18|SAA-C03 Exam|3-4h|Repaso + Examen|**SAA-C03 Certificate**|
 
 ---
 
@@ -435,96 +469,53 @@ graph TD
 ### 📚 Plataformas de Estudio
 
 - [ ] AWS Free Tier account configurada
-- [ ] Udemy/A Cloud Guru subscription activa
-- [ ] AWS Documentation bookmarked
-- [ ] AWS Whitepapers descargados
+- [ ] AWS Skill Builder account
+- [ ] Udemy/A Cloud Guru subscriptions
+- [ ] Whizlabs practice exams
 
 ### 🏗️ CDK Development Environment
 
-- [ ] **Go 1.19+** instalado
+- [ ] **Go 1.21+** instalado
 - [ ] **AWS CDK v2** instalado
 - [ ] **AWS CLI v2** configurado
-- [ ] **IDE** con AWS extensions (VS Code/GoLand)
-- [ ] **Git repository** para CDK stacks
+- [ ] **VS Code/GoLand** con AWS extensions
 
-### 🧪 Labs y Práctica
+### 📊 Progress Tracking
 
-- [ ] AWS Hands-on Labs
-- [ ] Qwiklabs access
-- [ ] Cloud Academy Labs
-- [ ] **CDK Go Examples Repository** creado
-
-### 👥 Comunidad
-
-- [ ] AWS Community Builders
-- [ ] Reddit r/AWSCertifications joined
-- [ ] **AWS CDK Slack** community
-- [ ] Discord/Slack AWS groups
-- [ ] LinkedIn AWS groups seguidos
+- [ ] Obsidian vault configurado
+- [ ] Practice exam scores tracking
+- [ ] CDK projects repository
+- [ ] Weekly review schedule
 
 ---
 
-## 🎯 Roadmap Post-Certificación
+## 🎯 Métricas de Éxito
 
-### 📈 Próximos Pasos
+### 🏆 Certificaciones Meta
 
-- [ ] [[AWS DevOps Engineer Preparation]]
-- [ ] [[Kubernetes CKA Preparation]]
-- [ ] [[Advanced AWS Architectures]]
-- [ ] [[Terraform vs CDK Comparison]]
+- [ ] **AWS Cloud Practitioner (CLF-C02)** - Semana 4
+- [ ] **AWS Developer Associate (DVA-C02)** - Semana 11
+- [ ] **AWS Solutions Architect Associate (SAA-C03)** - Semana 18
 
-### 💼 Aplicación Práctica
+### 📈 Objetivos por Mes
 
-- [ ] Migrar proyecto personal a AWS con CDK Go
-- [ ] Implementar CI/CD pipeline completo
-- [ ] Documentar arquitecturas en Obsidian
-- [ ] **Open Source CDK Go constructs**
-- [ ] Compartir conocimiento (blog/GitHub)
-- [ ] Contribuir a proyectos open source
+- [ ] **Mes 1:** CLF-C02 + Developer foundations
+- [ ] **Mes 2:** Technical implementation + CDK mastery
+- [ ] **Mes 3:** DVA-C02 + Architecture foundations
+- [ ] **Mes 4-5:** Enterprise patterns + SAA-C03
 
 ---
 
-## 📊 Tracking de Progreso
+## 📚 Enlaces de Referencia
 
-### 🏆 Certificaciones Objetivo
-
-- [ ] **AWS Certified Developer Associate (DVA-C02)** - Meta: Semana 12
-- [ ] **AWS Certified Solutions Architect Associate (SAA-C03)** - Meta: Semana 16
-
-### 📈 Métricas Semanales
-
-```
-Semana 1: ___% completado    Semana 9: ___% completado
-Semana 2: ___% completado    Semana 10: ___% completado
-Semana 3: ___% completado    Semana 11: ___% completado
-Semana 4: ___% completado    Semana 12: DVA EXAM
-Semana 5: ___% completado    Semana 13: ___% completado
-Semana 6: ___% completado    Semana 14: ___% completado
-Semana 7: ___% completado    Semana 15: ___% completado
-Semana 8: ___% completado    Semana 16: SAA EXAM
-```
-
-### 🎯 Objetivos Clave
-
-- [ ] **Mes 1:** Fundamentos sólidos + CDK setup + primeros labs
-- [ ] **Mes 2:** Servicios developer + Storage/DB + CDK stacks
-- [ ] **Mes 3:** Security + Integration + **Developer Exam**
-- [ ] **Mes 4:** Architecture avanzada + **Solutions Architect Exam**
-
----
-
-## 📚 Enlaces Útiles
-
-- [AWS Certification Roadmap](https://aws.amazon.com/certification/)
-- [AWS Well-Architected Tool](https://aws.amazon.com/well-architected-tool/)
-- [AWS Architecture Center](https://aws.amazon.com/architecture/)
+- [AWS Certification Paths](https://aws.amazon.com/certification/)
+- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 - [AWS CDK Go Documentation](https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-go.html)
-- [AWS CDK Patterns](https://cdkpatterns.com/)
+- [AWS Architecture Center](https://aws.amazon.com/architecture/)
 - [AWS Free Tier](https://aws.amazon.com/free/)
-- [AWS Training and Certification](https://aws.amazon.com/training/)
 
 ---
 
-> **💡 Nota:** Este plan está optimizado para desarrolladores backend con experiencia en Java/Spring Boot, usando AWS CDK con Go para Infrastructure as Code. Ajusta los tiempos según tu disponibilidad y ritmo de aprendizaje.
+> **💡 Estrategia:** Enfoque progresivo desde fundamentos teóricos hasta implementación enterprise, con práctica hands-on intensiva usando CDK Go para maximizar el aprendizaje práctico.
 
-**🔄 Próxima revisión:** {{date+7d}} **📝 Estado actual:** Listo para CDK + Dual Certification
+**🔄 Próxima revisión:** Semanal **📝 Estado:** Ready for Triple Certification Journey
