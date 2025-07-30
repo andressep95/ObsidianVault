@@ -54,23 +54,18 @@ graph TD
 ---
 
 ## 📚 Fase 1: Cloud Practitioner Fundamentals (Semanas 1-3)
-
 **⏱️ Tiempo sugerido:** 1-1.5 horas/día **🎯 Enfoque:** Teórico - Conceptos fundamentales de AWS
 
 ### 🌐 AWS Global Infrastructure
-
-- [ ] [[AWS Global Infrastructure]]
+- [x] [[AWS Global Infrastructure]]
 
 ### 🏗️ AWS Well-Architected Framework
-
-- [ ] [[AWS Well-Architected Framework]]
+- [x] [[AWS Well-Architected Framework]]
 
 ### 🔒 AWS Shared Responsibility Model
-
-- [ ] [[AWS Shared Responsibility Model]]
+- [x] [[AWS Shared Responsibility Model]]
 
 ### 💰 AWS Pricing and Billing
-
 - [ ] [[AWS Pricing Models]]
 - [ ] [[AWS Support Plans]]
 - [ ] [[AWS Cost Explorer]]
@@ -79,7 +74,6 @@ graph TD
 ### ⚙️ Core AWS Services (Conceptual)
 
 #### Compute Services
-
 - [ ] [[Amazon EC2 - Elastic Compute Cloud]]
 - [ ] [[AWS Lambda - Serverless Computing]]
 - [ ] [[AWS Elastic Beanstalk]]
@@ -87,28 +81,24 @@ graph TD
 - [ ] [[AWS Fargate]]
 
 #### Storage Services
-
 - [ ] [[Amazon S3 - Simple Storage Service]]
 - [ ] [[Amazon EBS - Elastic Block Store]]
 - [ ] [[Amazon EFS - Elastic File System]]
 - [ ] [[AWS Storage Gateway]]
 
 #### Database Services
-
 - [ ] [[Amazon RDS - Relational Database Service]]
 - [ ] [[Amazon DynamoDB]]
 - [ ] [[Amazon ElastiCache]]
 - [ ] [[Amazon Redshift]]
 
 #### Networking Services
-
 - [ ] [[Amazon VPC - Virtual Private Cloud]]
 - [ ] [[Amazon CloudFront]]
 - [ ] [[Amazon Route 53]]
 - [ ] [[Elastic Load Balancing]]
 
 ### 🛡️ Security and Identity Services
-
 - [ ] [[AWS IAM - Identity and Access Management]]
 - [ ] [[AWS CloudTrail]]
 - [ ] [[AWS Config]]
@@ -116,7 +106,6 @@ graph TD
 - [ ] [[AWS GuardDuty]]
 
 ### 📊 Management and Monitoring
-
 - [ ] [[Amazon CloudWatch]]
 - [ ] [[AWS Management Console]]
 - [ ] [[AWS Trusted Advisor]]
