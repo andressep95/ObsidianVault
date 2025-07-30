@@ -114,7 +114,6 @@ graph TD
 ### 📖 Recursos de Estudio Cloud Practitioner
 
 **Curso Principal:**
-
 - [ ] [AWS Cloud Practitioner Essentials - AWS Skill Builder](https://aws.amazon.com/training/digital/)
 - [ ] [Ultimate AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
 
