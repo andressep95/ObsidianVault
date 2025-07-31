@@ -118,12 +118,10 @@ graph TD
 - [ ] [Ultimate AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
 
 **Documentación:**
-
 - [ ] [AWS Cloud Practitioner Learning Path](https://aws.amazon.com/training/path-cloudpractitioner/)
 - [ ] [AWS Whitepapers - Cloud Fundamentals](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html)
 
 **✅ Checkpoint Semana 3:**
-
 - [ ] Comprendo la propuesta de valor de AWS
 - [ ] Entiendo el modelo de precios y facturación
 - [ ] Conozco los servicios core de cada categoría
