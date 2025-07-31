@@ -127,7 +127,6 @@ El modelo principal de AWS donde **pagas solo por lo que usas**, sin contratos a
 |**Dedicated**|Compliance, Licencias BYOL|Aplicaciones financieras|
 
 ## 🚨 Puntos Clave para Examen
-
 1. **On-Demand es el más caro** pero más flexible
 2. **Reserved Instances requieren compromiso** de 1-3 años
 3. **Spot puede ser interrumpido** por AWS en cualquier momento
@@ -141,7 +140,6 @@ El modelo principal de AWS donde **pagas solo por lo que usas**, sin contratos a
 ## 🧪 Cuestionario de Evaluación
 
 ### **Pregunta 1**
-
 Una startup necesita ejecutar una aplicación web con tráfico muy variable e impredecible. ¿Qué modelo de precios recomendarías inicialmente?
 
 - [ ] A) Reserved Instances por 3 años
@@ -154,7 +152,6 @@ Una startup necesita ejecutar una aplicación web con tráfico muy variable e im
 ---
 
 ### **Pregunta 2**
-
 Tu empresa tiene una aplicación de producción que funciona 24/7 con uso constante y predecible. ¿Cuál es la mejor estrategia de costos?
 
 - [ ] A) Mantener todo en On-Demand
@@ -167,7 +164,6 @@ Tu empresa tiene una aplicación de producción que funciona 24/7 con uso consta
 ---
 
 ### **Pregunta 3**
-
 ¿Cuál de las siguientes afirmaciones sobre Spot Instances es CORRECTA?
 
 - [ ] A) Garantizan disponibilidad 24/7
@@ -180,7 +176,6 @@ Tu empresa tiene una aplicación de producción que funciona 24/7 con uso consta
 ---
 
 ### **Pregunta 4**
-
 Una empresa quiere usar sus licencias de Windows Server existentes en AWS. ¿Qué opción deberían considerar?
 
 - [ ] A) On-Demand Instances regulares
@@ -193,7 +188,6 @@ Una empresa quiere usar sus licencias de Windows Server existentes en AWS. ¿Qu�
 ---
 
 ### **Pregunta 5**
-
 ¿Cuál es la principal diferencia entre Savings Plans y Reserved Instances?
 
 - [ ] A) Savings Plans son más caros
@@ -206,7 +200,6 @@ Una empresa quiere usar sus licencias de Windows Server existentes en AWS. ¿Qu�
 ---
 
 ### **Pregunta 6**
-
 Para un trabajo de procesamiento de datos que puede ejecutarse durante la noche y tolerar interrupciones, ¿qué modelo es más económico?
 
 - [ ] A) On-Demand Instances
@@ -219,7 +212,6 @@ Para un trabajo de procesamiento de datos que puede ejecutarse durante la noche 
 ---
 
 ### **Pregunta 7**
-
 ¿Qué herramienta de AWS te permite estimar costos ANTES de desplegar recursos?
 
 - [ ] A) Cost Explorer
@@ -232,7 +224,6 @@ Para un trabajo de procesamiento de datos que puede ejecutarse durante la noche 
 ---
 
 ### **Pregunta 8**
-
 En el modelo de precios de AWS, ¿qué aspecto de la transferencia de datos es generalmente GRATUITO?
 
 - [ ] A) Transferencia de datos saliente a Internet
