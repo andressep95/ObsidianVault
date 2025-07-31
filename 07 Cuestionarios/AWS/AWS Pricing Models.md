@@ -236,7 +236,6 @@ En el modelo de precios de AWS, ¿qué aspecto de la transferencia de datos es g
 ---
 
 ### **Pregunta 9**
-
 Una empresa necesita cumplir con regulaciones estrictas que requieren aislamiento físico completo. ¿Qué opción de AWS es más apropiada?
 
 - [ ] A) Instancias On-Demand regulares
@@ -249,7 +248,6 @@ Una empresa necesita cumplir con regulaciones estrictas que requieren aislamient
 ---
 
 ### **Pregunta 10**
-
 Si quieres comprometerte a un gasto mínimo por hora durante 1-3 años pero mantener flexibilidad en los servicios utilizados, ¿qué opción eliges?
 
 - [ ] A) Reserved Instances Standard
@@ -262,7 +260,6 @@ Si quieres comprometerte a un gasto mínimo por hora durante 1-3 años pero mant
 ---
 
 ## ✅ Respuestas Correctas
-
 1. **C** - On-Demand para máxima flexibilidad inicial
 2. **B** - Reserved Instances para cargas predecibles 24/7
 3. **C** - Spot puede ser interrumpido con 2 min de aviso
