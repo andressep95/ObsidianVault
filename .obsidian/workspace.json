@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Pricing Models.md",
+                "file": "01 Indice General/MOC - AWS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AWS Pricing Models"
+              "title": "MOC - AWS"
             }
           }
         ]
@@ -181,12 +181,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2bc542c48209e390",
+  "active": "41de66d15d41cf36",
   "lastOpenFiles": [
-    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS IAM & AWS CLI - Identity and Access Management.md",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/Untitled",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Pricing Models.md",
-    "07 Cuestionarios/AWS/phase-1-iam.md",
     "01 Indice General/MOC - AWS.md",
+    "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS IAM & AWS CLI - Identity and Access Management.md",
+    "07 Cuestionarios/AWS/phase-1-iam.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Shared Responsibility Model.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Global Infrastructure.md",
     "02 Tecnologias/AWS - Solutions Architect Associate (SAA-C03)/AWS Well-Architected Framework.md",
