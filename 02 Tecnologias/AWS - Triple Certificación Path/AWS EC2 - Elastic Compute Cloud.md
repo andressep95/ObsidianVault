@@ -92,48 +92,290 @@ graph LR
 **M5, M6i, T3, T4g**
 
 - Balance entre compute, memoria y red
+- Ratio típico: 1 vCPU : 4 GB RAM
 - Ideal para aplicaciones web, microservicios
-- **Ejemplo**: Servidor web corporativo con tráfico moderado
+
+**Ejemplos Detallados:**
+
+1. **Servidor Web Corporativo** (t3.medium)
+    
+    - WordPress con 1,000 visitantes/día
+    - 2 vCPUs, 4 GB RAM
+    - Tráfico variable: picos durante horario laboral
+2. **API Gateway** (m5.large)
+    
+    - Microservicio REST para e-commerce
+    - 2 vCPUs, 8 GB RAM
+    - Maneja 500 requests/segundo promedio
+3. **Aplicación Móvil Backend** (t3.small)
+    
+    - Backend para app de delivery
+    - 2 vCPUs, 2 GB RAM
+    - Carga variable según horas de comida
+4. **CMS Empresarial** (m6i.xlarge)
+    
+    - Drupal para intranet corporativa
+    - 4 vCPUs, 16 GB RAM
+    - 500 empleados accediendo contenido
+
+**Comparación con otras familias:**
+
+- vs Compute: Menos CPU, más balance general
+- vs Memory: Menos RAM por CPU
+- vs Storage: Almacenamiento estándar EBS
 
 #### Compute Optimized (Optimizadas para Cómputo)
 
 **C5, C6i, C7g**
 
 - Alto rendimiento de procesador
+- Ratio típico: 1 vCPU : 2 GB RAM
 - Ideal para HPC, modelado científico, gaming
-- **Ejemplo**: Servidor de juegos online que requiere baja latencia
+
+**Ejemplos Detallados:**
+
+1. **Servidor Gaming Online** (c5.2xlarge)
+    
+    - Counter-Strike server
+    - 8 vCPUs, 16 GB RAM
+    - 64 jugadores simultáneos, <50ms latencia
+2. **Análisis Financiero** (c6i.4xlarge)
+    
+    - Modelos de riesgo Monte Carlo
+    - 16 vCPUs, 32 GB RAM
+    - Procesa millones de simulaciones/hora
+3. **Codificación de Video** (c5n.9xlarge)
+    
+    - Streaming platform transcoding
+    - 36 vCPUs, 96 GB RAM
+    - Convierte video 4K en tiempo real
+4. **Web Server Alto Tráfico** (c7g.large)
+    
+    - Nginx para sitio con 10M pageviews/mes
+    - 2 vCPUs, 4 GB RAM
+    - Sirve contenido estático ultra-rápido
+5. **Simulación Científica** (c5.18xlarge)
+    
+    - Dinámica de fluidos computacional
+    - 72 vCPUs, 144 GB RAM
+    - Clusters para investigación aeroespacial
+
+**Comparación con otras familias:**
+
+- vs General: +100% CPU performance, -50% RAM por CPU
+- vs Memory: +200% CPU, -75% RAM
+- vs GPU: CPU puro sin aceleración gráfica
 
 #### Memory Optimized (Optimizadas para Memoria)
 
 **R5, R6g, X1e, z1d**
 
 - Gran cantidad de RAM
+- Ratio típico: 1 vCPU : 8-24 GB RAM
 - Ideal para bases de datos en memoria, analytics
-- **Ejemplo**: Base de datos SAP HANA con datasets masivos
+
+**Ejemplos Detallados:**
+
+1. **Base de Datos SAP HANA** (x1e.8xlarge)
+    
+    - ERP enterprise con 10TB datos en memoria
+    - 32 vCPUs, 976 GB RAM
+    - Consultas complejas en <1 segundo
+2. **Redis Cluster** (r6g.2xlarge)
+    
+    - Cache distribuido para e-commerce
+    - 8 vCPUs, 64 GB RAM
+    - 1M+ operaciones por segundo
+3. **Apache Spark Analytics** (r5.4xlarge)
+    
+    - Análisis de big data en tiempo real
+    - 16 vCPUs, 128 GB RAM
+    - Procesa logs de 100GB/hora
+4. **In-Memory Database** (r6i.xlarge)
+    
+    - MemSQL para analytics financieros
+    - 4 vCPUs, 32 GB RAM
+    - Queries de trading en microsegundos
+5. **Elasticsearch Heavy** (r5.8xlarge)
+    
+    - Motor búsqueda con índices masivos
+    - 32 vCPUs, 256 GB RAM
+    - 100M documentos indexados
+
+**Comparación específica por sub-familia:**
+
+- **R5**: Balance precio-performance
+- **R6g**: ARM Graviton2, 40% mejor precio-performance
+- **X1e**: Hasta 3,904 GB RAM, casos extremos
+- **z1d**: NVMe SSD local + alta memoria
 
 #### Storage Optimized (Optimizadas para Almacenamiento)
 
-**I3, D3, H1**
+**I3, I4i, D3, H1**
 
 - Alto rendimiento de E/O secuencial
+- NVMe SSD local o HDD optimizado
 - Ideal para sistemas distribuidos, data warehousing
-- **Ejemplo**: Cluster Elasticsearch para búsquedas en tiempo real
+
+**Ejemplos Detallados:**
+
+1. **Cluster Elasticsearch** (i3.2xlarge)
+    
+    - Búsquedas en logs de aplicaciones
+    - 8 vCPUs, 61 GB RAM, 1.9TB NVMe SSD
+    - 3.3M IOPS random read
+2. **Cassandra NoSQL** (i3.4xlarge)
+    
+    - Base de datos distribuida IoT
+    - 16 vCPUs, 122 GB RAM, 2x1.9TB NVMe
+    - Ingesta 100K escrituras/segundo
+3. **HDFS DataNode** (d3.2xlarge)
+    
+    - Hadoop cluster para big data
+    - 8 vCPUs, 32 GB RAM, 6TB HDD
+    - Almacena petabytes distribuidos
+4. **Data Warehousing** (i4i.8xlarge)
+    
+    - Vertica analytical database
+    - 32 vCPUs, 256 GB RAM, 2x3.75TB NVMe
+    - Consultas sobre terabytes en segundos
+5. **MapR Cluster** (h1.8xlarge)
+    
+    - Distributed file system
+    - 32 vCPUs, 128 GB RAM, 8x2TB HDD
+    - Throughput secuencial 2.5GB/s
+
+**Comparación por tipo de storage:**
+
+- **I3/I4i**: NVMe SSD, IOPS altísimos, baja latencia
+- **D3**: HDD denso, throughput alto, costo eficiente
+- **H1**: HDD, throughput extremo para sequential workloads
 
 #### Accelerated Computing (Cómputo Acelerado)
 
-**P4, G4, F1, Inf1**
+**P4, G4, F1, Inf1, Trn1**
 
 - GPU, FPGA, o chips especializados
+- Aceleración masiva para cargas específicas
 - Ideal para ML, renderizado, criptomonedas
-- **Ejemplo**: Entrenamiento de modelos de deep learning
 
-### Instancias Burstable (T3, T4g)
+**Ejemplos Detallados:**
 
-- **CPU Credits**: Sistema de créditos para manejar ráfagas de uso
-- **Baseline Performance**: Rendimiento base garantizado (10-40% CPU)
-- **Burst**: Puede usar hasta 100% CPU consumiendo créditos
+**Machine Learning (P4, P5):**
 
-**Escenario Real**: Blog personal que normalmente usa 5% CPU, pero puede necesitar 100% durante viral posts.
+1. **Entrenamiento GPT** (p4d.24xlarge)
+    
+    - Modelo de lenguaje con 175B parámetros
+    - 96 vCPUs, 1,152 GB RAM, 8x A100 GPUs
+    - Entrena en semanas vs años en CPU
+2. **Computer Vision** (p3.8xlarge)
+    
+    - Reconocimiento facial en tiempo real
+    - 32 vCPUs, 244 GB RAM, 4x V100 GPUs
+    - Procesa 1,000 imágenes/segundo
+
+**Graphics Workstation (G4, G5):** 3. **Renderizado 3D** (g4dn.8xlarge)
+
+- Estudio animación Pixar-style
+- 32 vCPUs, 128 GB RAM, T4 GPU
+- Renderiza frames 4K en minutos
+
+4. **Gaming en la Nube** (g5.2xlarge)
+    - Stream gaming como GeForce Now
+    - 8 vCPUs, 32 GB RAM, A10G GPU
+    - 60fps 1080p con latencia <20ms
+
+**AI Inference (Inf1, Inf2):** 5. **Recomendaciones en Tiempo Real** (inf1.2xlarge)
+
+- Amazon-style product recommendations
+- 8 vCPUs, 16 GB RAM, Inferentia chip
+- 1M+ inferencias por segundo
+
+**Custom Hardware (F1):** 6. **Aceleración Financiera** (f1.2xlarge)
+
+- Trading algorítmico high-frequency
+- 8 vCPUs, 122 GB RAM, Xilinx FPGA
+- Latencia <10 microsegundos
+
+**Comparación GPU vs CPU:**
+
+- **Cómputo paralelo**: GPU 100x más rápido
+- **Costo**: GPU más caro por hora, pero termina trabajos más rápido
+- **Especialización**: GPU optimizado para cargas específicas
+
+### Instancias Burstable (T3, T4g) - Análisis Profundo
+
+#### Mecánica de CPU Credits
+
+- **Baseline Performance**:
+    
+    - t3.nano: 5% CPU constante
+    - t3.micro: 10% CPU constante
+    - t3.small: 20% CPU constante
+    - t3.medium: 20% CPU constante
+    - t3.large: 30% CPU constante
+- **CPU Credits**:
+    
+    - 1 crédito = 1 vCPU al 100% por 1 minuto
+    - Se acumulan cuando uso < baseline
+    - Se consumen cuando uso > baseline
+
+#### Escenarios Reales Detallados:
+
+**Escenario 1: Blog WordPress** (t3.micro)
+
+- **Tráfico normal**: 100 visitantes/día (5% CPU)
+- **Viral post**: 10,000 visitantes en 2 horas (80% CPU)
+- **Análisis**: Acumula créditos 22 horas/día, los consume durante viral
+- **Resultado**: Maneja picos sin degradación
+
+**Escenario 2: API de Startup** (t3.small)
+
+- **Horario laboral**: 200 requests/min (40% CPU)
+- **Horario nocturno**: 10 requests/min (5% CPU)
+- **Picos**: Deploy o campañas marketing (90% CPU)
+- **Análisis**: Balance perfecto entre acumulación y consumo
+
+**Escenario 3: Ambiente Desarrollo** (t3.medium)
+
+- **Desarrollo activo**: 8am-6pm (60% CPU promedio)
+- **Noches/fines**: Idle (2% CPU)
+- **Compilaciones**: Burst a 100% CPU por 10-15 minutos
+- **Análisis**: Acumula créditos suficientes para builds pesados
+
+**Escenario 4: Microservicio** (t4g.large)
+
+- **Carga base**: 15% CPU constante
+- **Picos tráfico**: Black Friday, 200% aumento por 6 horas
+- **Baseline**: 30% CPU
+- **Análisis**: ARM Graviton2 da 20% mejor price-performance
+
+#### Comparación T3 vs T4g:
+
+|Aspecto|T3 (Intel)|T4g (ARM Graviton2)|
+|---|---|---|
+|Arquitectura|x86_64|arm64|
+|Performance/$|Baseline|+20% mejor|
+|Compatibilidad|Universal|Requiere ARM binaries|
+|Network|Hasta 5 Gbps|Hasta 5 Gbps|
+|Casos ideales|Apps legacy|Apps cloud-native|
+
+#### Cuándo NO usar Burstable:
+
+1. **CPU constante >40%**: Mejor instancia dedicada
+2. **Aplicaciones críticas**: Sin predictibilidad de performance
+3. **Batch processing**: Necesita CPU sostenido
+4. **Gaming servers**: Requiere performance constante
+
+#### Monitoreo CPU Credits:
+
+```bash
+# CloudWatch metrics clave:
+- CPUCreditUsage: Créditos consumidos
+- CPUCreditBalance: Créditos acumulados  
+- CPUUtilization: Uso actual CPU
+- CPUSurplusCreditBalance: Créditos prestados (cobro extra)
+```
 
 ---
 
