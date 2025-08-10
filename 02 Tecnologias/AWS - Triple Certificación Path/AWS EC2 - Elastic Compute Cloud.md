@@ -858,5 +858,3 @@ Este enlace te llevará a un cuestionario interactivo donde podrás:
 - Simular la experiencia del examen oficial
 
 ---
-
-_Esta guía cubre todos los aspectos de EC2 necesarios para aprobar la certificación AWS Cloud Practitioner. Estudia cada sección, practica con el cuestionario, y estarás bien preparado para el examen._
