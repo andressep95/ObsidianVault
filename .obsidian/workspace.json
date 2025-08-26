@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/main.tf.md",
+                "file": "03 Labs/AWS/phase-2-core-services/lab-02-iam/01 - Gestión de Identidades y Acceso.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "main.tf"
+              "title": "01 - Gestión de Identidades y Acceso"
             }
           }
         ]
@@ -183,6 +183,10 @@
   },
   "active": "35bf04e9be582c69",
   "lastOpenFiles": [
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/version.tf.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/terraform.tfvars.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/data.tf.md",
+    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/main.tf.md",
     "03 Labs/AWS/phase-2-core-services/lab-02-iam/01 - Gestión de Identidades y Acceso.md",
     "01 Indice General/MOC - Terraform.md",
     "07 Cuestionarios/AWS/phase-1-iam.md",
@@ -204,11 +208,7 @@
     "Untitled.canvas",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/locals.tf.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/output.tf.md",
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/data.tf.md",
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/terraform.tfvars.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/variables.tf.md",
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/version.tf.md",
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/main.tf.md",
     "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs",
     "03 Labs/AWS/phase-1-fundamentals",
     "03 Labs/AWS",
