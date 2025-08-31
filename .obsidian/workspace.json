@@ -180,6 +180,7 @@
   },
   "active": "41de66d15d41cf36",
   "lastOpenFiles": [
+    "05 Templates/Concepto General.md",
     "05 Templates",
     "04 Recursos de Estudio/Cheatsheets",
     "04 Recursos de Estudio/CheatSsheets",
@@ -190,7 +191,6 @@
     "Recursos de Estudio",
     "03 Labs/kubernetes",
     "03 Labs/AWS/solution-architect-labs",
-    "03 Labs/AWS/developer-associate-labs",
     "03 Labs/AWS/cloud-practicioner-labs/lab-02-iam/01 - Gestión de Identidades y Acceso.md",
     "03 Labs/AWS/cloud-practicioner-labs/lab-01-regions-azs/version.tf.md",
     "03 Labs/AWS/cloud-practicioner-labs/lab-01-regions-azs/variables.tf.md",
