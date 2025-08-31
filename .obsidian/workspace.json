@@ -180,6 +180,15 @@
   },
   "active": "41de66d15d41cf36",
   "lastOpenFiles": [
+    "02 Conceptos/AWS/Cloud Practicioner/Global Infrastructure.md",
+    "02 Conceptos/AWS - Triple Certificación Path/Global Infrastructure.md",
+    "02 Conceptos/AWS/Cloud Practicioner/Pricing Models.md",
+    "02 Conceptos/AWS - Triple Certificación Path/Pricing Models.md",
+    "02 Conceptos/AWS/Cloud Practicioner/Shared Responsibility Model.md",
+    "02 Conceptos/AWS - Triple Certificación Path/Shared Responsibility Model.md",
+    "02 Conceptos/AWS/Cloud Practicioner/Well-Architected Framework.md",
+    "02 Conceptos/AWS - Triple Certificación Path/Well-Architected Framework.md",
+    "02 Conceptos/AWS/Cloud Practicioner/EC2 - Elastic Compute Cloud.md",
     "02 Conceptos/AWS - Triple Certificación Path/EC2 - Elastic Compute Cloud.md",
     "02 Conceptos/AWS/Solution Architect",
     "02 Conceptos/AWS/Developer Associate",
@@ -207,15 +216,6 @@
     "01 Indice (Map Of Content)/MOC - Terraform.md",
     "01 Indice (Map Of Content)/MOC - Desarrollo de Software.md",
     "01 Indice (Map Of Content)/MOC - AWS.md",
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/locals.tf.md",
-    "01 Indice General/MOC - AWS.md",
-    "Amazon VPC.md",
-    "02 Tecnologias/AWS - Triple Certificación Path/AWS Global Infrastructure.md",
-    "02 Tecnologias/AWS - Triple Certificación Path/AWS API Gateway.md",
-    "02 Tecnologias/AWS - Triple Certificación Path/AWS EC2 - Elastic Compute Cloud.md",
-    "02 Tecnologias/AWS - Triple Certificación Path/AWS Well-Architected Framework.md",
-    "03 Labs/AWS/phase-2-core-services/lab-02-iam/01 - Gestión de Identidades y Acceso.md",
-    "03 Labs/AWS/phase-1-fundamentals/lab-01-regions-azs/version.tf.md",
     "Untitled.canvas"
   ]
 }
