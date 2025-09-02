@@ -1,3 +1,8 @@
+---
+tags: [moc, aws, cloud, infraestructura]
+aliases: [Amazon Web Services, AWS Index]
+---
+
 # ☁️ Plan de Estudios - AWS Triple Certificación Path
 
 > **🎯 Objetivo:** Obtener las certificaciones AWS Cloud Practitioner (CLF-C02), Developer Associate (DVA-C02) y Solutions Architect Associate (SAA-C03) en 6-7 meses
@@ -55,19 +60,19 @@ graph TD
 
 ### 🌐 AWS Global Infrastructure
 
-- [x] [AWS Global Infrastructure](https://www.google.com/search?q=02%2520Conceptos/AWS/Basics/Global%2520Infrastructure.md)
+- [x] [[AWS Global Infrastructure]]
 
 ### 🏗️ AWS Well-Architected Framework
 
-- [x] [AWS Well-Architected Framework](https://www.google.com/search?q=02%2520Conceptos/AWS/Basics/Well-Architected%2520Framework.md)
+- [x] [[AWS Well-Architected Framework]]
 
 ### 🔒 AWS Shared Responsibility Model
 
-- [x] [AWS Shared Responsibility Model](https://www.google.com/search?q=02%2520Conceptos/AWS/Basics/Shared%2520Responsibility%2520Model.md)
+- [x] [[AWS Shared Responsibility Model]]
 
 ### 💰 AWS Pricing and Billing
 
-- [ ] [AWS Pricing Models](https://www.google.com/search?q=02%2520Conceptos/AWS/Basics/Pricing%2520Models.md)
+- [ ] [[AWS Pricing Models]]
 - [ ] [[AWS Support Plans]]
 - [ ] [[AWS Cost Explorer]]
 - [ ] [[AWS Budgets and Cost Management]]
@@ -76,7 +81,7 @@ graph TD
 
 #### Compute Services
 
-- [ ] [AWS EC2 - Elastic Compute Cloud](https://www.google.com/search?q=02%2520Conceptos/AWS/Cloud%2520Practicioner/Compute%2520Services/EC2%2520-%2520Elastic%2520Compute%2520Cloud.md)
+- [ ] [[AWS EC2 - Elastic Compute Cloud]]
 - [ ] [[AWS Lambda - Serverless Computing]]
 - [ ] [[AWS Elastic Beanstalk]]
 - [ ] [[Amazon ECS - Elastic Container Service]]
@@ -105,7 +110,7 @@ graph TD
 
 ### 🛡️ Security and Identity Services
 
-- [x] [AWS IAM - Identity and Access Management](https://www.google.com/search?q=02%2520Conceptos/AWS/Cloud%2520Practicioner/Security%2520And%2520identify%2520Services/AWS%2520IAM%2520-%2520Identity%2520and%2520Access%2520Management.md)
+- [x] [[AWS IAM - Identity and Access Management]]
 - [ ] [[AWS CloudTrail]]
 - [ ] [[AWS Config]]
 - [ ] [[Amazon Inspector]]
@@ -152,9 +157,9 @@ graph TD
 
 ### 🎯 Resultados Simulacros CLF-C02
 
-- [ ] Simulacro 1: \_\_\_% (Objetivo: \>80%)
-- [ ] Simulacro 2: \_\_\_% (Objetivo: \>85%)
-- [ ] Simulacro 3: \_\_\_% (Objetivo: \>90%)
+- [ ] Simulacro 1: \_\_\_% (Objetivo: >80%)
+- [ ] Simulacro 2: \_\_\_% (Objetivo: >85%)
+- [ ] Simulacro 3: \_\_\_% (Objetivo: >90%)
 
 **🏆 EXAMEN CLOUD PRACTITIONER (CLF-C02) - Semana 4**
 
@@ -292,9 +297,9 @@ graph TD
 
 ### 🎯 Resultados Simulacros DVA-C02
 
-- [ ] Simulacro 1: \_\_\_% (Objetivo: \>75%)
-- [ ] Simulacro 2: \_\_\_% (Objetivo: \>80%)
-- [ ] Simulacro 3: \_\_\_% (Objetivo: \>85%)
+- [ ] Simulacro 1: \_\_\_% (Objetivo: >75%)
+- [ ] Simulacro 2: \_\_\_% (Objetivo: >80%)
+- [ ] Simulacro 3: \_\_\_% (Objetivo: >85%)
 
 **🏆 EXAMEN DEVELOPER ASSOCIATE (DVA-C02) - Semana 11**
 
@@ -430,9 +435,9 @@ graph TD
 
 ### 🎯 Resultados Simulacros SAA-C03
 
-- [ ] Simulacro 1: \_\_\_% (Objetivo: \>75%)
-- [ ] Simulacro 2: \_\_\_% (Objetivo: \>80%)
-- [ ] Simulacro 3: \_\_\_% (Objetivo: \>85%)
+- [ ] Simulacro 1: \_\_\_% (Objetivo: >75%)
+- [ ] Simulacro 2: \_\_\_% (Objetivo: >80%)
+- [ ] Simulacro 3: \_\_\_% (Objetivo: >85%)
 
 ### ✅ Checklist Final Pre-Examen
 
@@ -441,7 +446,7 @@ graph TD
 - [ ] Conozco límites y quotas de todos los servicios
 - [ ] Puedo diseñar para cualquier caso de uso
 - [ ] Manejo troubleshooting avanzado
-- [ ] Promedio \>85% en simulacros
+- [ ] Promedio >85% en simulacros
 
 **🏆 EXAMEN SOLUTIONS ARCHITECT ASSOCIATE (SAA-C03) - Semana 18**
 
