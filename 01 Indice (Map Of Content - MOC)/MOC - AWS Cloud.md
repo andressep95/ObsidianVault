@@ -81,9 +81,9 @@ graph TD
 
 #### Compute Services
 
-- [ ] [[AWS EC2 - Elastic Compute Cloud]]
-- [ ] [[AWS Lambda - Serverless Computing]]
-- [ ] [[AWS Elastic Beanstalk]]
+- [ ] [[EC2 - Elastic Compute Cloud]]
+- [ ] [[Lambda - Serverless Computing]]
+- [ ] [[Elastic Beanstalk]]
 - [ ] [[Amazon ECS - Elastic Container Service]]
 - [ ] [[AWS Fargate]]
 
