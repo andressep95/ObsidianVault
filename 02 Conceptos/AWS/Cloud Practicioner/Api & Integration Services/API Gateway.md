@@ -2,171 +2,253 @@
 
 ## 🧠 Descripción General
 
-Amazon API Gateway es un servicio completamente administrado de AWS que permite a los desarrolladores crear, publicar, mantener, monitorear y asegurar APIs REST, HTTP y WebSocket a cualquier escala. Actúa como una "puerta frontal" para que las aplicaciones accedan a datos, lógica de negocio o funcionalidad desde servicios backend como workloads en EC2, código en AWS Lambda, aplicaciones web o aplicaciones de comunicación en tiempo real.
-
-API Gateway forma parte integral de la infraestructura serverless de AWS y maneja todas las tareas involucradas en aceptar y procesar hasta cientos de miles de llamadas API concurrentes, incluyendo gestión de tráfico, autorización y control de acceso, monitoreo y gestión de versiones de API.
+Amazon API Gateway es un servicio completamente administrado que actúa como puerta de entrada para aplicaciones que acceden a servicios backend. Maneja el tráfico API, autorización, monitoreo y control de versiones, permitiendo crear, publicar y mantener APIs seguras a cualquier escala. Es fundamental en arquitecturas serverless y microservicios, integrándose estrechamente con Lambda, VPC endpoints, CloudFront y servicios de autenticación.
 
 ---
 
 ## 🛠️ Configuraciones y Buenas Prácticas
 
-### **Tipos de API**
+### **1. Selección y Configuración de Tipo de API**
 
-- **REST APIs:** Soporte completo de funciones con claves API, throttling por cliente, validación de requests, integración con AWS WAF
-- **HTTP APIs:** Diseñadas con funciones mínimas para ofrecer menor precio, ideales para proxies simples de Lambda
-- **WebSocket APIs:** Para comunicación bidireccional y en tiempo real entre cliente y servidor
+- **REST API:** Para funcionalidades completas (caching, API keys, WAF, request validation)
+- **HTTP API:** Para casos simples con 70% menos costo, mejor performance para Lambda proxy
+- **WebSocket API:** Para comunicación bidireccional en tiempo real
 
-### **Tipos de Endpoints**
+### **2. Configuración de Endpoints**
 
-- **Edge-Optimized:** Enruta requests al CloudFront POP más cercano (por defecto para REST APIs)
-- **Regional:** Para clientes en la misma región, reduce overhead de conexión
-- **Private:** Accesible solo desde VPC usando VPC endpoints
+- **Edge-Optimized:** Para audiencias globales distribuidas (usa CloudFront automáticamente)
+- **Regional:** Para audiencias concentradas en una región específica (menor latencia)
+- **Private:** Para tráfico interno VPC únicamente (requiere VPC endpoints)
 
-### **Configuraciones de Seguridad**
+### **3. Configuración de Seguridad (Orden de Implementación)**
 
-- **Implementar Principio de Menor Privilegio:** Usar políticas IAM para controlar acceso granular
-- **Autenticación Mutua TLS:** Disponible para REST y HTTP APIs
-- **Integración con AWS WAF:** Solo para REST APIs, protege contra exploits web comunes
-- **Lambda Authorizers:** Funciones personalizadas de autorización para validación compleja
-- **Amazon Cognito:** Integración con pools de usuarios para autenticación
+- **Resource Policies:** Control de acceso a nivel de API (IP whitelisting, VPC restrictions)
+- **Authentication:** IAM, Cognito User Pools, Lambda Authorizers, o JWT (HTTP API)
+- **Authorization:** Method-level permissions y resource-based access control
+- **CORS:** Configurar origins, methods, headers permitidos para aplicaciones web
+- **API Keys + Usage Plans:** Control de acceso y throttling por cliente
+- **AWS WAF Integration:** Protección contra ataques web (solo REST API)
+- **Mutual TLS:** Para autenticación bidireccional en conexiones sensibles
 
-### **Mejores Prácticas de Logging y Monitoreo**
+### **4. Configuración de Performance**
 
-- **Habilitar CloudWatch Logs:** Para requests de API con niveles INFO y ERROR
-- **Configurar CloudTrail:** Registro de acciones realizadas por usuarios, roles o servicios
-- **Implementar CloudWatch Alarms:** Monitoreo de métricas como latencia, errores 4XX/5XX
-- **Usar AWS X-Ray:** Para análisis de rendimiento y triaging de latencias
-- **AWS Config:** Monitoreo de configuraciones de recursos API Gateway
+- **Throttling Settings:**
+    - Account-level: 10,000 RPS con burst de 5,000 (ajustable)
+    - Stage-level: Límites por ambiente
+    - Method-level: Límites granulares por endpoint
+    - Usage Plan-level: Límites por cliente/API key
+- **Caching Configuration:** (Solo REST API)
+    - Cache size: 0.5GB a 237GB
+    - TTL: 0 segundos a 3600 segundos
+    - Cache key parameters: Query strings, headers, path parameters
+- **Request/Response Optimization:**
+    - Request validation: Validar antes de llegar al backend
+    - Response compression: Habilitar para payloads grandes
+    - Request transformation: Mapping templates para modificar requests
 
-### **Configuraciones de Rendimiento**
+### **5. Configuración de Integración**
 
-- **Caching:** Solo disponible en REST APIs, mejora rendimiento reduciendo llamadas backend
-- **Throttling:** Control de rate limiting a nivel de stage, método y usage plan
-- **Request Validation:** Validación de payloads antes de enviar al backend (REST APIs)
-- **Data Transformation:** Transformación de request/response usando mapping templates
+- **Integration Types:**
+    - Lambda Proxy: Para funciones Lambda (recomendado)
+    - Lambda Integration: Para control granular de request/response
+    - HTTP Proxy: Para servicios HTTP existentes
+    - HTTP Integration: Con transformaciones personalizadas
+    - AWS Service: Integración directa con servicios AWS
+    - Mock Integration: Para testing y development
+- **Connection Types:**
+    - Internet: Para endpoints públicos
+    - VPC Link: Para servicios privados en VPC
+- **Timeout Configuration:**
+    - Integration timeout: Máximo 29 segundos
+    - Custom timeout: Basado en requirements del backend
 
-### **Gestión de Deployments**
+### **6. Configuración de Logging y Monitoreo**
 
-- **Stages:** Ambientes lógicos como dev, test, prod con configuraciones independientes
-- **Canary Deployments:** Deployments graduales para rollout seguro de cambios (REST APIs)
-- **Stage Variables:** Variables de entorno para diferentes stages
-- **Custom Domain Names:** Dominios personalizados con certificados SSL/TLS
+- **CloudWatch Logs:**
+    - Access Logging: Log format personalizado con variables contextuales
+    - Execution Logging: INFO/ERROR levels para debugging
+- **CloudWatch Metrics:**
+    - Default metrics: Count, Latency, IntegrationLatency, 4XXError, 5XXError
+    - Custom metrics: Usando stage variables y mapping templates
+- **AWS X-Ray:**
+    - Tracing habilitado a nivel de stage
+    - Sampling rules personalizadas
+- **CloudWatch Alarms:**
+    - Error rate thresholds
+    - Latency thresholds
+    - Traffic anomalies
+
+### **7. Configuración de Deployment**
+
+- **Stage Management:**
+    - Stage variables para configuración por ambiente
+    - Deployment history y rollback capability
+    - Canary deployments para production (solo REST API)
+- **Custom Domain Names:**
+    - ACM certificate management
+    - DNS configuration con Route 53
+    - Base path mappings para múltiples APIs
+- **API Documentation:**
+    - OpenAPI/Swagger specification
+    - Documentation parts para cada método
+    - SDK generation configuration
+
+### **8. Configuración de Data Transformation**
+
+- **Request Mapping:**
+    - Header mapping: Request headers a integration headers
+    - Parameter mapping: Query/path parameters
+    - Body transformation: JSON to XML, field mapping
+- **Response Mapping:**
+    - Status code mapping
+    - Header transformation
+    - Response body modification
+- **Variables de Contexto Disponibles:**
+    - $context.requestId, $context.stage, $context.httpMethod
+    - $context.sourceIp, $context.userAgent
+    - $context.authorizer.* para Lambda authorizers
 
 ---
 
 ## 📂 Casos de Uso
 
-### **Caso de Uso 1: API Serverless con Lambda**
+### **Caso de Uso 1: API Pública para Aplicación Móvil**
 
-Crear una API completamente serverless integrando API Gateway con Lambda functions. Ideal para microservicios, procesamiento de datos y backends de aplicaciones móviles.
+- **Configuración:** HTTP API con JWT authorizer, CORS habilitado, CloudFront distribution
+- **Razón:** Menor costo, alta performance, autenticación estándar
+- **Consideraciones:** Rate limiting por usuario, response caching con CloudFront
 
-- **Escenario:** E-commerce con funciones para gestión de productos, pedidos y usuarios
-- **Configuración:** HTTP API con integración Lambda proxy para menor latencia y costo
+### **Caso de Uso 2: API de Microservicios Internos**
 
-### **Caso de Uso 2: API Gateway como Proxy para Servicios Legacy**
+- **Configuración:** Private REST API con VPC endpoints, IAM authentication
+- **Razón:** Seguridad interna, control granular de acceso, auditoría completa
+- **Consideraciones:** Network Load Balancer para alta disponibilidad, service mesh integration
 
-Modernizar aplicaciones legacy exponiendo servicios existentes a través de API Gateway, agregando seguridad, throttling y monitoreo.
+### **Caso de Uso 3: Legacy System Modernization**
 
-- **Escenario:** Sistema bancario con servicios SOAP legacy expuestos como REST APIs
-- **Configuración:** REST API con HTTP proxy integration y transformación de datos
+- **Configuración:** REST API con HTTP integration, extensive mapping templates
+- **Razón:** Transformación de protocolos, validación de requests, throttling control
+- **Consideraciones:** Circuit breaker patterns, gradual migration strategy
 
-### **Caso de Uso 3: APIs en Tiempo Real con WebSocket**
+### **Caso de Uso 4: Partner API con SLA**
 
-Implementar funcionalidades de chat, notificaciones push, actualizaciones en vivo y gaming.
+- **Configuración:** REST API con API keys, usage plans, dedicated caching
+- **Razón:** Revenue model, SLA enforcement, detailed analytics
+- **Consideraciones:** Multi-tier pricing, overage policies, partner onboarding
 
-- **Escenario:** Aplicación de trading con precios en tiempo real
-- **Configuración:** WebSocket API con routes para connect, disconnect y sendmessage
+### **Ejemplo Práctico: Checklist de Configuración Óptima**
 
-### **Caso de Uso 4: APIs Privadas para Arquitecturas Internas**
-
-APIs accesibles solo desde VPC para comunicación segura entre servicios internos.
-
-- **Escenario:** Microservicios en contenedores que se comunican internamente
-- **Configuración:** Private REST API con VPC endpoints y resource policies
-
-### **Ejemplo Práctico: Configuración REST API con Lambda**
-
-```json
-{
-  "swagger": "2.0",
-  "info": {
-    "title": "Example API",
-    "version": "1.0.0"
-  },
-  "paths": {
-    "/users": {
-      "get": {
-        "x-amazon-apigateway-integration": {
-          "type": "aws_proxy",
-          "httpMethod": "POST",
-          "uri": "arn:aws:lambda:us-east-1:123456789012:function:GetUsers"
-        }
-      }
-    }
-  }
-}
+```
+□ Seleccionar tipo de API basado en requirements
+□ Configurar endpoint type según audiencia geográfica
+□ Implementar resource policy para control de acceso básico
+□ Configurar authentication method apropiado
+□ Establecer CORS para aplicaciones web
+□ Configurar throttling a nivel account, stage y method
+□ Habilitar caching si aplica (REST API)
+□ Configurar integration type y timeout
+□ Establecer logging detallado para troubleshooting
+□ Configurar monitoring y alertas proactivas
+□ Implementar custom domain con certificado válido
+□ Documentar API con OpenAPI specification
+□ Configurar deployment stages y variables
+□ Realizar testing de performance y security
+□ Configurar backup y disaster recovery
 ```
 
 ---
 
 ## 🔗 Relaciones con Otros Conceptos
 
-- [[💡 AWS Lambda]] - Integración principal para APIs serverless
+- [[💡 AWS Lambda]] - Backend serverless principal para APIs
 - [[💡 Amazon CloudFront]] - CDN para edge-optimized endpoints
-- [[💡 AWS WAF]] - Protección de aplicaciones web para REST APIs
-- [[💡 Amazon Cognito]] - Servicios de autenticación y autorización
-- [[💡 AWS X-Ray]] - Distributed tracing y análisis de performance
-- [[💡 Amazon CloudWatch]] - Monitoreo y logging de APIs
 - [[💡 AWS Certificate Manager]] - Gestión de certificados SSL/TLS
-- [[💡 Amazon VPC]] - Redes virtuales para private APIs
-- [[💡 AWS IAM]] - Gestión de identidades y permisos
-- [[🧪 Lab - Crear REST API con Lambda Integration]]
-- [[🧪 Lab - Implementar WebSocket API para Chat]]
-- [[🧪 Lab - Configurar API Gateway con Custom Authorizer]]
+- [[💡 Amazon Cognito]] - User pools para autenticación OAuth/OIDC
+- [[💡 AWS WAF]] - Web application firewall para REST APIs
+- [[💡 AWS X-Ray]] - Distributed tracing para performance analysis
+- [[💡 Amazon CloudWatch]] - Logging, metrics y monitoring
+- [[💡 AWS IAM]] - Identity and access management
+- [[💡 Amazon VPC]] - Virtual private cloud para private APIs
+- [[💡 AWS Systems Manager]] - Parameter Store para configuraciones
+- [[🧪 Lab - REST API con Múltiples Ambientes]]
+- [[🧪 Lab - HTTP API con JWT Authentication]]
+- [[🧪 Lab - Private API con VPC Integration]]
 
 ---
 
 ## ➕ Información Adicional
 
-### **Límites y Quotas Importantes**
+### **Límites y Quotas Críticas**
 
-- **Throttle por defecto:** 10,000 requests por segundo con burst de 5,000
-- **Payload máximo:** 10MB para REST APIs, 6MB para HTTP APIs
-- **Timeout integration:** 29 segundos máximo
-- **Stages por API:** 10 stages por REST API
+- **Request Rate:** 10,000 RPS por región (ajustable hasta 5,000,000)
+- **Burst Capacity:** 5,000 requests (ajustable)
+- **Payload Size:** 10MB REST API, 6MB HTTP API
+- **Integration Timeout:** 29 segundos máximo
+- **Mapping Template Size:** 1MB máximo
+- **Stages per API:** 10 stages máximo
+- **Methods per Resource:** 200 métodos máximo
 
-### **Diferencias Clave REST vs HTTP APIs**
+### **Consideraciones de Costo**
 
-- **REST APIs:** Funciones completas, mayor costo, soporte para caching, API keys, WAF
-- **HTTP APIs:** Funciones básicas, menor costo (hasta 70% menos), mejor performance
-- **WebSocket APIs:** Comunicación bidireccional, stateful connections
+- **REST API:** $3.50 por millón de requests + features adicionales
+- **HTTP API:** $1.00 por millón de requests (70% ahorro)
+- **WebSocket API:** $1.00 por millón de messages + $0.25 por millón de connection minutes
+- **Caching:** $0.020 por hora por GB de cache
+- **Data Transfer:** $0.09 per GB out después de 1GB free tier
 
-### **Integración Types disponibles**
+### **Patrones de Configuración Avanzada**
 
-- **AWS Proxy Integration:** Para Lambda con formato de evento estándar
-- **HTTP Proxy Integration:** Pass-through a HTTP endpoints
-- **AWS Integration:** Integración directa con servicios AWS (DynamoDB, S3, etc.)
-- **Mock Integration:** Respuestas estáticas para testing
+- **Circuit Breaker:** Timeout cortos con retry logic en cliente
+- **Rate Limiting Jerárquico:** Account > Stage > Method > Usage Plan
+- **Cache Invalidation:** Invalidación selectiva por cache key patterns
+- **Blue/Green Deployments:** Canary deployments con stage variables
+- **Multi-Region:** Route 53 health checks con failover
 
-### **Consideraciones de Pricing**
+### **Troubleshooting Común**
 
-- **REST APIs:** Por millón de requests + costos adicionales por features
-- **HTTP APIs:** Hasta 70% menos costoso que REST APIs
-- **WebSocket APIs:** Por millón de mensajes + minutes conectados
-- **Data Transfer:** Cobros por data out adicionales
+- **429 Too Many Requests:** Revisar throttling settings y usage plans
+- **502 Bad Gateway:** Verificar integration timeout y backend health
+- **403 Forbidden:** Validar resource policies, CORS, authentication
+- **504 Gateway Timeout:** Aumentar integration timeout o optimizar backend
+- **CORS Errors:** Verificar preflight OPTIONS method configuration
 
-### **Notas Importantes para Certificaciones**
+### **Security Hardening Checklist**
 
-- **Architect Associate:** Enfocarse en tipos de endpoint, integración con Lambda, seguridad básica
-- **Developer Associate:** Profundizar en integration types, data transformation, deployment strategies
-- **Solutions Architect Professional:** Arquitecturas complejas, multi-región, disaster recovery, cost optimization
+```
+□ Resource policy restricts access por IP/VPC
+□ Authentication habilitada en todos los métodos
+□ HTTPS enforcement (redirect HTTP to HTTPS)
+□ API keys rotadas regularmente
+□ WAF rules configuradas para common attacks
+□ CloudTrail logging habilitado
+□ Sensitive data no expuesta en logs
+□ Rate limiting apropiado para prevenir abuse
+□ Input validation en todos los endpoints
+□ Least privilege en IAM roles
+```
+
+### **Performance Optimization Checklist**
+
+```
+□ HTTP API usado para simple Lambda proxy
+□ Regional endpoint para audiencia local
+□ Caching habilitado con TTL apropiado
+□ Request validation para rechazar requests inválidos temprano
+□ Response compression habilitada
+□ CloudFront distribution para contenido estático
+□ Lambda function timeout < API Gateway timeout
+□ Connection pooling en backend services
+□ Async processing para operaciones long-running
+□ Content-based routing para optimize backends
+```
 
 ### **Recursos Externos**
 
 - [Amazon API Gateway Documentation](https://docs.aws.amazon.com/apigateway/)
-- [API Gateway REST API vs HTTP API](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-vs-rest.html)
+- [API Gateway REST API vs HTTP API Comparison](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-vs-rest.html)
 - [Security Best Practices](https://docs.aws.amazon.com/apigateway/latest/developerguide/security-best-practices.html)
-- [AWS Well-Architected Framework - API Gateway](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/api-gateway.html)
+- [Performance Best Practices](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html)
+- [Cost Optimization Guide](https://aws.amazon.com/api-gateway/pricing/)
 
 ---
 
@@ -174,53 +256,52 @@ APIs accesibles solo desde VPC para comunicación segura entre servicios interno
 
 ### **Para Solutions Architect Associate:**
 
-1. **Recuerda las diferencias clave entre REST y HTTP APIs** - HTTP APIs son más económicas pero con menos funciones
-2. **Edge-optimized es el default para REST APIs** - Usa Regional para clientes en la misma región
-3. **Private APIs requieren VPC endpoints** - Solo accesibles desde within VPC
+1. **REST vs HTTP API decision matrix:** HTTP para simple Lambda proxy (costo), REST para features avanzadas
+2. **Endpoint types geographic considerations:** Edge para global, Regional para same-region clients
+3. **Authentication methods comparison:** IAM para AWS services, Cognito para users, Lambda authorizer para custom logic
 
 ### **Para Developer Associate:**
 
-1. **Lambda Proxy Integration pasa todo el request context** - Incluye headers, query params, body en el evento
-2. **Stage variables actúan como environment variables** - Útiles para diferentes ambientes (dev/prod)
-3. **Request validation ocurre antes del backend call** - Reduce costos validando en API Gateway
+1. **Integration timeout es 29 segundos máximo** - Diseñar para async patterns si necesitas más tiempo
+2. **Caching solo disponible en REST APIs** - Factor clave en decisiones de arquitectura
+3. **CORS debe configurarse explícitamente** - No está habilitado por defecto
 
 ### **Para Solutions Architect Professional:**
 
-1. **Custom domain names requieren certificados en ACM** - Edge-optimized usa us-east-1, Regional usa región local
-2. **Canary deployments permiten rollouts graduales** - Divide tráfico entre versiones base y canary
-3. **Resource policies controlan acceso a nivel de API** - Combinan con IAM policies para control granular
+1. **Private APIs requieren VPC endpoints específicos** - Planificar networking apropiadamente
+2. **Canary deployments solo en REST APIs** - Considerar alternativas para HTTP APIs
+3. **Multi-region requires Route 53 health checks** - API Gateway no tiene automatic failover
 
 ---
 
 ## 📝 Preguntas de Práctica
 
-**1.** Una empresa necesita exponer una REST API que debe ser accesible solo desde su VPC corporativa y rechazar todo el tráfico de internet. ¿Cuál es la configuración más apropiada?
+**1.** Una empresa necesita una API que maneje 50,000 RPS con autenticación JWT, CORS, y el menor costo posible. ¿Cuál es la configuración óptima?
 
-A) Edge-optimized endpoint con AWS WAF rules B) Regional endpoint con security groups restrictivos  
-C) Private endpoint con VPC endpoint y resource policy D) Regional endpoint con Lambda authorizer
+A) REST API con Lambda authorizer y edge-optimized endpoint B) HTTP API con JWT authorizer y regional endpoint C) WebSocket API con custom authorizer D) REST API con Cognito authorizer y private endpoint
 
-**2.** Un desarrollador necesita crear una API que maneje hasta 50,000 requests por segundo con el menor costo posible, integrándose únicamente con Lambda functions. ¿Qué tipo de API debería usar?
+**2.** Para una aplicación que requiere 45 segundos de processing time, ¿cuál es la mejor architectural approach con API Gateway?
 
-A) REST API con Lambda integration B) HTTP API con Lambda proxy integration C) WebSocket API con Lambda integration D) REST API con AWS proxy integration
+A) Aumentar integration timeout a 45 segundos B) Usar async processing con SQS y polling endpoint C) Implementar WebSocket para long-running connections D) Usar Lambda con extended timeout
 
-**3.** Una aplicación requiere autenticación JWT, transformación de requests, caching de respuestas y throttling por cliente. ¿Cuál es la mejor opción?
+**3.** Una API privada debe ser accesible solo desde EC2 instances en subnets específicas. ¿Qué configuración de seguridad es necesaria?
 
-A) HTTP API con JWT authorizer y CloudFront B) REST API con Lambda authorizer y caching habilitado C) WebSocket API con custom authorizer D) REST API con Cognito authorizer y usage plans
+A) Security groups en API Gateway B) Private endpoint con VPC endpoint y resource policy C) WAF rules con IP restrictions D) Lambda authorizer con subnet validation
 
-**4.** Para un deployment de API Gateway que requiere rollback inmediato en caso de issues, ¿cuál es la estrategia más apropiada?
+**4.** Para minimizar latencia en una aplicación móvil global con backend en us-east-1, ¿cuál es la configuración óptima?
 
-A) Blue/Green deployment con Route 53 weighted routing B) Canary deployment con 10% de tráfico inicialmente C) Rolling deployment con CloudFormation D) All-at-once deployment con stage variables
+A) Regional API Gateway con CloudFront distribution B) Edge-optimized API Gateway únicamente C) Private API Gateway con global accelerator D) Multiple regional API Gateways con Route 53
 
-**5.** Una empresa necesita integrar API Gateway con un servicio interno que requiere certificados client-side SSL. ¿Qué configuración es necesaria?
+**5.** Una API requiere diferentes rate limits: 100 RPS para free tier, 1000 RPS para paid tier. ¿Cómo configurar esto?
 
-A) Mutual TLS en REST API con custom domain B) Client-side SSL certificates en REST API integration C) VPC endpoint con security groups D) Lambda authorizer con certificate validation
+A) Multiple APIs con diferentes throttling settings B) Usage plans con API keys y different throttling limits C) Lambda authorizer con custom rate limiting logic D) CloudFront with rate limiting rules
 
 ---
 
 **Respuestas:**
 
-1. C) Private endpoint con VPC endpoint y resource policy
-2. B) HTTP API con Lambda proxy integration
-3. B) REST API con Lambda authorizer y caching habilitado
-4. B) Canary deployment con 10% de tráfico inicialmente
-5. B) Client-side SSL certificates en REST API integration
+1. B) HTTP API con JWT authorizer y regional endpoint
+2. B) Usar async processing con SQS y polling endpoint
+3. B) Private endpoint con VPC endpoint y resource policy
+4. A) Regional API Gateway con CloudFront distribution
+5. B) Usage plans con API keys y different throttling limits
