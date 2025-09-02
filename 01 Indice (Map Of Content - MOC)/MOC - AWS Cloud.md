@@ -206,7 +206,7 @@ graph TD
 
 ### 🌐 API & Integration Services
 
-- [ ] [[AWS API Gateway]]
+- [ ] [[API Gateway]]
 - [ ] [[AWS Step Functions]]
 - [ ] [[Amazon EventBridge]]
 - [ ] [[Amazon SQS]]
