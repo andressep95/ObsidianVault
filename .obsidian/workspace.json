@@ -11,10 +11,14 @@
             "id": "e7ea7355b5ec28a1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "01 Indice (Map Of Content - MOC)/MOC - AWS Cloud.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MOC - AWS Cloud"
             }
           }
         ]
@@ -178,7 +182,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "41de66d15d41cf36",
+  "active": "e7ea7355b5ec28a1",
   "lastOpenFiles": [
     "05 Templates/Concepto General.md",
     "05 Templates",
