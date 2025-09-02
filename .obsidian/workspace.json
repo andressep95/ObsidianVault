@@ -35,12 +35,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 Templates/Concepto General.md",
+                "file": "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services/API Gateway.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Concepto General"
+              "title": "API Gateway"
             }
           }
         ]
@@ -206,10 +206,11 @@
   },
   "active": "791afcb6569ec5ce",
   "lastOpenFiles": [
+    "01 Indice (Map Of Content - MOC)/MOC - AWS Cloud.md",
+    "05 Templates/Concepto General.md",
     "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services/API Gateway.md",
     "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services",
     "02 Conceptos/AWS/Cloud Practicioner/Compute Services/EC2 - Elastic Compute Cloud.md",
-    "01 Indice (Map Of Content - MOC)/MOC - AWS Cloud.md",
     "02 Conceptos/AWS/Basics/Well-Architected Framework.md",
     "AWS EC2 - Elastic Compute Cloud.md",
     "02 Conceptos/AWS/Basics/Shared Responsibility Model.md",
@@ -222,7 +223,6 @@
     "02 Conceptos/AWS/Cloud Practicioner/Database Services",
     "02 Conceptos/AWS/Cloud Practicioner/Storage Services",
     "02 Conceptos/AWS/Cloud Practicioner/Compute Services",
-    "05 Templates/Concepto General.md",
     "05 Templates",
     "04 Recursos de Estudio/Cheatsheets",
     "04 Recursos de Estudio/CheatSsheets",
