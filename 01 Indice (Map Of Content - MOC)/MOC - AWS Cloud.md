@@ -99,7 +99,7 @@ graph TD
 - [ ] [[Elastic Load Balancing]]
 
 ### 🛡️ Security and Identity Services
-- [ ] [[AWS IAM - Identity and Access Management]]
+- [x] [[AWS IAM - Identity and Access Management]]
 - [ ] [[AWS CloudTrail]]
 - [ ] [[AWS Config]]
 - [ ] [[Amazon Inspector]]
