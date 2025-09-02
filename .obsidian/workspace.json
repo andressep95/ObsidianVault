@@ -182,8 +182,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "e7ea7355b5ec28a1",
+  "active": "41de66d15d41cf36",
   "lastOpenFiles": [
+    "02 Conceptos/AWS/Cloud Practicioner/Storage Services",
+    "02 Conceptos/AWS/Cloud Practicioner/Compute Services",
     "05 Templates/Concepto General.md",
     "05 Templates",
     "04 Recursos de Estudio/Cheatsheets",
@@ -194,7 +196,6 @@
     "04 Recursos de Estudio",
     "Recursos de Estudio",
     "03 Labs/kubernetes",
-    "03 Labs/AWS/solution-architect-labs",
     "03 Labs/AWS/cloud-practicioner-labs/lab-02-iam/01 - Gestión de Identidades y Acceso.md",
     "03 Labs/AWS/cloud-practicioner-labs/lab-01-regions-azs/version.tf.md",
     "03 Labs/AWS/cloud-practicioner-labs/lab-01-regions-azs/variables.tf.md",
@@ -219,7 +220,6 @@
     "02 Conceptos/AWS/Cloud Practicioner/Well-Architected Framework.md",
     "02 Conceptos/AWS - Triple Certificación Path/Well-Architected Framework.md",
     "02 Conceptos/AWS/Cloud Practicioner/EC2 - Elastic Compute Cloud.md",
-    "02 Conceptos/AWS - Triple Certificación Path/EC2 - Elastic Compute Cloud.md",
     "Untitled.canvas"
   ]
 }
