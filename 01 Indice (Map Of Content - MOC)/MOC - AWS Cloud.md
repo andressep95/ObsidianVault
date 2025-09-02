@@ -68,11 +68,11 @@ graph TD
 
 ### 🔒 AWS Shared Responsibility Model
 
-- [x] [[AWS Shared Responsibility Model]]
+- [x] [[Shared Responsibility Model]]
 
 ### 💰 AWS Pricing and Billing
 
-- [ ] [[AWS Pricing Models]]
+- [x] [[Pricing Models]]
 - [ ] [[AWS Support Plans]]
 - [ ] [[AWS Cost Explorer]]
 - [ ] [[AWS Budgets and Cost Management]]
@@ -81,11 +81,11 @@ graph TD
 
 #### Compute Services
 
-- [ ] [[EC2 - Elastic Compute Cloud]]
+- [x] [[EC2 - Elastic Compute Cloud]]
 - [ ] [[Lambda - Serverless Computing]]
 - [ ] [[Elastic Beanstalk]]
-- [ ] [[Amazon ECS - Elastic Container Service]]
-- [ ] [[AWS Fargate]]
+- [ ] [[ECS - Elastic Container Service]]
+- [ ] [[Fargate]]
 
 #### Storage Services
 
