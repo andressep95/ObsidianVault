@@ -60,11 +60,11 @@ graph TD
 
 ### 🌐 AWS Global Infrastructure
 
-- [x] [[AWS Global Infrastructure]]
+- [x] [[Global Infrastructure]]
 
 ### 🏗️ AWS Well-Architected Framework
 
-- [x] [[AWS Well-Architected Framework]]
+- [x] [[Well-Architected Framework]]
 
 ### 🔒 AWS Shared Responsibility Model
 
