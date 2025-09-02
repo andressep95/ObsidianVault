@@ -1,11 +1,7 @@
----
-tags: [moc, aws, cloud, infraestructura]
-aliases: [Amazon Web Services, AWS Index]
----
 # ☁️ Plan de Estudios - AWS Triple Certificación Path
 
 > **🎯 Objetivo:** Obtener las certificaciones AWS Cloud Practitioner (CLF-C02), Developer Associate (DVA-C02) y Solutions Architect Associate (SAA-C03) en 6-7 meses
-> 
+>
 > **📅 Creado:** 30/07/2025 **🔄 Última actualización:** {{date}}
 
 ## 📋 Prerrequisitos Completados
@@ -54,19 +50,24 @@ graph TD
 ---
 
 ## 📚 Fase 1: Cloud Practitioner Fundamentals (Semanas 1-3)
+
 **⏱️ Tiempo sugerido:** 1-1.5 horas/día **🎯 Enfoque:** Teórico - Conceptos fundamentales de AWS
 
 ### 🌐 AWS Global Infrastructure
-- [x] [[AWS Global Infrastructure]]
+
+- [x] [AWS Global Infrastructure](https://www.google.com/search?q=02%2520Conceptos/AWS/Basics/Global%2520Infrastructure.md)
 
 ### 🏗️ AWS Well-Architected Framework
-- [x] [[AWS Well-Architected Framework]]
+
+- [x] [AWS Well-Architected Framework](https://www.google.com/search?q=02%2520Conceptos/AWS/Basics/Well-Architected%2520Framework.md)
 
 ### 🔒 AWS Shared Responsibility Model
-- [x] [[AWS Shared Responsibility Model]]
+
+- [x] [AWS Shared Responsibility Model](https://www.google.com/search?q=02%2520Conceptos/AWS/Basics/Shared%2520Responsibility%2520Model.md)
 
 ### 💰 AWS Pricing and Billing
-- [ ] [[AWS Pricing Models]]
+
+- [ ] [AWS Pricing Models](https://www.google.com/search?q=02%2520Conceptos/AWS/Basics/Pricing%2520Models.md)
 - [ ] [[AWS Support Plans]]
 - [ ] [[AWS Cost Explorer]]
 - [ ] [[AWS Budgets and Cost Management]]
@@ -74,38 +75,44 @@ graph TD
 ### ⚙️ Core AWS Services (Conceptual)
 
 #### Compute Services
-- [ ] [[AWS EC2 - Elastic Compute Cloud]]
+
+- [ ] [AWS EC2 - Elastic Compute Cloud](https://www.google.com/search?q=02%2520Conceptos/AWS/Cloud%2520Practicioner/Compute%2520Services/EC2%2520-%2520Elastic%2520Compute%2520Cloud.md)
 - [ ] [[AWS Lambda - Serverless Computing]]
 - [ ] [[AWS Elastic Beanstalk]]
 - [ ] [[Amazon ECS - Elastic Container Service]]
 - [ ] [[AWS Fargate]]
 
 #### Storage Services
+
 - [ ] [[Amazon S3 - Simple Storage Service]]
 - [ ] [[Amazon EBS - Elastic Block Store]]
 - [ ] [[Amazon EFS - Elastic File System]]
 - [ ] [[AWS Storage Gateway]]
 
 #### Database Services
+
 - [ ] [[Amazon RDS - Relational Database Service]]
 - [ ] [[Amazon DynamoDB]]
 - [ ] [[Amazon ElastiCache]]
 - [ ] [[Amazon Redshift]]
 
 #### Networking Services
+
 - [ ] [[Amazon VPC - Virtual Private Cloud]]
 - [ ] [[Amazon CloudFront]]
 - [ ] [[Amazon Route 53]]
 - [ ] [[Elastic Load Balancing]]
 
 ### 🛡️ Security and Identity Services
-- [x] [[AWS IAM - Identity and Access Management]]
+
+- [x] [AWS IAM - Identity and Access Management](https://www.google.com/search?q=02%2520Conceptos/AWS/Cloud%2520Practicioner/Security%2520And%2520identify%2520Services/AWS%2520IAM%2520-%2520Identity%2520and%2520Access%2520Management.md)
 - [ ] [[AWS CloudTrail]]
 - [ ] [[AWS Config]]
 - [ ] [[Amazon Inspector]]
 - [ ] [[AWS GuardDuty]]
 
 ### 📊 Management and Monitoring
+
 - [ ] [[Amazon CloudWatch]]
 - [ ] [[AWS Management Console]]
 - [ ] [[AWS Trusted Advisor]]
@@ -114,14 +121,17 @@ graph TD
 ### 📖 Recursos de Estudio Cloud Practitioner
 
 **Curso Principal:**
+
 - [ ] [AWS Cloud Practitioner Essentials - AWS Skill Builder](https://aws.amazon.com/training/digital/)
 - [ ] [Ultimate AWS Certified Cloud Practitioner CLF-C02](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/)
 
 **Documentación:**
+
 - [ ] [AWS Cloud Practitioner Learning Path](https://aws.amazon.com/training/path-cloudpractitioner/)
 - [ ] [AWS Whitepapers - Cloud Fundamentals](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html)
 
 **✅ Checkpoint Semana 3:**
+
 - [ ] Comprendo la propuesta de valor de AWS
 - [ ] Entiendo el modelo de precios y facturación
 - [ ] Conozco los servicios core de cada categoría
@@ -142,9 +152,9 @@ graph TD
 
 ### 🎯 Resultados Simulacros CLF-C02
 
-- [ ] Simulacro 1: ___% (Objetivo: >80%)
-- [ ] Simulacro 2: ___% (Objetivo: >85%)
-- [ ] Simulacro 3: ___% (Objetivo: >90%)
+- [ ] Simulacro 1: \_\_\_% (Objetivo: \>80%)
+- [ ] Simulacro 2: \_\_\_% (Objetivo: \>85%)
+- [ ] Simulacro 3: \_\_\_% (Objetivo: \>90%)
 
 **🏆 EXAMEN CLOUD PRACTITIONER (CLF-C02) - Semana 4**
 
@@ -282,9 +292,9 @@ graph TD
 
 ### 🎯 Resultados Simulacros DVA-C02
 
-- [ ] Simulacro 1: ___% (Objetivo: >75%)
-- [ ] Simulacro 2: ___% (Objetivo: >80%)
-- [ ] Simulacro 3: ___% (Objetivo: >85%)
+- [ ] Simulacro 1: \_\_\_% (Objetivo: \>75%)
+- [ ] Simulacro 2: \_\_\_% (Objetivo: \>80%)
+- [ ] Simulacro 3: \_\_\_% (Objetivo: \>85%)
 
 **🏆 EXAMEN DEVELOPER ASSOCIATE (DVA-C02) - Semana 11**
 
@@ -420,9 +430,9 @@ graph TD
 
 ### 🎯 Resultados Simulacros SAA-C03
 
-- [ ] Simulacro 1: ___% (Objetivo: >75%)
-- [ ] Simulacro 2: ___% (Objetivo: >80%)
-- [ ] Simulacro 3: ___% (Objetivo: >85%)
+- [ ] Simulacro 1: \_\_\_% (Objetivo: \>75%)
+- [ ] Simulacro 2: \_\_\_% (Objetivo: \>80%)
+- [ ] Simulacro 3: \_\_\_% (Objetivo: \>85%)
 
 ### ✅ Checklist Final Pre-Examen
 
@@ -431,7 +441,7 @@ graph TD
 - [ ] Conozco límites y quotas de todos los servicios
 - [ ] Puedo diseñar para cualquier caso de uso
 - [ ] Manejo troubleshooting avanzado
-- [ ] Promedio >85% en simulacros
+- [ ] Promedio \>85% en simulacros
 
 **🏆 EXAMEN SOLUTIONS ARCHITECT ASSOCIATE (SAA-C03) - Semana 18**
 
@@ -439,14 +449,14 @@ graph TD
 
 ## 📅 Cronograma Detallado Triple Certificación
 
-|Semana|Fase|Tiempo/día|Enfoque Principal|Deliverable|
-|---|---|---|---|---|
-|1-3|Cloud Practitioner Prep|1-1.5h|Teoría fundamental AWS|Conceptos sólidos|
-|4|CLF-C02 Exam|2-3h|Repaso + Examen|**CLF-C02 Certificate**|
-|5-10|Developer Technical|2-2.5h|Hands-on + CDK Go|CDK Stacks completos|
-|11|DVA-C02 Exam|3-4h|Repaso + Examen|**DVA-C02 Certificate**|
-|12-17|Solutions Architect|2.5-3h|Enterprise Architecture|Architecture Patterns|
-|18|SAA-C03 Exam|3-4h|Repaso + Examen|**SAA-C03 Certificate**|
+| Semana | Fase                    | Tiempo/día | Enfoque Principal       | Deliverable             |
+| ------ | ----------------------- | ---------- | ----------------------- | ----------------------- |
+| 1-3    | Cloud Practitioner Prep | 1-1.5h     | Teoría fundamental AWS  | Conceptos sólidos       |
+| 4      | CLF-C02 Exam            | 2-3h       | Repaso + Examen         | **CLF-C02 Certificate** |
+| 5-10   | Developer Technical     | 2-2.5h     | Hands-on + CDK Go       | CDK Stacks completos    |
+| 11     | DVA-C02 Exam            | 3-4h       | Repaso + Examen         | **DVA-C02 Certificate** |
+| 12-17  | Solutions Architect     | 2.5-3h     | Enterprise Architecture | Architecture Patterns   |
+| 18     | SAA-C03 Exam            | 3-4h       | Repaso + Examen         | **SAA-C03 Certificate** |
 
 ---
 
@@ -505,3 +515,7 @@ graph TD
 > **💡 Estrategia:** Enfoque progresivo desde fundamentos teóricos hasta implementación enterprise, con práctica hands-on intensiva usando CDK Go para maximizar el aprendizaje práctico.
 
 **🔄 Próxima revisión:** Semanal **📝 Estado:** Ready for Triple Certification Journey
+
+```
+
+```
