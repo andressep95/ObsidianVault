@@ -515,7 +515,3 @@ graph TD
 > **💡 Estrategia:** Enfoque progresivo desde fundamentos teóricos hasta implementación enterprise, con práctica hands-on intensiva usando CDK Go para maximizar el aprendizaje práctico.
 
 **🔄 Próxima revisión:** Semanal **📝 Estado:** Ready for Triple Certification Journey
-
-```
-
-```
