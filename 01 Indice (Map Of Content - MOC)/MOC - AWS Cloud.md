@@ -74,7 +74,7 @@ graph TD
 ### ⚙️ Core AWS Services (Conceptual)
 
 #### Compute Services
-- [ ] [[AWS EC2 - Elastic Compute Cloud]]
+- [x] [[AWS EC2 - Elastic Compute Cloud]]
 - [ ] [[AWS Lambda - Serverless Computing]]
 - [ ] [[AWS Elastic Beanstalk]]
 - [ ] [[Amazon ECS - Elastic Container Service]]
