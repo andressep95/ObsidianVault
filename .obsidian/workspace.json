@@ -4,28 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "7c7d11944b6efb10",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e7ea7355b5ec28a1",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 Indice (Map Of Content - MOC)/MOC - AWS Cloud.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "MOC - AWS Cloud"
-            }
-          }
-        ]
-      },
-      {
         "id": "a90d8509e8162ace",
         "type": "tabs",
         "children": [
