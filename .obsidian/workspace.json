@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Indice (Map Of Content - MOC)/MOC - Desarrollo de Software.md",
+                "file": "02 Conceptos/AWS/Basics/Well-Architected Framework.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MOC - Desarrollo de Software"
+              "title": "Well-Architected Framework"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 436.5
+    "width": 436.5,
+    "collapsed": true
   },
   "right": {
     "id": "643dd29477638eb7",
@@ -185,6 +186,8 @@
   "active": "791afcb6569ec5ce",
   "lastOpenFiles": [
     "01 Indice (Map Of Content - MOC)/MOC - AWS Cloud.md",
+    "01 Indice (Map Of Content - MOC)/MOC - Terraform & IaC.md",
+    "01 Indice (Map Of Content - MOC)/MOC - Desarrollo de Software.md",
     "02 Conceptos/AWS/Basics/Global Infrastructure.md",
     "02 Conceptos/AWS/Basics/Pricing Models.md",
     "02 Conceptos/AWS/Basics/Shared Responsibility Model.md",
@@ -218,7 +221,6 @@
     "02 Conceptos/AWS/Cloud Practicioner/Global Infrastructure.md",
     "02 Conceptos/AWS - Triple Certificación Path/Global Infrastructure.md",
     "02 Conceptos/AWS/Cloud Practicioner/Pricing Models.md",
-    "02 Conceptos/AWS - Triple Certificación Path/Pricing Models.md",
     "Untitled.canvas"
   ]
 }
