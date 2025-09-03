@@ -35,12 +35,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services/API Gateway.md",
+                "file": "02 Conceptos/AWS/Basics/Well-Architected Framework.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "API Gateway"
+              "title": "Well-Architected Framework"
             }
           }
         ]
@@ -207,9 +207,9 @@
   },
   "active": "791afcb6569ec5ce",
   "lastOpenFiles": [
+    "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services/API Gateway.md",
     "01 Indice (Map Of Content - MOC)/MOC - AWS Cloud.md",
     "05 Templates/Concepto General.md",
-    "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services/API Gateway.md",
     "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services",
     "02 Conceptos/AWS/Cloud Practicioner/Compute Services/EC2 - Elastic Compute Cloud.md",
     "02 Conceptos/AWS/Basics/Well-Architected Framework.md",
