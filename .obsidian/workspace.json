@@ -185,13 +185,14 @@
   },
   "active": "791afcb6569ec5ce",
   "lastOpenFiles": [
+    "01 - Well-Architected Tool.md",
+    "02 Conceptos/AWS/Basics/Well-Architected Framework.md",
     "01 Indice (Map Of Content - MOC)/MOC - AWS Cloud.md",
     "01 Indice (Map Of Content - MOC)/MOC - Terraform & IaC.md",
     "01 Indice (Map Of Content - MOC)/MOC - Desarrollo de Software.md",
     "02 Conceptos/AWS/Basics/Global Infrastructure.md",
     "02 Conceptos/AWS/Basics/Pricing Models.md",
     "02 Conceptos/AWS/Basics/Shared Responsibility Model.md",
-    "02 Conceptos/AWS/Basics/Well-Architected Framework.md",
     "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services/API Gateway.md",
     "05 Templates/Concepto General.md",
     "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services",
@@ -220,7 +221,6 @@
     "02 Conceptos/AWS - Triple Certificación Path/IAM & AWS CLI - Identity and Access Management.md",
     "02 Conceptos/AWS/Cloud Practicioner/Global Infrastructure.md",
     "02 Conceptos/AWS - Triple Certificación Path/Global Infrastructure.md",
-    "02 Conceptos/AWS/Cloud Practicioner/Pricing Models.md",
     "Untitled.canvas"
   ]
 }

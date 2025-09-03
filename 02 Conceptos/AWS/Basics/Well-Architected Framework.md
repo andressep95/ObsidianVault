@@ -165,15 +165,15 @@ Por eso, cada recomendación debe ser evaluada según el presupuesto y criticida
 
 ### ✅ Mejores Prácticas
 
-| Área                          | Recomendación                                                   |
-|------------------------------|------------------------------------------------------------------|
-| **Gestión de identidades (IAM)** | Usa roles y políticas mínimas necesarias (least privilege).      |
-| **Autenticación multifactor (MFA)** | Habilita MFA para usuarios y roles críticos.                     |
-| **Registro y monitoreo**     | Habilita AWS CloudTrail, Config y CloudWatch Logs.              |
-| **Cifrado de datos**         | Usa KMS para cifrar datos en S3, EBS, RDS, etc.                 |
-| **Seguridad de red**         | Configura VPCs, subredes privadas, NACLs, y grupos de seguridad. |
-| **Auditorías automáticas**   | Usa AWS Config Rules, GuardDuty, Security Hub.                  |
-| **Respuesta a incidentes**   | Establece un runbook y simula incidentes con AWS Fault Injection Simulator. |
+| Área                                | Recomendación                                                               |
+| ----------------------------------- | --------------------------------------------------------------------------- |
+| **Gestión de identidades (IAM)**    | Usa roles y políticas mínimas necesarias (least privilege).                 |
+| **Autenticación multifactor (MFA)** | Habilita MFA para usuarios y roles críticos.                                |
+| **Registro y monitoreo**            | Habilita AWS CloudTrail, Config y CloudWatch Logs.                          |
+| **Cifrado de datos**                | Usa KMS para cifrar datos en S3, EBS, RDS, etc.                             |
+| **Seguridad de red**                | Configura VPCs, subredes privadas, NACLs, y grupos de seguridad.            |
+| **Auditorías automáticas**          | Usa AWS Config Rules, GuardDuty, Security Hub.                              |
+| **Respuesta a incidentes**          | Establece un runbook y simula incidentes con AWS Fault Injection Simulator. |
 
 ### ❌ Errores Comunes
 
@@ -203,5 +203,3 @@ Por eso, cada recomendación debe ser evaluada según el presupuesto y criticida
 - 📘 [AWS Well-Architected Tool - Documentación Oficial](https://docs.aws.amazon.com/wellarchitected/latest/userguide/)
 - 🛠️ [AWS Pricing Calculator](https://aws.amazon.com/es/aws-cost-management/aws-pricing-calculator/)
 
-### 🧪 Hands-on Labs
-- [[01 - Well-Architected Tool]]
