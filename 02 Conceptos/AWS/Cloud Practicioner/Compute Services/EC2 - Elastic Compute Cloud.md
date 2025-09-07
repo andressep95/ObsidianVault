@@ -2,7 +2,7 @@
 
 **Amazon Elastic Compute Cloud (EC2)** es un servicio web que proporciona capacidad de computación redimensionable en la nube de AWS. Permite lanzar servidores virtuales bajo demanda, escalando automáticamente hacia arriba o hacia abajo según las necesidades de la aplicación, eliminando la necesidad de invertir en hardware por adelantado.
 
-![AWS EC2](../../../../attachments/img-ec2.jpeg)
+![AWS EC2](../../../../attachments/Compute%20Services/EC2/img-ec2.jpeg)
 
 **Diagrama:**
 
