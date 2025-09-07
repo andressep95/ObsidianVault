@@ -184,6 +184,12 @@
   },
   "active": "791afcb6569ec5ce",
   "lastOpenFiles": [
+    "attachments/img-ebs-data-migration.png",
+    "attachments/Captura de pantalla 2025-09-07 a la(s) 3.25.06 p. m..png",
+    "attachments/Captura de pantalla 2025-09-07 a la(s) 3.25.27 p. m..png",
+    "attachments/Captura de pantalla 2025-09-07 a la(s) 3.25.39 p. m..png",
+    "attachments/Captura de pantalla 2025-09-07 a la(s) 3.25.55 p. m..png",
+    "attachments/Captura de pantalla 2025-09-07 a la(s) 3.26.05 p. m..png",
     "02 Conceptos/AWS/Cloud Practicioner/Storage Services/EBS - Elastic Block Store.md",
     "02 Conceptos/AWS/Basics/Well-Architected Framework.md",
     "01 - Well-Architected Tool.md",
@@ -219,7 +225,6 @@
     "03 Labs/AWS/cloud-practicioner-labs/lab-01-regions-azs/data.tf.md",
     "03 Labs/AWS/cloud-practicioner-labs/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
     "02 Conceptos/AWS - Triple Certificación Path/IAM & AWS CLI - Identity and Access Management.md",
-    "02 Conceptos/AWS/Cloud Practicioner/Global Infrastructure.md",
     "Untitled.canvas"
   ]
 }
