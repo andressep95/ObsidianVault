@@ -1,50 +1,91 @@
----
-tags: [concept, general]
----
+# Plantilla de Estudio AWS - [NOMBRE DEL SERVICIO]
 
-# 💡 {{Concepto Base}}
+## ¿Qué es?
 
-## 🧠 Descripción General
+[Definición clara y concisa del servicio]
+**Diagrama:**
 
-Una breve y concisa descripción del concepto. Explica qué es, por qué es importante y en qué contexto se usa.
+[Descripción textual del diagrama arquitectural básico]
 
----
+## Escenarios de uso
 
-## 🛠️ Configuraciones y Buenas Prácticas
+- [Escenario 1]
+- [Escenario 2]
+- [Escenario 3]
+- [Escenario 4]
 
-Lista de configuraciones clave y buenas prácticas asociadas a este concepto. Usa una lista para que sea fácil de leer y escanear.
+## Buenas prácticas
 
-- **Configuración 1:** Descripción de la configuración o práctica.
-- **Configuración 2:** Otra configuración importante.
-- **Práctica 1:** Recomendación de buenas prácticas.
-- **Práctica 2:** Otra práctica sugerida.
+- [Práctica 1]
+- [Práctica 2]
+- [Práctica 3]
+- [Práctica 4]
 
----
+## Aspectos a configurar
 
-## 📂 Casos de Uso
+- [Configuración 1]
+- [Configuración 2]
+- [Configuración 3]
+- [Configuración 4]
 
-Ejemplos prácticos y escenarios donde este concepto se aplica de manera efectiva.
+## Versiones/Variantes del servicio
 
-- **Caso de Uso 1:** Describe un escenario real donde este concepto es la solución.
-- **Caso de Uso 2:** Describe otro escenario y por qué se adapta.
-- **Ejemplo Práctico:** Un ejemplo de código o un diagrama simple.
+| Versión/Tipo | Caso de uso | Características         |
+| ------------ | ----------- | ----------------------- |
+| [Variante 1] | [Uso]       | [Características clave] |
+| [Variante 2] | [Uso]       | [Características clave] |
+| [Variante 3] | [Uso]       | [Características clave] |
 
----
+## Modelo de precios y facturación
 
-## 🔗 Relaciones con Otros Conceptos
+- Método de cobro: [Cómo se cobra]
+- Opciones de pricing: [On-Demand, Reserved, etc.]
+- Costos típicos: [Rangos de precio]
+- Free Tier: [Detalles del nivel gratuito]
 
-Enlaces internos a otros conceptos, servicios o laboratorios relevantes en tu vault. Esto ayuda a construir una red de conocimiento interconectada.
+## Integración con otros servicios AWS
 
-- [[💡 Concepto Relacionado 1]]
-- [[💡 Concepto Relacionado 2]]
-- [[🧪 Lab - {{Nombre del Laboratorio}}]]
+- Servicios comunes: [Lista de servicios que se integran]
+- Patrones arquitecturales: [Patrones típicos]
+- Dependencias: [Prerequisitos si los hay]
 
----
+## Límites y cuotas
 
-## ➕ Información Adicional
+- Límites por defecto: [Límites estándar]
+- Límites aumentables: [Qué se puede aumentar]
+- Consideraciones de escalabilidad: [Puntos importantes]
 
-Cualquier otra información relevante, como notas históricas, evolución del concepto o datos curiosos.
+## Seguridad y compliance
 
-- **Notas:** {{Aquí tus notas personales o puntos clave a recordar.}}
-- **Recursos Externos:** - [Enlace a la documentación oficial](URL)
-  - [Artículo o video de referencia](URL)
+- Modelo de responsabilidad: [Qué maneja AWS vs cliente]
+- Opciones de cifrado: [Tipos de cifrado disponibles]
+- Certificaciones: [Compliance soportado]
+- Control de acceso: [IAM, políticas, etc.]
+
+## Monitoreo y troubleshooting
+
+- CloudWatch metrics: [Métricas principales]
+- Logs generados: [Tipos de logs]
+- CloudTrail events: [Eventos relevantes]
+- Herramientas de diagnóstico: [Tools disponibles]
+
+## Disponibilidad y durabilidad
+
+- SLA: [Porcentaje de disponibilidad garantizada]
+- Durabilidad: [Porcentaje si aplica]
+- Opciones de redundancia: [Multi-AZ, cross-region, etc.]
+- Backup/Restore: [Opciones de respaldo]
+
+## Casos de uso: Correcto vs Incorrecto
+
+### ✅ Cuándo SÍ usar este servicio:
+
+- [Caso correcto 1]
+- [Caso correcto 2]
+- [Caso correcto 3]
+
+### ❌ Cuándo NO usar este servicio:
+
+- [Caso incorrecto 1] → Alternativa: [Servicio recomendado]
+- [Caso incorrecto 2] → Alternativa: [Servicio recomendado]
+- [Caso incorrecto 3] → Alternativa: [Servicio recomendado]
