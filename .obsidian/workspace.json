@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services/API Gateway.md",
+                "file": "02 Conceptos/AWS/Cloud Practicioner/Storage Services/EBS - Elastic Block Store.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "API Gateway"
+              "title": "EBS - Elastic Block Store"
             }
           }
         ]
@@ -184,6 +184,8 @@
   },
   "active": "791afcb6569ec5ce",
   "lastOpenFiles": [
+    "02 Conceptos/AWS/Cloud Practicioner/Compute Services/EC2 - Elastic Compute Cloud.md",
+    "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services/API Gateway.md",
     "attachments/Api & Integration Services/API Gateway/img-api-gateway.png",
     "attachments/Api & Integration Services/API Gateway",
     "attachments/Api & Integration Services/Api Gateway",
@@ -203,7 +205,6 @@
     "attachments/Compute Services",
     "attachments/img-ebs.png",
     "attachments/Captura de pantalla 2025-09-07 a la(s) 3.44.31 p. m..png",
-    "attachments/img-ebs-performance-tuning.png",
     "02 Conceptos/AWS/Cloud Practicioner/Storage Services/EBS - Elastic Block Store.md",
     "02 Conceptos/AWS/Basics/Well-Architected Framework.md",
     "01 - Well-Architected Tool.md",
@@ -213,10 +214,8 @@
     "02 Conceptos/AWS/Basics/Global Infrastructure.md",
     "02 Conceptos/AWS/Basics/Pricing Models.md",
     "02 Conceptos/AWS/Basics/Shared Responsibility Model.md",
-    "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services/API Gateway.md",
     "05 Templates/Concepto General.md",
     "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services",
-    "02 Conceptos/AWS/Cloud Practicioner/Compute Services/EC2 - Elastic Compute Cloud.md",
     "AWS EC2 - Elastic Compute Cloud.md",
     "02 Conceptos/AWS/Cloud Practicioner/Security And identify Services/AWS IAM - Identity and Access Management.md",
     "02 Conceptos/AWS/Cloud Practicioner/Security And identify Services/IAM & AWS CLI - Identity and Access Management.md",
