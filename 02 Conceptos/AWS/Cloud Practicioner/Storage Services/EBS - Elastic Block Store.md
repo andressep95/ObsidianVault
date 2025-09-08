@@ -176,3 +176,9 @@
 
 - **Optimizacion de costes:**
   ![AWS EC2](../../../../attachments/Storage%20Services/EBS/img-ebs-cost-optimization.png)
+
+- **Migraciones de datos entre instancias:**
+  ![AWS EC2](../../../../attachments/Storage%20Services/EBS/img-ebs-data-migration.png)
+
+- **Recuperacion ante desastres:**
+  ![AWS EC2](../../../../attachments/Storage%20Services/EBS/img-ebs-disaster-recovery.png)
