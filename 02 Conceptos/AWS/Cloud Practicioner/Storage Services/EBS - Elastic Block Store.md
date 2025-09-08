@@ -171,3 +171,8 @@
 - **Almacenamiento cross-region por defecto** → **Alternativa:** S3 para datos que necesitan acceso multi-region
 - **Streaming de datos en tiempo real** → **Alternativa:** Kinesis Data Streams para data streaming
 - **Content delivery global** → **Alternativa:** S3 + CloudFront para distribución mundial
+
+## Caracteristicas importantes
+
+- **Optimizacion de costes:**
+  ![AWS EC2](../../../../attachments/Storage%20Services/EBS/img-ebs-cost-optimization.png)
