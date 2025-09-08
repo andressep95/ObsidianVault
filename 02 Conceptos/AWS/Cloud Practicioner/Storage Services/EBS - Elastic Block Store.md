@@ -182,3 +182,9 @@
 
 - **Recuperacion ante desastres:**
   ![AWS EC2](../../../../attachments/Storage%20Services/EBS/img-ebs-disaster-recovery.png)
+
+- **Migraciones entre tipos de instancias:**
+  ![AWS EC2](../../../../attachments/Storage%20Services/EBS/img-ebs-ec2-migration-instance.png)
+
+- **Optimizacion de rendimiento:**
+  ![AWS EC2](../../../../attachments/Storage%20Services/EBS/img-ebs-performance-tuning.png)
