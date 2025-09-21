@@ -104,7 +104,7 @@ graph TD
 #### Networking Services
 
 - [ ] [[Amazon VPC - Virtual Private Cloud]]
-- [ ] [[Amazon CloudFront]]
+- [ ] [[CloudFront]]
 - [ ] [[Amazon Route 53]]
 - [ ] [[Elastic Load Balancing]]
 
