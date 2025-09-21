@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Conceptos/AWS/Cloud Practicioner/Compute Services/EC2 - Elastic Compute Cloud.md",
+                "file": "01 Indice (Map Of Content - MOC)/MOC - AWS Cloud.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EC2 - Elastic Compute Cloud"
+              "title": "MOC - AWS Cloud"
             }
           }
         ]
@@ -184,9 +184,10 @@
   },
   "active": "791afcb6569ec5ce",
   "lastOpenFiles": [
+    "05 Templates/Concepto General.md",
+    "02 Conceptos/AWS/Cloud Practicioner/Compute Services/EC2 - Elastic Compute Cloud.md",
     "01 Indice (Map Of Content - MOC)/MOC - AWS Cloud.md",
     "02 Conceptos/AWS/Cloud Practicioner/Storage Services/EBS - Elastic Block Store.md",
-    "02 Conceptos/AWS/Cloud Practicioner/Compute Services/EC2 - Elastic Compute Cloud.md",
     "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services/API Gateway.md",
     "attachments/Api & Integration Services/API Gateway/img-api-gateway.png",
     "attachments/Api & Integration Services/API Gateway",
@@ -214,7 +215,6 @@
     "02 Conceptos/AWS/Basics/Global Infrastructure.md",
     "02 Conceptos/AWS/Basics/Pricing Models.md",
     "02 Conceptos/AWS/Basics/Shared Responsibility Model.md",
-    "05 Templates/Concepto General.md",
     "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services",
     "AWS EC2 - Elastic Compute Cloud.md",
     "02 Conceptos/AWS/Cloud Practicioner/Security And identify Services/AWS IAM - Identity and Access Management.md",
