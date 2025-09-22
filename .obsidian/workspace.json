@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 436.5,
-    "collapsed": true
+    "width": 436.5
   },
   "right": {
     "id": "643dd29477638eb7",
@@ -183,8 +182,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "791afcb6569ec5ce",
+  "active": "41de66d15d41cf36",
   "lastOpenFiles": [
+    "02 Conceptos/AWS/Developer Associate/Untitled",
     "01 Indice (Map Of Content - MOC)/MOC - AWS Cloud.md",
     "02 Conceptos/AWS/Cloud Practicioner/Networking Services/CloudFront.md",
     "05 Templates/Concepto General.md",
@@ -230,7 +230,6 @@
     "03 Labs/AWS/cloud-practicioner-labs/lab-01-regions-azs/locals.tf.md",
     "03 Labs/AWS/cloud-practicioner-labs/lab-01-regions-azs/data.tf.md",
     "03 Labs/AWS/cloud-practicioner-labs/lab-01-regions-azs/01 - Exploring AWS Regions and AZs.md",
-    "02 Conceptos/AWS - Triple Certificación Path/IAM & AWS CLI - Identity and Access Management.md",
     "Untitled.canvas"
   ]
 }
