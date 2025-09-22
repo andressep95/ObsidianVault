@@ -184,7 +184,8 @@
   },
   "active": "41de66d15d41cf36",
   "lastOpenFiles": [
-    "02 Conceptos/AWS/Developer Associate/Untitled",
+    "02 Conceptos/AWS/Developer Associate/Storage Services/S3",
+    "02 Conceptos/AWS/Developer Associate/Storage Services",
     "01 Indice (Map Of Content - MOC)/MOC - AWS Cloud.md",
     "02 Conceptos/AWS/Cloud Practicioner/Networking Services/CloudFront.md",
     "05 Templates/Concepto General.md",
@@ -217,7 +218,6 @@
     "02 Conceptos/AWS/Basics/Global Infrastructure.md",
     "02 Conceptos/AWS/Basics/Pricing Models.md",
     "02 Conceptos/AWS/Basics/Shared Responsibility Model.md",
-    "02 Conceptos/AWS/Cloud Practicioner/Api & Integration Services",
     "AWS EC2 - Elastic Compute Cloud.md",
     "02 Conceptos/AWS/Cloud Practicioner/Security And identify Services/AWS IAM - Identity and Access Management.md",
     "02 Conceptos/AWS/Cloud Practicioner/Security And identify Services/IAM & AWS CLI - Identity and Access Management.md",
