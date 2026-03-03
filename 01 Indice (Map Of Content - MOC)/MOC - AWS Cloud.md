@@ -82,6 +82,7 @@ graph TD
 #### Compute Services
 
 - [x] [[EC2 - Elastic Compute Cloud]]
+- [x] [[basic-ec2-instance]] — 🔒 Proyecto EC2 práctico (repositorio privado)
 - [ ] [[Lambda - Serverless Computing]]
 - [ ] [[Elastic Beanstalk]]
 - [ ] [[ECS - Elastic Container Service]]
